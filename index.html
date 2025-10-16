@@ -1,35 +1,140 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clément BOUNAIX - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
     <header>
-        <meta charset="UTF-8">
-        <link rel="stylesheet" href="style.css">
-        <title>loazur - Portfolio </title>
+        <nav>
+            <ul>
+                <li><a href="#about">À propos</a></li>
+                <li><a href="#projects">Projets</a></li>
+                <li><a href="#cv">CV</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
     </header>
-    <body>
-        <!-- Modèle: https://port-folio-nine-lemon-27.vercel.app/#home -->
-        <!-- Modèle: https://www.ciangoon.dev/ -->
 
-        <!-- Page d'accueil -->
-        <h1>loazur - Clément BOUNAIX <br>Technicien supérieur en informatique</h1>
+    <main>
+        <!--~ Accueil -->
+        <section id="home" class="hero">
+            <div class="hero-text">
+                <h1>Clément BOUNAIX - loazur</h1>
+                <p>SITE ACTUELLEMENT EN DEVELOPPEMENT</p>
+                <div class="buttons">
+                    <a href="#about" class="btn">À propos</a>
+                    <a href="#projects" class="btn">Voir Projets</a>
+                    <a href="#cv" class="btn">CV</a>
+                    <a href="#contact" class="btn">Contact</a>
+                </div>
+            </div>
+        </section>
 
-        <!-- À propos de moi -->
-        <h3>À propos de moi</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores eius, obcaecati eveniet, inventore excepturi quo quae a totam nobis laborum rerum vitae cupiditate voluptatibus iste sit aspernatur nemo accusamus hic.</p>
+        <!--~ À propos -->
+        <section id="about" class="section">
+            <h2>À propos de moi</h2>
+            <p>
+                Comprendre le fonctionnement des jeux vidéo m’a toujours intéressé. <br>
+                Comment le joueur se déplace-t-il ? <br>
+                Comment fonctionnent les IA ? <br>
+                C’est pour cette raison que je suis actuellement une formation dans ce domaine, tout en travaillant en parallèle sur de nombreux projets liés aux jeux vidéo.
+            </p>
+        </section>
 
-        <button type="button">À propos</button>
-        <button type="button">Voir Projets</button>
-        <button type="button">CV</button>
-        <button type="button">Contacts</button>
+        <!--~ Projets -->
+        <section id="projects" class="section">
+            <h2>Projets</h2>
 
-        <!-- Menu de navigation -->
+            <!--~ Filtres -->
+            <div class="project-filters">
+                <button class="filter active">Tous</button>
+                <button class="filter">Jeux</button>
+                <button class="filter">Outils</button>
+            </div>
 
-        <!-- Projets -->
-        <h2>Projets</h2>
+             <!--! AJOUTER TOUT LES PROJETS QUE J'AI FAIT -->
+            <div class="projects-grid">
+                <!--& IPlat -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <span class="project-badge">Open Source</span>
+                        <span class="project-badge">2021</span>
+                        <h3>IPlat - Love2D</h3>
+                    </div>
+                    <p>
+                        Court jeu de platforme 
+                    </p>
 
-        <!-- CV  (Disponible sur le site et téléchargable)-->
-        <h2>CV</h2>
-        
-        <!-- Projets -->
-        <h2>Contacts</h2>
-    </body>
+                    <div class="project-links">
+                        <a href="https://github.com/loazur/IPlat" target="_blank" class="link-btn github">Github</a>
+                        <a href="https://loazur.itch.io/iplat" target="_blank" class="link-btn demo">Itch.io</a>
+                    </div>
+
+                    <div class="project-tags">
+                        <span>Lua</span>
+                        <span>Love2D</span>
+                    </div>
+                </div>
+
+                 <!--& Project Mycoria -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <span class="project-badge">2025</span>
+                        <h3>Project Mycoria – Unreal Engine</h3>
+                    </div>
+                    <p>
+                        ...
+                    </p>
+
+                    <div class="project-tags">
+                        <span>Unreal Engine</span>
+                        <span>C++</span>
+                        <span>Blueprints</span>
+
+                    </div>
+                </div>
+
+                 <!--& ProjetUnity -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <span class="project-badge">2025-???</span>
+                        <h3>Sans Nom – Unity</h3>
+                    </div>
+                    <p>
+                        Jeu d'exploration et de survie en développement sur Unity 6
+                    </p>
+
+                    <div class="project-links">
+                        <a href="https://github.com/Mortann/Build-ProjetUnity" target="_blank" class="link-btn github">Builds</a>
+                    </div>
+
+                    <div class="project-tags">
+                        <span>Unity</span>
+                        <span>C#</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--~ CV -->
+        <section id="cv" class="section">
+            <h2>CV</h2>
+           
+           
+        </section>
+
+        <!--~ Contact -->
+        <section id="contact" class="section">
+            <h2>Contact</h2>
+            
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 loazur. Tous droits réservés.</p>
+    </footer>
+</body>
 </html>
