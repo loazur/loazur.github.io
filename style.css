@@ -1,3 +1,4 @@
+/* === RESET & BASE === */
 * {
     margin: 0;
     padding: 0;
@@ -12,7 +13,7 @@ body {
     line-height: 1.6;
 }
 
-/* Navigation */
+/* === NAVIGATION === */
 nav {
     display: flex;
     justify-content: center;
@@ -42,14 +43,14 @@ nav a:hover {
     color: #fff;
 }
 
-/* Sections */
+/* === SECTIONS === */
 .section {
     padding: 6rem 2rem;
-    max-width: 900px;
+    max-width: 1100px;
     margin: 0 auto;
 }
 
-/* Hero */
+/* === HERO === */
 .hero {
     display: flex;
     justify-content: center;
@@ -91,128 +92,151 @@ nav a:hover {
     color: #000;
 }
 
-/* Filtres */
+/* === PROJETS === */
 .project-filters {
     display: flex;
-    gap: 1rem;
-    margin: 1rem 0 2rem;
     justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
 }
 
 .filter {
     background: #111;
-    border: 1px solid #333;
     color: #ccc;
+    border: 1px solid #333;
     padding: 0.5rem 1rem;
-    border-radius: 8px;
+    border-radius: 6px;
     cursor: pointer;
-    transition: all 0.2s ease;
+    transition: background 0.2s;
 }
 
-.filter.active, .filter:hover {
+.filter:hover,
+.filter.active {
     background: #fff;
     color: #000;
 }
 
-/* Grille de projets */
+/* === GRILLE DES PROJETS === */
 .projects-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 2.5rem;
+    margin-top: 2rem;
 }
 
-/* Cartes projets */
+/* === CARTES DE PROJET === */
 .project-card {
-    background: rgba(255, 255, 255, 0.05);
-    backdrop-filter: blur(15px);
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    background-color: #1c1c1c;
     border-radius: 16px;
     padding: 2rem;
-    transition: transform 0.3s ease, border-color 0.3s;
+    transition: transform 0.2s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.3);
 }
 
 .project-card:hover {
-    transform: translateY(-8px);
-    border-color: rgba(255, 255, 255, 0.3);
+    transform: translateY(-5px);
+    box-shadow: 0 8px 30px rgba(0,0,0,0.5);
 }
 
+/* === EN-TÊTE DU PROJET === */
 .project-header {
     display: flex;
     flex-direction: column;
-    gap: 0.5rem;
+    align-items: flex-start;
+    gap: 0.3rem;
     margin-bottom: 1rem;
+}
+
+.badge-group {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
 }
 
 .project-badge {
-    font-size: 0.8rem;
-    background: rgba(255, 255, 255, 0.1);
-    color: #ccc;
-    padding: 0.2rem 0.6rem;
-    border-radius: 999px;
-    align-self: flex-start;
+    display: inline-block;
+    background-color: #2a2a2a;
+    color: #bbb;
+    font-size: 0.75rem;
+    font-weight: 500;
+    padding: 0.25rem 0.6rem;
+    border-radius: 6px;
+    line-height: 1;
+    white-space: nowrap;
 }
 
-.project-card h3 {
-    font-size: 1.2rem;
-    color: #fff;
+.project-header h3 {
+    font-size: 1.3rem;
+    margin-top: 0.3rem;
 }
 
-.project-card p {
-    color: #aaa;
-    margin-bottom: 1.2rem;
-}
-
-/* Liens */
+/* === LIENS DE PROJET === */
 .project-links {
+    margin-top: 1rem;
     display: flex;
-    gap: 1rem;
-    margin-bottom: 1rem;
+    flex-wrap: wrap;
+    gap: 0.5rem;
 }
 
 .link-btn {
     display: inline-block;
-    padding: 0.5rem 1rem;
+    padding: 0.4rem 0.8rem;
     border-radius: 8px;
-    text-decoration: none;
     font-size: 0.9rem;
-    transition: all 0.2s ease;
+    text-decoration: none;
+    color: #fff;
+    transition: background 0.2s;
 }
 
 .link-btn.github {
     background: #000;
-    color: #fff;
 }
 
 .link-btn.demo {
-    background: rgba(255, 255, 255, 0.1);
-    color: #ccc;
+    background: #007acc;
 }
 
 .link-btn:hover {
-    transform: translateY(-2px);
+    opacity: 0.8;
 }
 
-/* Tags */
+/* === TAGS === */
 .project-tags {
+    margin-top: 1rem;
     display: flex;
     flex-wrap: wrap;
     gap: 0.5rem;
 }
 
 .project-tags span {
-    background: rgba(255, 255, 255, 0.08);
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    color: #bbb;
-    font-size: 0.8rem;
+    background-color: #333;
     padding: 0.3rem 0.7rem;
-    border-radius: 999px;
+    border-radius: 8px;
+    font-size: 0.85rem;
+    color: #ccc;
 }
 
-/* Footer */
+/* === CV & CONTACT === */
+#cv, #contact {
+    text-align: center;
+}
+
+/* === FOOTER === */
 footer {
     text-align: center;
     padding: 2rem 0;
     border-top: 1px solid #222;
     color: #888;
     font-size: 0.9rem;
+}
+
+/* === RESPONSIVE === */
+@media (max-width: 600px) {
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero h1 {
+        font-size: 1.8rem;
+    }
 }
