@@ -1,0 +1,153 @@
+/* === RESET & BASE === */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #0a0a0a;
+    color: #fff;
+    line-height: 1.6;
+    padding-top: 4.5rem; /* espace à cause du header fixe */
+}
+
+/* === NAVIGATION === */
+nav {
+    display: flex;
+    justify-content: center;
+    padding: 1rem 0;
+    background: rgba(0, 0, 0, 0.8);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    backdrop-filter: blur(10px);
+    z-index: 100;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+nav a {
+    color: #ccc;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+
+nav a:hover {
+    color: #fff;
+}
+
+/* === SECTION PAGE PROJET === */
+.project-page {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 3rem 1.5rem;
+}
+
+.project-page h1 {
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+}
+
+.project-page p {
+    font-size: 1.05rem;
+    color: #ccc;
+    margin-bottom: 1.6rem;
+}
+
+/* === IMAGE DU PROJET (OPTIONNEL) === */
+.project-cover {
+    width: 100%;
+    border-radius: 14px;
+    margin: 1.5rem 0;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.35);
+}
+
+/* === BADGES / TAGS === */
+.project-tags {
+    margin-top: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+}
+
+.project-tags span {
+    background-color: #222;
+    padding: 0.35rem 0.7rem;
+    border-radius: 8px;
+    font-size: 0.85rem;
+    color: #aaa;
+}
+
+/* === LIENS EXTERNES === */
+.project-links {
+    margin-top: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+}
+
+.link-btn {
+    display: inline-block;
+    padding: 0.6rem 1.1rem;
+    border-radius: 8px;
+    font-size: 0.95rem;
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.2s;
+}
+
+/* GitHub */
+.link-btn.github {
+    background: #000;
+    border: 1px solid #333;
+    color: #fff;
+}
+.link-btn.github:hover {
+    background: #fff;
+    color: #000;
+}
+
+/* Demo */
+.link-btn.demo {
+    background: #007acc;
+    color: #fff;
+}
+.link-btn.demo:hover {
+    opacity: 0.8;
+}
+
+/* Plus d'infos / Retour */
+.link-btn.back {
+    background: #111;
+    border: 1px solid #333;
+    color: #ccc;
+}
+.link-btn.back:hover {
+    background: #fff;
+    color: #000;
+}
+
+/* === FOOTER === */
+footer {
+    text-align: center;
+    padding: 2rem 0;
+    border-top: 1px solid #222;
+    color: #888;
+    font-size: 0.9rem;
+    margin-top: 2rem;
+}
+
+/* === RESPONSIVE === */
+@media (max-width: 600px) {
+    .project-page h1 {
+        font-size: 1.7rem;
+    }
+}
