@@ -185,7 +185,7 @@ nav a:hover {
     font-size: 0.9rem;
     text-decoration: none;
     color: #fff;
-    transition: background 0.2s;
+    transition: 0.2s;
 }
 
 .link-btn.github {
@@ -196,9 +196,20 @@ nav a:hover {
     background: #007acc;
 }
 
+.link-btn.moreInfos {
+    background: #111;
+    border: 1px solid #444;
+}
+
+.link-btn.moreInfos:hover {
+    background: #fff;
+    color: #000;
+}
+
 .link-btn:hover {
     opacity: 0.8;
 }
+
 
 /* === TAGS === */
 .project-tags {
@@ -219,6 +230,42 @@ nav a:hover {
 /* === CV & CONTACT === */
 #cv, #contact {
     text-align: center;
+}
+
+/* === CONTACT BUTTONS === */
+.contact-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1.2rem;
+    margin-top: 1.5rem;
+}
+
+.contact-btn {
+    width: 48px;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #111;
+    border: 1px solid #333;
+    border-radius: 10px;
+    transition: 0.2s;
+}
+
+.contact-btn:hover {
+    background: #fff;
+    border-color: #fff;
+}
+
+.contact-btn img {
+    width: 24px;
+    height: 24px;
+    filter: invert(1);
+    transition: 0.2s;
+}
+
+.contact-btn:hover img {
+    filter: invert(0);
 }
 
 /* === FOOTER === */
