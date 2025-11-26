@@ -28,8 +28,8 @@
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  a .logo {
-    animation: logo-spin infinite 0.00001s linear;
+  .logo {
+    animation: logo-spin infinite 0.5s linear;
   }
 }
 
