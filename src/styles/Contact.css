@@ -47,7 +47,7 @@
 }
 
 .info-card:hover {
-  border-color: #61dafb;
+  border-color: var(--primary-color);
   background: rgba(97, 218, 251, 0.1);
   transform: translateY(-5px);
 }
@@ -64,7 +64,7 @@
 .info-icon svg {
   width: 100%;
   height: 100%;
-  color: #61dafb;
+  color: var(--primary-color);
   transition: all 0.3s ease;
 }
 
@@ -74,7 +74,7 @@
 }
 
 .info-card h3 {
-  color: #61dafb;
+  color: var(--primary-color);
   font-size: 1.2rem;
   margin: 0 0 0.75rem 0;
 }
@@ -88,7 +88,7 @@
 }
 
 .info-card a:hover {
-  color: #61dafb;
+  color: var(--primary-color);
 }
 
 .contact-form {
@@ -108,7 +108,7 @@
 }
 
 .form-group label {
-  color: #61dafb;
+  color: var(--primary-color);
   font-weight: 600;
   font-size: 0.95rem;
 }
@@ -128,7 +128,7 @@
 .form-group input:focus,
 .form-group textarea:focus {
   outline: none;
-  border-color: #61dafb;
+  border-color: var(--primary-color);
   box-shadow: 0 0 0 3px rgba(97, 218, 251, 0.1);
   background: rgba(26, 26, 26, 0.95);
 }

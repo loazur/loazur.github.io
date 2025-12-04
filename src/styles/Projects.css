@@ -43,7 +43,7 @@
 }
 
 .project-card:hover {
-  border-color: #61dafb;
+  border-color: var(--primary-color);
   transform: translateY(-10px);
   box-shadow: 0 20px 50px rgba(97, 218, 251, 0.2);
 }
@@ -62,7 +62,7 @@
 .project-tag {
   display: inline-block;
   background: rgba(97, 218, 251, 0.2);
-  color: #61dafb;
+  color: var(--primary-color);
   padding: 0.5rem 1rem;
   border-radius: 20px;
   font-size: 0.85rem;
@@ -91,7 +91,7 @@
 
 .feature-badge {
   background: rgba(97, 218, 251, 0.15);
-  color: #61dafb;
+  color: var(--primary-color);
   padding: 0.4rem 0.8rem;
   border-radius: 6px;
   font-size: 0.8rem;
@@ -99,7 +99,7 @@
 }
 
 .project-link {
-  color: #61dafb;
+  color: var(--primary-color);
   text-decoration: none;
   font-weight: 600;
   transition: all 0.3s ease;

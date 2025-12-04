@@ -28,7 +28,7 @@ export default function Contact() {
     <section className="contact">
       <div className="contact-header">
         <h1>Me Contacter</h1>
-        <p>Vous avez une question ou une opportunité ? N'hésitez pas à me contacter !</p>
+        <p>Si jamais vous souhaitez me contacter, n'hésitez pas!</p>
       </div>
 
       <div className="contact-container">
@@ -40,7 +40,7 @@ export default function Contact() {
               </svg>
             </div>
             <h3>Email</h3>
-            <a href="mailto:votre.email@exemple.com">votre.email@exemple.com</a>
+            <a href="mailto:clement.bounaix@gmail.com">clement.bounaix@gmail.com</a>
           </div>
           
           <div className="info-card">
@@ -50,7 +50,7 @@ export default function Contact() {
               </svg>
             </div>
             <h3>LinkedIn</h3>
-            <a href="#" target="_blank" rel="noopener noreferrer">Votre profil LinkedIn</a>
+            <a href="https://www.linkedin.com/in/clement-bounaix/" target="_blank" rel="noopener noreferrer">Profil LinkedIn</a>
           </div>
           
           <div className="info-card">
@@ -60,7 +60,7 @@ export default function Contact() {
               </svg>
             </div>
             <h3>GitHub</h3>
-            <a href="#" target="_blank" rel="noopener noreferrer">Votre GitHub</a>
+            <a href="https://github.com/loazur" target="_blank" rel="noopener noreferrer">Profil GitHub</a>
           </div>
           
         </div>

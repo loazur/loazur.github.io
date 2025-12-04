@@ -27,7 +27,7 @@
 }
 
 .logo h1 {
-  color: #61dafb;
+  color: var(--primary-color);
   margin: 0;
   font-size: 1.8rem;
   font-weight: 700;
@@ -69,13 +69,13 @@
   height: 3px;
   bottom: 0;
   left: 50%;
-  background-color: #61dafb;
+  background-color: var(--primary-color);
   transition: all 0.3s ease;
   transform: translateX(-50%);
 }
 
 .nav a:hover {
-  color: #61dafb;
+  color: var(--primary-color);
 }
 
 .nav a:hover::before {
@@ -97,7 +97,7 @@
 .menu-toggle span {
   width: 25px;
   height: 3px;
-  background-color: #61dafb;
+  background-color: var(--primary-color);
   border-radius: 2px;
   transition: all 0.3s ease;
 }
@@ -138,8 +138,10 @@
   }
 
   .nav.active {
-    max-height: 400px;
+    max-height: 100vh; /* ou une grande valeur */
+    overflow-y: auto;
   }
+
 
   .nav ul {
     flex-direction: column;
@@ -154,7 +156,7 @@
   }
 
   .nav a:hover {
-    border-left-color: #61dafb;
+    border-left-color: var(--primary-color);
     padding-left: 2rem;
     background-color: rgba(97, 218, 251, 0.1);
   }

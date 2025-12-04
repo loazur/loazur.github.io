@@ -35,7 +35,7 @@ export default function Projects() {
     <section className="projects">
       <div className="projects-header">
         <h1>Mes Projets</h1>
-        <p>Découvrez mes projets et réalisations</p>
+        <p>Découvrez mes projets</p>
       </div>
 
       <div className="projects-grid">

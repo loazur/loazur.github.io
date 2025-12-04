@@ -13,7 +13,7 @@ export default function Home() {
             Gameplay Programmer en formation - 19 ans
           </p>
           <p className="home-description">
-            Site en plein développement en React.
+            Etudiant français passionné par le développement de jeux vidéo.
           </p>
         </div>
         

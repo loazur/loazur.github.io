@@ -24,13 +24,13 @@ html {
 }
 
 a {
-  color: #61dafb;
+  color: var(--primary-color);
   text-decoration: none;
   transition: color 0.3s ease;
 }
 
 a:hover {
-  color: #40b8e0;
+  color: var(--primary-color);
 }
 
 h1 {
@@ -51,7 +51,7 @@ button {
 }
 
 button:hover {
-  border-color: #61dafb;
+  border-color: var(--primary-color);
 }
 
 button:focus,

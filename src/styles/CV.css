@@ -21,16 +21,19 @@
 }
 
 .download-btn {
-  background: linear-gradient(135deg, #61dafb 0%, #40b8e0 100%);
+  background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-color) 100%);
   color: #1a1a1a;
   padding: 0.875rem 2rem;
   border-radius: 8px;
+  border: none;
   text-decoration: none;
   font-weight: 600;
   transition: all 0.3s ease;
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
+  cursor: pointer;
+  font-size: 1rem;
 }
 
 .download-btn:hover {
@@ -57,7 +60,7 @@
 
 .cv-section h2 {
   font-size: 2rem;
-  color: #61dafb;
+  color: var(--primary-color);
   margin: 0 0 2rem 0;
   padding-bottom: 1rem;
   border-bottom: 2px solid rgba(97, 218, 251, 0.2);
@@ -87,7 +90,7 @@
 }
 
 .cv-meta .date {
-  color: #61dafb;
+  color: var(--primary-color);
   font-weight: 600;
   white-space: nowrap;
 }
@@ -116,7 +119,7 @@
 }
 
 .cv-item li::marker {
-  color: #61dafb;
+  color: var(--primary-color);
 }
 
 @media (max-width: 768px) {
