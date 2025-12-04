@@ -1,0 +1,139 @@
+.cv {
+  min-height: 100vh;
+  padding: 4rem 2rem;
+}
+
+.cv-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 4rem;
+  padding: 4rem 0;
+  border-bottom: 1px solid rgba(97, 218, 251, 0.2);
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.cv-header h1 {
+  font-size: 3rem;
+  color: #fff;
+  margin: 0;
+}
+
+.download-btn {
+  background: linear-gradient(135deg, #61dafb 0%, #40b8e0 100%);
+  color: #1a1a1a;
+  padding: 0.875rem 2rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.download-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 30px rgba(97, 218, 251, 0.3);
+}
+
+.cv-content {
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+.cv-section {
+  border-bottom: 1px solid rgba(97, 218, 251, 0.1);
+  padding-bottom: 3rem;
+}
+
+.cv-section:last-child {
+  border-bottom: none;
+}
+
+.cv-section h2 {
+  font-size: 2rem;
+  color: #61dafb;
+  margin: 0 0 2rem 0;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid rgba(97, 218, 251, 0.2);
+}
+
+.cv-item {
+  margin-bottom: 2rem;
+}
+
+.cv-item:last-child {
+  margin-bottom: 0;
+}
+
+.cv-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  gap: 2rem;
+  margin-bottom: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.cv-meta h3 {
+  color: #fff;
+  font-size: 1.3rem;
+  margin: 0;
+}
+
+.cv-meta .date {
+  color: #61dafb;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.institution {
+  color: #b0b0b0;
+  font-style: italic;
+  margin: 0.5rem 0 1rem 0;
+}
+
+.cv-item p {
+  color: #b0b0b0;
+  line-height: 1.8;
+  margin: 0.5rem 0;
+}
+
+.cv-item ul {
+  color: #b0b0b0;
+  margin: 1rem 0 0 0;
+  padding-left: 1.5rem;
+  line-height: 1.8;
+}
+
+.cv-item li {
+  margin-bottom: 0.5rem;
+}
+
+.cv-item li::marker {
+  color: #61dafb;
+}
+
+@media (max-width: 768px) {
+  .cv {
+    padding: 2rem 1rem;
+  }
+
+  .cv-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .cv-header h1 {
+    font-size: 2rem;
+  }
+
+  .cv-meta {
+    flex-direction: column;
+  }
+}

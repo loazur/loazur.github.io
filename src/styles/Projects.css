@@ -1,0 +1,127 @@
+.projects {
+  min-height: 100vh;
+  padding: 4rem 2rem;
+}
+
+.projects-header {
+  text-align: center;
+  margin-bottom: 4rem;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.projects-header h1 {
+  font-size: 3rem;
+  color: #fff;
+  margin: 0 0 1rem 0;
+}
+
+.projects-header p {
+  font-size: 1.1rem;
+  color: #b0b0b0;
+  margin: 0;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 2.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.project-card {
+  background: linear-gradient(135deg, rgba(97, 218, 251, 0.1) 0%, rgba(45, 45, 45, 0.5) 100%);
+  border: 1px solid rgba(97, 218, 251, 0.2);
+  border-radius: 12px;
+  padding: 2.5rem;
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.project-card:hover {
+  border-color: #61dafb;
+  transform: translateY(-10px);
+  box-shadow: 0 20px 50px rgba(97, 218, 251, 0.2);
+}
+
+.project-icon {
+  font-size: 3rem;
+  text-align: center;
+}
+
+.project-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.project-tag {
+  display: inline-block;
+  background: rgba(97, 218, 251, 0.2);
+  color: #61dafb;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  width: fit-content;
+  border: 1px solid rgba(97, 218, 251, 0.3);
+}
+
+.project-card h2 {
+  color: #fff;
+  font-size: 1.8rem;
+  margin: 0;
+}
+
+.project-description {
+  color: #b0b0b0;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.project-features {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.feature-badge {
+  background: rgba(97, 218, 251, 0.15);
+  color: #61dafb;
+  padding: 0.4rem 0.8rem;
+  border-radius: 6px;
+  font-size: 0.8rem;
+  border: 1px solid rgba(97, 218, 251, 0.2);
+}
+
+.project-link {
+  color: #61dafb;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  display: inline-block;
+  margin-top: 0.5rem;
+}
+
+.project-link:hover {
+  transform: translateX(5px);
+}
+
+@media (max-width: 768px) {
+  .projects {
+    padding: 2rem 1rem;
+  }
+
+  .projects-header h1 {
+    font-size: 2rem;
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+}

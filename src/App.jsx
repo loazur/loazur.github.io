@@ -1,18 +1,27 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
+import { BrowserRouter, Routes, Route } from "react-router-dom"
+import { Header } from './components/Header';
+import MainLayout from "./layout/MainLayout"
+import Home from "./pages/Home"
+import About from "./pages/About"
+import Contact from "./pages/Contact"
+import CV from "./pages/CV"
+import Projects from "./pages/Projects"
 import './App.css'
-
 
 function App() {
   return (
-    <>
-      <div>
-        <img src={reactLogo} className="logo react" alt="React logo" />
-      </div>
-
-      <h1>Site en pleine refonte...</h1>
-      <h2>Revenez plus tard.</h2>
-    </>
+    <BrowserRouter>
+      <Header />
+      <MainLayout>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/cv" element={<CV />} />
+          <Route path="/projects" element={<Projects />} />
+        </Routes>
+      </MainLayout>
+    </BrowserRouter>
   )
 }
 
