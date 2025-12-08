@@ -35,18 +35,12 @@
   transition: all 0.3s ease;
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
 }
 
 .project-card:hover {
   transform: translateY(-10px);
   border-color: var(--primary-color);
   box-shadow: 0 10px 40px rgba(55, 198, 255, 0.2);
-}
-
-.project-icon {
-  font-size: 3rem;
-  text-align: center;
 }
 
 .project-content {

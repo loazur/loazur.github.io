@@ -9,7 +9,6 @@ export default function Projects() {
       engine: "Unity 6",
       description: "Jeu 3D à la première personne dans lequel le joueur incarne 'Libet', un vieil homme atteint d'Alzheimer, vivant sa vie tandis qu'il perd progressivement la raison.",
       features: ["Unity 6", "C#", "Open Source"],
-      image: "🎮",
       link: "/projects/libet"
     },
     {
@@ -18,7 +17,6 @@ export default function Projects() {
       engine: "Unreal Engine 5",
       description: "Jeu 3D d'exploration et narratif se déroulant dans la région du Livradois-Forez. Incarnez Vincent Morel, agent de la DGSI, chargé d'enquêter sur une série de disparitions mystérieuses.",
       features: ["Unreal Engine 5", "C++", "Blueprints"],
-      image: "🎯",
       link: "/projects/project-mycoria"
     },
     {
@@ -27,7 +25,6 @@ export default function Projects() {
       engine: "Löve2D",
       description: "Court jeu de platforme en 2D développé en 1 semaine avec le framework Löve2D.",
       features: ["Lua", "Löve2D", "Open Source"],
-      image: "🕹️",
       link: "/projects/iplat"
     },
     {
@@ -36,7 +33,6 @@ export default function Projects() {
       engine: "Node.js",
       description: "Bot Discord codé en JavaScript, intégrant l'API Steam pour permettre la liaison des comptes Steam à Discord et l'affichage des informations associées.",
       features: ["JavaScript", "Discord.js", "Steam API"],
-      image: "🤖",
       link: "/projects/bot-discord-steam"
     },
     {
@@ -45,7 +41,6 @@ export default function Projects() {
       engine: "Web",
       description: "Application web permettant de gérer les soutenances d'étudiants des 2ème et 3ème année du BUT Informatique de l'IUT du Puy.",
       features: ["PHP", "SQL", "Gestion"],
-      image: "💻",
       link: "/projects/app-web-soutenances"
     }
   ];
@@ -60,7 +55,6 @@ export default function Projects() {
       <div className="projects-grid">
         {projects.map((project) => (
           <article key={project.id} className="project-card">
-            <div className="project-icon">{project.image}</div>
             <div className="project-content">
               <div className="project-tag">{project.engine}</div>
               <h2>{project.title}</h2>

@@ -1,11 +1,14 @@
 .contact {
   min-height: 100vh;
-  padding: 4rem 2rem;
+  padding: 2rem 2rem 4rem 2rem;
+  display: flex;
+  flex-direction: column;
 }
 
 .contact-header {
   text-align: center;
-  margin-bottom: 4rem;
+  margin-bottom: 3rem;
+  padding-top: 1rem;
 }
 
 .contact-header h1 {
@@ -20,49 +23,47 @@
 }
 
 .contact-container {
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  gap: 3rem;
-  max-width: 1400px;
+  max-width: 1000px;
   margin: 0 auto;
-  align-items: start;
+  width: 100%;
 }
 
 .contact-info {
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
-  position: sticky;
-  top: 100px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
 }
 
 .info-card {
   background: rgba(55, 198, 255, 0.05);
   border: 1px solid rgba(55, 198, 255, 0.2);
   border-radius: 12px;
-  padding: 1.5rem;
+  padding: 2rem;
   display: flex;
   align-items: center;
   gap: 1.5rem;
   transition: all 0.3s ease;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 .info-card:hover {
-  transform: translateX(5px);
+  transform: translateY(-5px);
   border-color: var(--primary-color);
   background: rgba(55, 198, 255, 0.1);
+  box-shadow: 0 10px 30px rgba(55, 198, 255, 0.2);
 }
 
 .info-icon {
-  width: 50px;
-  height: 50px;
+  width: 60px;
+  height: 60px;
   flex-shrink: 0;
   display: flex;
   align-items: center;
   justify-content: center;
   background: rgba(55, 198, 255, 0.1);
-  border-radius: 8px;
-  padding: 0.5rem;
+  border-radius: 12px;
+  padding: 0.75rem;
 }
 
 .info-icon img {
@@ -79,118 +80,33 @@
 
 .info-card h3 {
   color: var(--primary-color);
-  font-size: 1.1rem;
+  font-size: 1.3rem;
   margin: 0 0 0.5rem 0;
 }
 
-.info-card a,
 .info-card p {
   color: #b0b0b0;
-  text-decoration: none;
-  transition: color 0.3s ease;
   margin: 0;
-  font-size: 0.95rem;
+  font-size: 1rem;
   word-break: break-word;
 }
 
-.info-card a:hover {
-  color: var(--primary-color);
-}
-
-.contact-form {
-  background: rgba(55, 198, 255, 0.05);
-  border: 1px solid rgba(55, 198, 255, 0.2);
-  border-radius: 12px;
-  padding: 2.5rem;
-}
-
-.form-group {
-  margin-bottom: 1.5rem;
-}
-
-.form-group label {
-  display: block;
-  color: var(--primary-color);
-  font-weight: 600;
-  margin-bottom: 0.5rem;
-}
-
-.form-group input,
-.form-group textarea {
-  width: 100%;
-  padding: 0.875rem;
-  background: rgba(26, 26, 26, 0.8);
-  border: 1px solid rgba(55, 198, 255, 0.3);
-  border-radius: 8px;
+.info-card:hover h3 {
   color: #fff;
-  font-size: 1rem;
-  font-family: inherit;
-  transition: all 0.3s ease;
 }
 
-.form-group input:focus,
-.form-group textarea:focus {
-  outline: none;
-  border-color: var(--primary-color);
-  box-shadow: 0 0 0 3px rgba(55, 198, 255, 0.1);
-}
-
-.form-group textarea {
-  resize: vertical;
-  min-height: 150px;
-}
-
-.btn {
-  padding: 1rem 2.5rem;
-  border-radius: 8px;
-  text-decoration: none;
-  font-weight: 600;
-  font-size: 1.1rem;
-  transition: all 0.3s ease;
-  display: inline-block;
-  width: 100%;
-  text-align: center;
-  cursor: pointer;
-  border: none;
-  font-family: inherit;
-}
-
-.btn-primary {
-  background: linear-gradient(135deg, var(--primary-color) 0%, #2d9dd4 100%);
-  color: #1a1a1a;
-}
-
-.btn-primary:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 10px 30px rgba(55, 198, 255, 0.3);
-}
-
-@media (max-width: 1200px) {
-  .contact-container {
-    grid-template-columns: 1fr;
-  }
-
-  .contact-info {
-    position: static;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1.5rem;
-  }
-}
-
-@media (max-width: 968px) {
-  .contact-container {
-    grid-template-columns: 1fr;
-  }
-
-  .contact-info {
-    grid-template-columns: 1fr 1fr;
-  }
+.info-card:hover p {
+  color: var(--primary-color);
 }
 
 @media (max-width: 768px) {
   .contact {
-    padding: 2rem 1rem;
+    padding: 1rem 1rem 2rem 1rem;
+  }
+
+  .contact-header {
+    padding-top: 0.5rem;
+    margin-bottom: 2rem;
   }
 
   .contact-header h1 {
@@ -208,9 +124,5 @@
 
   .info-content {
     text-align: center;
-  }
-
-  .contact-form {
-    padding: 1.5rem;
   }
 }

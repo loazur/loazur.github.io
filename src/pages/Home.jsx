@@ -33,24 +33,24 @@ export default function Home() {
       </div>
 
       <div className="home-featured">
-        <h2>Projets</h2>
+        <h2>Projets en vedette</h2>
         <div className="featured-grid">
           <Link to="/projects/libet" className="featured-card">
-            <div className="card-tag">Unity</div>
+            <div className="card-tag">Unity 6</div>
             <h3>LIBET</h3>
-            <p>Jeu d'énigmes en première personne avec mécaniques avancées</p>
+            <p>Jeu 3D à la première personne dans lequel le joueur incarne 'Libet', un vieil homme atteint d'Alzheimer, vivant sa vie tandis qu'il perd progressivement la raison.</p>
             <span className="card-link">En savoir plus →</span>
           </Link>
           <Link to="/projects/project-mycoria" className="featured-card">
-            <div className="card-tag">Unreal Engine</div>
+            <div className="card-tag">Unreal Engine 5</div>
             <h3>Project Mycoria</h3>
-            <p>Jeu complet avec systèmes d'IA et gameplay complexe</p>
+            <p>Jeu 3D d'exploration et narratif se déroulant dans la région du Livradois-Forez. Incarnez Vincent Morel, agent de la DGSI, chargé d'enquêter sur une série de disparitions mystérieuses.</p>
             <span className="card-link">En savoir plus →</span>
           </Link>
           <Link to="/projects/iplat" className="featured-card">
-            <div className="card-tag">C++</div>
+            <div className="card-tag">Löve2D</div>
             <h3>iPlat</h3>
-            <p>Jeu de plateforme 2D avec moteur custom</p>
+            <p>Court jeu de platforme en 2D développé en 1 semaine avec le framework Löve2D.</p>
             <span className="card-link">En savoir plus →</span>
           </Link>
         </div>
@@ -60,22 +60,18 @@ export default function Home() {
         <h2>Compétences principales</h2>
         <div className="skills-grid">
           <div className="skill-item">
-            <div className="skill-icon">🎮</div>
             <h3>Moteurs de Jeu</h3>
             <p>Unity, Unreal Engine</p>
           </div>
           <div className="skill-item">
-            <div className="skill-icon">💻</div>
             <h3>Programmation</h3>
             <p>C#, C++, JavaScript</p>
           </div>
           <div className="skill-item">
-            <div className="skill-icon">⚙️</div>
             <h3>Gameplay</h3>
             <p>Mécanique, IA, Physique</p>
           </div>
           <div className="skill-item">
-            <div className="skill-icon">🔧</div>
             <h3>Outils</h3>
             <p>Git, SCRUM, Jira</p>
           </div>
