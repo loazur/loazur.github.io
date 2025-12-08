@@ -4,41 +4,35 @@
 }
 
 .cv-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  text-align: center;
   margin-bottom: 4rem;
-  padding: 4rem 0;
-  border-bottom: 1px solid rgba(97, 218, 251, 0.2);
-  flex-wrap: wrap;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   gap: 2rem;
 }
 
 .cv-header h1 {
   font-size: 3rem;
-  color: #fff;
   margin: 0;
+  color: #fff;
 }
 
 .download-btn {
-  background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-color) 100%);
+  background: linear-gradient(135deg, #ffffff 0%, #d4d4d4 100%);
   color: #1a1a1a;
-  padding: 0.875rem 2rem;
-  border-radius: 8px;
   border: none;
-  text-decoration: none;
+  padding: 1rem 2.5rem;
+  border-radius: 8px;
   font-weight: 600;
-  transition: all 0.3s ease;
-  display: inline-flex;
-  align-items: center;
-  gap: 0.5rem;
+  font-size: 1.1rem;
   cursor: pointer;
-  font-size: 1rem;
+  transition: all 0.3s ease;
 }
 
 .download-btn:hover {
   transform: translateY(-3px);
-  box-shadow: 0 10px 30px rgba(97, 218, 251, 0.3);
+  box-shadow: 0 10px 30px rgba(255, 255, 255, 0.3);
 }
 
 .cv-content {
@@ -59,77 +53,117 @@
 }
 
 .cv-section h2 {
+  color: #ffffff;
   font-size: 2rem;
-  color: var(--primary-color);
   margin: 0 0 2rem 0;
   padding-bottom: 1rem;
-  border-bottom: 2px solid rgba(97, 218, 251, 0.2);
+  border-bottom: 2px solid rgba(255, 255, 255, 0.2);
 }
 
 .cv-item {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 12px;
+  padding: 2rem;
   margin-bottom: 2rem;
+  transition: all 0.3s ease;
 }
 
-.cv-item:last-child {
-  margin-bottom: 0;
+.cv-item:hover {
+  transform: translateX(5px);
+  border-color: #ffffff;
+  background: rgba(255, 255, 255, 0.1);
 }
 
 .cv-meta {
   display: flex;
   justify-content: space-between;
-  align-items: start;
-  gap: 2rem;
-  margin-bottom: 0.5rem;
+  align-items: baseline;
+  margin-bottom: 1rem;
   flex-wrap: wrap;
+  gap: 1rem;
 }
 
-.cv-meta h3 {
-  color: #fff;
+.cv-item h3 {
+  color: #ffffff;
   font-size: 1.3rem;
   margin: 0;
 }
 
-.cv-meta .date {
-  color: var(--primary-color);
+.date {
+  color: #ffffff;
+  font-size: 0.9rem;
   font-weight: 600;
-  white-space: nowrap;
 }
 
 .institution {
   color: #b0b0b0;
   font-style: italic;
-  margin: 0.5rem 0 1rem 0;
+  margin: 0.5rem 0;
 }
 
-.cv-item p {
+.cv-item p,
+.cv-item em {
   color: #b0b0b0;
-  line-height: 1.8;
+  line-height: 1.6;
   margin: 0.5rem 0;
 }
 
 .cv-item ul {
-  color: #b0b0b0;
+  list-style: none;
+  padding: 0;
   margin: 1rem 0 0 0;
-  padding-left: 1.5rem;
-  line-height: 1.8;
 }
 
 .cv-item li {
+  color: #b0b0b0;
+  padding-left: 1.5rem;
+  position: relative;
   margin-bottom: 0.5rem;
+  line-height: 1.6;
 }
 
-.cv-item li::marker {
-  color: var(--primary-color);
+.cv-item li::before {
+  content: '→';
+  position: absolute;
+  left: 0;
+  color: #ffffff;
+}
+
+.skill-bars {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.skill-bar {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.skill-bar span {
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.bar {
+  width: 100%;
+  height: 10px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.bar div {
+  height: 100%;
+  background: linear-gradient(90deg, #ffffff 0%, #d4d4d4 100%);
+  transition: width 1s ease;
 }
 
 @media (max-width: 768px) {
   .cv {
     padding: 2rem 1rem;
-  }
-
-  .cv-header {
-    flex-direction: column;
-    align-items: flex-start;
   }
 
   .cv-header h1 {
@@ -138,5 +172,10 @@
 
   .cv-meta {
     flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .cv-item {
+    padding: 1.5rem;
   }
 }

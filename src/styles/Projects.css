@@ -28,8 +28,8 @@
 }
 
 .project-card {
-  background: linear-gradient(135deg, rgba(55, 198, 255, 0.05) 0%, rgba(26, 26, 26, 0.8) 100%);
-  border: 1px solid rgba(55, 198, 255, 0.2);
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.05) 0%, rgba(26, 26, 26, 0.8) 100%);
+  border: 1px solid rgba(255, 255, 255, 0.2);
   border-radius: 12px;
   padding: 2rem;
   transition: all 0.3s ease;
@@ -39,8 +39,8 @@
 
 .project-card:hover {
   transform: translateY(-10px);
-  border-color: var(--primary-color);
-  box-shadow: 0 10px 40px rgba(55, 198, 255, 0.2);
+  border-color: #ffffff;
+  box-shadow: 0 10px 40px rgba(255, 255, 255, 0.2);
 }
 
 .project-content {
@@ -50,8 +50,8 @@
 }
 
 .project-tag {
-  background: rgba(55, 198, 255, 0.2);
-  color: var(--primary-color);
+  background: rgba(255, 255, 255, 0.2);
+  color: #ffffff;
   padding: 0.5rem 1rem;
   border-radius: 20px;
   display: inline-block;
@@ -79,16 +79,16 @@
 }
 
 .feature-badge {
-  background: rgba(55, 198, 255, 0.1);
-  border: 1px solid rgba(55, 198, 255, 0.3);
-  color: var(--primary-color);
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: #ffffff;
   padding: 0.4rem 0.8rem;
   border-radius: 12px;
   font-size: 0.8rem;
 }
 
 .project-link {
-  color: var(--primary-color);
+  color: #ffffff;
   font-weight: 600;
   text-decoration: none;
   display: inline-block;

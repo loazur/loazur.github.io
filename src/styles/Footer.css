@@ -1,6 +1,6 @@
 .footer {
   background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
-  border-top: 1px solid rgba(55, 198, 255, 0.2);
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
   padding: 2rem;
   margin-top: 4rem;
   width: 100%;
@@ -17,13 +17,13 @@
 }
 
 .footer-section h3 {
-  color: var(--primary-color);
+  color: #ffffff;
   font-size: 1.3rem;
   margin: 0 0 1rem 0;
 }
 
 .footer-section h4 {
-  color: var(--primary-color);
+  color: #ffffff;
   font-size: 1.1rem;
   margin: 0 0 1rem 0;
 }
@@ -51,7 +51,7 @@
 }
 
 .footer-section a:hover {
-  color: var(--primary-color);
+  color: #ffffff;
   transform: translateX(5px);
 }
 
@@ -59,7 +59,7 @@
   max-width: 1280px;
   margin: 0 auto;
   padding-top: 2rem;
-  border-top: 1px solid rgba(97, 218, 251, 0.1);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
   text-align: center;
   color: #b0b0b0;
   font-size: 0.9rem;
