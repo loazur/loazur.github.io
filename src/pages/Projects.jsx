@@ -1,41 +1,60 @@
+import { Link } from 'react-router-dom';
 import '../styles/Projects.css';
 
 export default function Projects() {
   const projects = [
     {
       id: 1,
-      title: "Projet 1",
-      engine: "Moteur 1",
-      description: "Description de votre projet 1",
-      features: ["Fonctionnalité 1", "Fonctionnalité 2", "Fonctionnalité 3"],
+      title: "LIBET",
+      engine: "Unity 6",
+      description: "Jeu 3D à la première personne dans lequel le joueur incarne 'Libet', un vieil homme atteint d'Alzheimer, vivant sa vie tandis qu'il perd progressivement la raison.",
+      features: ["Unity 6", "C#", "Open Source"],
       image: "🎮",
-      link: "#"
+      link: "/projects/libet"
     },
     {
       id: 2,
-      title: "Projet 2",
-      engine: "Moteur 2",
-      description: "Description de votre projet 2",
-      features: ["Fonctionnalité 1", "Fonctionnalité 2", "Fonctionnalité 3"],
+      title: "Project Mycoria",
+      engine: "Unreal Engine 5",
+      description: "Jeu 3D d'exploration et narratif se déroulant dans la région du Livradois-Forez. Incarnez Vincent Morel, agent de la DGSI, chargé d'enquêter sur une série de disparitions mystérieuses.",
+      features: ["Unreal Engine 5", "C++", "Blueprints"],
       image: "🎯",
-      link: "#"
+      link: "/projects/project-mycoria"
     },
     {
       id: 3,
-      title: "Projet 3",
-      engine: "Moteur 3",
-      description: "Description de votre projet 3",
-      features: ["Fonctionnalité 1", "Fonctionnalité 2", "Fonctionnalité 3"],
-      image: "⚙️",
-      link: "#"
+      title: "iPlat",
+      engine: "Löve2D",
+      description: "Court jeu de platforme en 2D développé en 1 semaine avec le framework Löve2D.",
+      features: ["Lua", "Löve2D", "Open Source"],
+      image: "🕹️",
+      link: "/projects/iplat"
     },
+    {
+      id: 4,
+      title: "Bot Discord Steam API",
+      engine: "Node.js",
+      description: "Bot Discord codé en JavaScript, intégrant l'API Steam pour permettre la liaison des comptes Steam à Discord et l'affichage des informations associées.",
+      features: ["JavaScript", "Discord.js", "Steam API"],
+      image: "🤖",
+      link: "/projects/bot-discord-steam"
+    },
+    {
+      id: 5,
+      title: "Application Web Soutenances",
+      engine: "Web",
+      description: "Application web permettant de gérer les soutenances d'étudiants des 2ème et 3ème année du BUT Informatique de l'IUT du Puy.",
+      features: ["PHP", "SQL", "Gestion"],
+      image: "💻",
+      link: "/projects/app-web-soutenances"
+    }
   ];
 
   return (
     <section className="projects">
       <div className="projects-header">
         <h1>Mes Projets</h1>
-        <p>Découvrez mes projets</p>
+        <p>Découvrez mes projets et réalisations</p>
       </div>
 
       <div className="projects-grid">
@@ -53,9 +72,9 @@ export default function Projects() {
                 ))}
               </div>
 
-              <a href={project.link} className="project-link">
+              <Link to={project.link} className="project-link">
                 Voir le projet →
-              </a>
+              </Link>
             </div>
           </article>
         ))}

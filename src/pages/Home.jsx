@@ -35,24 +35,24 @@ export default function Home() {
       <div className="home-featured">
         <h2>Projets</h2>
         <div className="featured-grid">
-          <div className="featured-card">
-            <div className="card-tag">...</div>
-            <h3>Projet 1</h3>
-            <p>Description projet</p>
-            <a href="#" className="card-link">En savoir plus →</a>
-          </div>
-          <div className="featured-card">
-            <div className="card-tag">...</div>
-            <h3>Projet 2</h3>
-            <p>Description projet</p>
-            <a href="#" className="card-link">En savoir plus →</a>
-          </div>
-          <div className="featured-card">
-            <div className="card-tag">...</div>
-            <h3>Projet 3</h3>
-            <p>Description projet</p>
-            <a href="#" className="card-link">En savoir plus →</a>
-          </div>
+          <Link to="/projects/libet" className="featured-card">
+            <div className="card-tag">Unity</div>
+            <h3>LIBET</h3>
+            <p>Jeu d'énigmes en première personne avec mécaniques avancées</p>
+            <span className="card-link">En savoir plus →</span>
+          </Link>
+          <Link to="/projects/project-mycoria" className="featured-card">
+            <div className="card-tag">Unreal Engine</div>
+            <h3>Project Mycoria</h3>
+            <p>Jeu complet avec systèmes d'IA et gameplay complexe</p>
+            <span className="card-link">En savoir plus →</span>
+          </Link>
+          <Link to="/projects/iplat" className="featured-card">
+            <div className="card-tag">C++</div>
+            <h3>iPlat</h3>
+            <p>Jeu de plateforme 2D avec moteur custom</p>
+            <span className="card-link">En savoir plus →</span>
+          </Link>
         </div>
       </div>
 
@@ -60,14 +60,24 @@ export default function Home() {
         <h2>Compétences principales</h2>
         <div className="skills-grid">
           <div className="skill-item">
+            <div className="skill-icon">🎮</div>
+            <h3>Moteurs de Jeu</h3>
+            <p>Unity, Unreal Engine</p>
+          </div>
+          <div className="skill-item">
             <div className="skill-icon">💻</div>
-            <h3>Compétence 1</h3>
-            <p>Détails compétence</p>
+            <h3>Programmation</h3>
+            <p>C#, C++, JavaScript</p>
           </div>
           <div className="skill-item">
             <div className="skill-icon">⚙️</div>
-            <h3>Compétence 2</h3>
-            <p>Détails compétence</p>
+            <h3>Gameplay</h3>
+            <p>Mécanique, IA, Physique</p>
+          </div>
+          <div className="skill-item">
+            <div className="skill-icon">🔧</div>
+            <h3>Outils</h3>
+            <p>Git, SCRUM, Jira</p>
           </div>
         </div>
       </div>
