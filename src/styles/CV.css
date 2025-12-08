@@ -130,37 +130,6 @@
   color: #ffffff;
 }
 
-.skill-bars {
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
-}
-
-.skill-bar {
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
-}
-
-.skill-bar span {
-  color: #ffffff;
-  font-weight: 600;
-}
-
-.bar {
-  width: 100%;
-  height: 10px;
-  background: rgba(255, 255, 255, 0.1);
-  border-radius: 5px;
-  overflow: hidden;
-}
-
-.bar div {
-  height: 100%;
-  background: linear-gradient(90deg, #ffffff 0%, #d4d4d4 100%);
-  transition: width 1s ease;
-}
-
 @media (max-width: 768px) {
   .cv {
     padding: 2rem 1rem;

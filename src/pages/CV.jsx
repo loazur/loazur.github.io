@@ -85,32 +85,6 @@ export default function CV() {
         </section>
 
         <section className="cv-section">
-          <h2>Compétences Techniques</h2>
-          <div className="skill-bars">
-            <div className="skill-bar">
-              <span>Unity / C#</span>
-              <div className="bar"><div style={{width: '85%'}}></div></div>
-            </div>
-            <div className="skill-bar">
-              <span>Unreal Engine / C++ / Blueprints</span>
-              <div className="bar"><div style={{width: '80%'}}></div></div>
-            </div>
-            <div className="skill-bar">
-              <span>Java</span>
-              <div className="bar"><div style={{width: '75%'}}></div></div>
-            </div>
-            <div className="skill-bar">
-              <span>Lua / Löve2D</span>
-              <div className="bar"><div style={{width: '70%'}}></div></div>
-            </div>
-            <div className="skill-bar">
-              <span>Git / GitHub</span>
-              <div className="bar"><div style={{width: '85%'}}></div></div>
-            </div>
-          </div>
-        </section>
-
-        <section className="cv-section">
           <h2>Langues</h2>
           <div className="cv-item">
             <p><strong>Français :</strong> Langue maternelle</p>

@@ -1,9 +1,10 @@
 #root {
   width: 100%;
   min-height: 100vh;
-  background: #0a0a0a;
+  background: transparent;
   display: flex;
   flex-direction: column;
+  position: relative;
 }
 
 main {
@@ -11,6 +12,8 @@ main {
   max-width: 1280px;
   margin: 0 auto;
   width: 100%;
+  position: relative;
+  z-index: 1;
 }
 
 .card {

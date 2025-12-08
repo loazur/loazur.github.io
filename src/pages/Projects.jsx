@@ -21,7 +21,7 @@ export default function Projects() {
     },
     {
       id: 3,
-      title: "iPlat",
+      title: "IPlat",
       engine: "Löve2D",
       description: "Court jeu de platforme en 2D développé en 1 semaine avec le framework Löve2D.",
       features: ["Lua", "Löve2D", "Open Source"],
