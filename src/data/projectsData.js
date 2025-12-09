@@ -46,7 +46,7 @@ export const projectsData = [
     title: "Bot Discord Steam",
     engine: "JavaScript",
     status: "Terminé",
-    year: "2024",
+    year: "2024-2025",
     type: "Personnel",
     category: "Bot",
     description: "Bot Discord permettant de suivre les soldes Steam et recevoir des notifications pour vos jeux favoris.",
@@ -57,7 +57,7 @@ export const projectsData = [
   },
   {
     id: 5,
-    title: "Application Web de Gestion des Soutenances",
+    title: "Application web de gestion de soutenances",
     engine: "PHP",
     status: "Terminé",
     year: "2025",

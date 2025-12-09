@@ -72,7 +72,7 @@
   background: rgba(255, 255, 255, 0.03);
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 20px;
-  padding: 1.25rem;
+  padding: 1rem;
   transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
   display: flex;
   flex-direction: column;
@@ -80,7 +80,6 @@
   position: relative;
   overflow: hidden;
   backdrop-filter: blur(10px);
-  min-height: 400px; /* Hauteur minimale pour uniformiser */
 }
 
 .project-card::before {
@@ -109,30 +108,31 @@
 .project-content {
   display: flex;
   flex-direction: column;
-  gap: 0.35rem;
+  gap: 0.15rem; 
   position: relative;
   z-index: 1;
-  flex: 1; /* Prend tout l'espace disponible */
+  flex: 1;
 }
 
 .project-tags-column {
   display: flex;
   flex-direction: column;
-  gap: 0.3rem;
+  gap: 0.15rem;
+  margin-bottom: 0.2rem; 
 }
 
 .project-tags-row {
   display: flex;
-  gap: 0.3rem;
+  gap: 0.25rem;
   flex-wrap: wrap;
   align-items: center;
 }
 
 .project-tag {
-  padding: 0.3rem 0.75rem;
-  border-radius: 20px;
+  padding: 0.25rem 0.65rem;
+  border-radius: 18px;
   display: inline-block;
-  font-size: 0.7rem;
+  font-size: 0.65rem;
   font-weight: 700;
   transition: all 0.3s ease;
   text-transform: uppercase;
@@ -146,8 +146,8 @@
 }
 
 .project-tag.status {
-  font-size: 0.65rem;
-  padding: 0.3rem 0.75rem;
+  font-size: 0.6rem;
+  padding: 0.25rem 0.65rem;
   align-self: flex-start;
   font-weight: 800;
 }
@@ -179,19 +179,20 @@
 .project-meta-row {
   display: flex;
   align-items: center;
-  gap: 0.4rem;
+  gap: 0.5rem;
   flex-wrap: wrap;
-  font-size: 0.75rem;
+  font-size: 0.8rem;
   color: #b0b0b0;
-  padding: 0.4rem 0;
+  padding: 0.3rem 0;
   border-top: 1px solid rgba(255, 255, 255, 0.1);
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  margin: 0;
 }
 
 .project-meta-tag {
   color: #888888;
   font-weight: 600;
-  font-size: 0.7rem;
+  font-size: 0.65rem;
 }
 
 .project-meta-separator {
@@ -201,7 +202,7 @@
 .project-card h2 {
   color: #fff;
   font-size: 1.5rem;
-  margin: 0.1rem 0 0 0;
+  margin: 0;
   font-weight: 700;
   line-height: 1.2;
 }
@@ -209,24 +210,24 @@
 .project-description {
   color: #b0b0b0;
   line-height: 1.5;
-  margin: 0 0 0.3rem 0;
+  margin: 0;
   font-size: 0.9rem;
 }
 
 .project-features {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.3rem;
-  margin-top: 0;
+  gap: 0.4rem;
+  margin: 0;
 }
 
 .feature-badge {
   background: rgba(255, 255, 255, 0.08);
   border: 1px solid rgba(255, 255, 255, 0.15);
   color: #cccccc;
-  padding: 0.3rem 0.7rem;
+  padding: 0.25rem 0.6rem;
   border-radius: 12px;
-  font-size: 0.7rem;
+  font-size: 0.65rem;
   font-weight: 500;
   transition: all 0.3s ease;
 }
@@ -245,10 +246,10 @@
   align-items: center;
   gap: 0.4rem;
   transition: all 0.3s ease;
-  margin-top: auto; /* Pousse le lien vers le bas */
-  padding-top: 0.75rem;
+  margin-top: auto;
+  padding-top: 0.3rem;
   font-size: 0.85rem;
-  align-self: flex-start; /* Aligne à gauche */
+  align-self: flex-start;
 }
 
 .project-card:hover .project-link {
@@ -275,6 +276,6 @@
   }
 
   .project-card {
-    padding: 1.25rem;
+    padding: 1rem;
   }
 }
