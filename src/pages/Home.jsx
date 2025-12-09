@@ -1,6 +1,9 @@
 import { Link } from 'react-router-dom';
 import { GitHubCalendar } from 'react-github-calendar';
+import { getFeaturedProjects } from '../data/projectsData';
 import '../styles/Home.css';
+
+const featuredProjects = getFeaturedProjects();
 
 export default function Home() {
   return (
@@ -53,26 +56,20 @@ export default function Home() {
       </div>
 
       <div className="home-featured">
-        <h2>Projets principaux</h2>
+        <h2>{featuredProjects.length === 1 ? 'Projet Principal' : 'Projets principaux'}</h2>
         <div className="featured-grid">
-          <Link to="/projects/libet" className="featured-card">
-            <div className="card-tag">Unity</div>
-            <h3>LIBET</h3>
-            <p>Jeu 3D à la première personne dans lequel le joueur incarne 'Libet', un vieil homme atteint d'Alzheimer, vivant sa vie tandis qu'il perd progressivement la raison.</p>
-            <span className="card-link">En savoir plus →</span>
-          </Link>
-          <Link to="/projects/project-mycoria" className="featured-card">
-            <div className="card-tag">Unreal Engine</div>
-            <h3>Project Mycoria</h3>
-            <p>Jeu 3D d'exploration et narratif se déroulant dans la région du Livradois-Forez. Incarnez Vincent Morel, agent de la DGSI, chargé d'enquêter sur une série de disparitions mystérieuses.</p>
-            <span className="card-link">En savoir plus →</span>
-          </Link>
-          <Link to="/projects/iplat" className="featured-card">
-            <div className="card-tag">Löve2D</div>
-            <h3>IPlat</h3>
-            <p>Court jeu de platforme en 2D développé en 1 semaine avec le framework Löve2D.</p>
-            <span className="card-link">En savoir plus →</span>
-          </Link>
+          {featuredProjects.map(project => (
+            <Link to={project.link} key={project.id} className="featured-card">
+              <div className="card-tags-row">
+                <div className="card-tag">{project.engine}</div>
+                {project.openSource && (
+                  <div className="card-tag open-source">Open Source</div>
+                )}
+              </div>
+              <h3>{project.title}</h3>
+              <p>{project.description}</p>
+            </Link>
+          ))}
         </div>
       </div>
     </section>
