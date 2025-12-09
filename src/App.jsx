@@ -1,6 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import MainLayout from './layout/MainLayout';
 import AnimatedBackground from './components/AnimatedBackground';
+import ScrollToTop from './components/ScrollToTop';
 import Home from './pages/Home';
 import Projects from './pages/Projects';
 import CV from './pages/CV';
@@ -15,6 +16,7 @@ import './App.css';
 function App() {
   return (
     <Router>
+      <ScrollToTop />
       <AnimatedBackground />
       <MainLayout>
         <Routes>
