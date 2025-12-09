@@ -36,7 +36,7 @@ export const projectsData = [
     type: "Personnel",
     category: "Jeu vidéo",
     description: "Court jeu de platforme en 2D développé en 1 semaine avec le framework Löve2D.",
-    features: ["Lua", "2D", "Platformer"],
+    features: ["Lua", "2D", "Platformer", "Tiled"],
     link: "/projects/iplat",
     featured: false,
     openSource: true
