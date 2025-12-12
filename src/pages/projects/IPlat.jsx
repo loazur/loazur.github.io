@@ -2,11 +2,11 @@ import '../../styles/ProjectDetail.css';
 
 import ProjectLayout from '../../layout/ProjectLayout';
 
-import IPlatMainPicture from '../../assets/IPlat/iplat-main-picture.png';
-import IPlatPicture1 from '../../assets/IPlat/iplat-picture1.png';
-import IPlatPicture2 from '../../assets/IPlat/iplat-picture2.png';
-import IPlatPicture3 from '../../assets/IPlat/iplat-picture3.png';
-import IPlatPicture4 from '../../assets/IPlat/iplat-picture4.png';
+import IPlatMainPicture from '../../assets/IPlat/iplat-main-picture.webp';
+import IPlatPicture1 from '../../assets/IPlat/iplat-picture1.webp';
+import IPlatPicture2 from '../../assets/IPlat/iplat-picture2.webp';
+import IPlatPicture3 from '../../assets/IPlat/iplat-picture3.webp';
+import IPlatPicture4 from '../../assets/IPlat/iplat-picture4.webp';
 
 export default function IPlat() {
   const projectData = {

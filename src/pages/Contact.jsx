@@ -1,7 +1,7 @@
 import '../styles/Contact.css';
-import emailIcon from '../assets/icons/icon-mail.png';
-import linkedinIcon from '../assets/icons/icon-linkedin.png';
-import githubIcon from '../assets/icons/icon-github.png';
+import emailIcon from '../assets/icons/icon-mail.webp';
+import linkedinIcon from '../assets/icons/icon-linkedin.webp';
+import githubIcon from '../assets/icons/icon-github.webp';
 import itchIcon from '../assets/icons/icon-itchio.webp';
 
 export default function Contact() {
