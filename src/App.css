@@ -14,4 +14,11 @@ main {
   width: 100%;
   position: relative;
   z-index: 1;
+  padding-top: 80px; /* Ajoute un espace pour le header fixe */
+}
+
+@media (max-width: 768px) {
+  main {
+    padding-top: 70px; /* Légèrement moins sur mobile */
+  }
 }

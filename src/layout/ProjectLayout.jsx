@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
+import { useLanguage } from '../context/LanguageContext';
 import '../styles/ProjectDetail.css';
 
 export default function ProjectLayout({ 
@@ -11,8 +12,22 @@ export default function ProjectLayout({
   galleryImages, 
   children 
 }) {
+  const { language } = useLanguage();
   const [lightboxOpen, setLightboxOpen] = useState(false);
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
+
+  const translations = {
+    fr: {
+      backToProjects: '← Retour aux projets',
+      gallery: 'Galerie'
+    },
+    en: {
+      backToProjects: '← Back to projects',
+      gallery: 'Gallery'
+    }
+  };
+
+  const t = translations[language];
 
   const openLightbox = (index) => {
     setCurrentImageIndex(index);
@@ -39,7 +54,7 @@ export default function ProjectLayout({
 
   return (
     <section className="project-detail" onKeyDown={handleKeyDown} tabIndex={0}>
-      <Link to="/projects" className="back-link">← Retour aux projets</Link>
+      <Link to="/projects" className="back-link">{t.backToProjects}</Link>
       
       <div className="project-header">
         <h1>{title}</h1>
@@ -80,7 +95,7 @@ export default function ProjectLayout({
         {/* Galerie */}
         {galleryImages && galleryImages.length > 0 && (
           <section className="project-section">
-            <h2>Galerie</h2>
+            <h2>{t.gallery}</h2>
             <div className="project-gallery">
               {galleryImages.map((image, index) => (
                 <img 
