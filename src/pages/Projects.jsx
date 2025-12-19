@@ -78,6 +78,11 @@ export default function Projects() {
       <div className="projects-grid">
         {filteredProjects.map((project) => (
           <Link to={project.link} key={project.id} className="project-card">
+            {project.image && (
+              <div className="project-card-image-wrapper">
+                <img src={project.image} alt={project.title} className="project-card-bg" />
+              </div>
+            )}
             <div className="project-content">
               <div className="project-tags-column">
                 <div className="project-tags-row">

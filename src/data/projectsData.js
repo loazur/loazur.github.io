@@ -1,3 +1,6 @@
+import LibetMainPicture from '../assets/Libet/libet-proto-main-picture.webp';
+import IPlatMainPicture from '../assets/IPlat/iplat-main-picture.webp';
+
 export const projectsData = {
   fr: [
     {
@@ -12,7 +15,8 @@ export const projectsData = {
       features: ["C#", "FMOD"],
       link: "/projects/libet",
       featured: true,
-      openSource: true 
+      openSource: true,
+      image: LibetMainPicture
     },
     {
       id: 2,
@@ -26,7 +30,8 @@ export const projectsData = {
       features: ["C++", "Blueprints"],
       link: "/projects/project-mycoria",
       featured: false,
-      openSource: false
+      openSource: false,
+      image: null // Pas d'image pour l'instant
     },
     {
       id: 3,
@@ -40,7 +45,8 @@ export const projectsData = {
       features: ["Lua", "2D", "Platformer", "Tiled"],
       link: "/projects/iplat",
       featured: false,
-      openSource: true
+      openSource: true,
+      image: IPlatMainPicture
     },
     {
       id: 4,
@@ -50,11 +56,12 @@ export const projectsData = {
       year: "2024-2025",
       type: "Personnel",
       category: "Bot",
-      description: "Bot Discord permettant d'afficher des informations de profils Steam.",
+      description: "Bot Discord permettant de suivre les soldes Steam et recevoir des notifications pour vos jeux favoris.",
       features: ["Node.js", "Discord.js", "API Steam"],
       link: "/projects/bot-discord-steam",
       featured: false,
-      openSource: true
+      openSource: true,
+      image: null
     },
     {
       id: 5,
@@ -68,7 +75,8 @@ export const projectsData = {
       features: ["MySQL", "Base de données"],
       link: "/projects/app-web-soutenances",
       featured: false,
-      openSource: false
+      openSource: false,
+      image: null
     }
   ],
   en: [
@@ -84,7 +92,8 @@ export const projectsData = {
       features: ["C#", "FMOD"],
       link: "/projects/libet",
       featured: true,
-      openSource: true 
+      openSource: true,
+      image: LibetMainPicture
     },
     {
       id: 2,
@@ -98,7 +107,8 @@ export const projectsData = {
       features: ["C++", "Blueprints"],
       link: "/projects/project-mycoria",
       featured: false,
-      openSource: false
+      openSource: false,
+      image: null // No image for now
     },
     {
       id: 3,
@@ -112,7 +122,8 @@ export const projectsData = {
       features: ["Lua", "2D", "Platformer", "Tiled"],
       link: "/projects/iplat",
       featured: false,
-      openSource: true
+      openSource: true,
+      image: IPlatMainPicture
     },
     {
       id: 4,
@@ -126,7 +137,8 @@ export const projectsData = {
       features: ["Node.js", "Discord.js", "Steam API"],
       link: "/projects/bot-discord-steam",
       featured: false,
-      openSource: true
+      openSource: true,
+      image: null
     },
     {
       id: 5,
@@ -140,7 +152,8 @@ export const projectsData = {
       features: ["MySQL", "Database"],
       link: "/projects/app-web-soutenances",
       featured: false,
-      openSource: false
+      openSource: false,
+      image: null
     }
   ]
 };
