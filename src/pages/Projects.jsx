@@ -17,7 +17,7 @@ export default function Projects() {
       videoGame: 'Jeux vidéo',
       web: 'Web',
       bot: 'Bot',
-      learnMore: 'En savoir plus'
+      viewDetails: 'En savoir plus →'
     },
     en: {
       title: 'My Projects',
@@ -26,25 +26,22 @@ export default function Projects() {
       videoGame: 'Video Games',
       web: 'Web',
       bot: 'Bot',
-      learnMore: 'Learn more'
+      viewDetails: 'Learn more →'
     }
   };
 
   const t = translations[language];
-
   const categories = [t.all, t.videoGame, t.web, t.bot];
 
-  // Fonction pour convertir le statut en classe CSS
-  const getStatusClass = (status) => {
+  const getStatusBadge = (status) => {
     const statusMap = {
-      'En cours': 'en-cours',
-      'In Progress': 'en-cours',
-      'Terminé': 'terminé',
-      'Completed': 'terminé',
-      'En pause': 'en-pause',
-      'Paused': 'en-pause'
+      'En cours': { class: 'ongoing', label: status },
+      'In Progress': { class: 'ongoing', label: status },
+      'Terminé': { class: 'completed', label: status },
+      'Completed': { class: 'completed', label: status },
+      'Prototype': { class: 'prototype', label: status }
     };
-    return statusMap[status] || 'terminé';
+    return statusMap[status] || { class: 'completed', label: status };
   };
 
   const filteredProjects = filter === t.all 
@@ -76,49 +73,42 @@ export default function Projects() {
       </div>
 
       <div className="projects-grid">
-        {filteredProjects.map((project) => (
-          <Link to={project.link} key={project.id} className="project-card">
-            {project.image && (
-              <div className="project-card-image-wrapper">
-                <img src={project.image} alt={project.title} className="project-card-bg" />
+        {filteredProjects.map((project) => {
+          const statusInfo = getStatusBadge(project.status);
+          
+          return (
+            <div key={project.id} className="project-card">
+              {/* Image ou placeholder */}
+              <div className={`project-card-image ${!project.image ? 'no-image' : ''}`}>
+                {project.image && <img src={project.image} alt={project.title} />}
+                <span className={`project-status-badge ${statusInfo.class}`}>
+                  {statusInfo.label}
+                </span>
               </div>
-            )}
-            <div className="project-content">
-              <div className="project-tags-column">
-                <div className="project-tags-row">
-                  <span className="project-tag engine">{project.engine}</span>
-                  {project.openSource && (
-                    <span className="project-tag open-source">OPEN SOURCE</span>
-                  )}
+
+              {/* Contenu */}
+              <div className="project-card-content">
+                <h2>{project.title}</h2>
+                <p>{project.description}</p>
+
+                {/* Tags de technos */}
+                <div className="project-tech-tags">
+                  <span className="tech-tag">{project.engine}</span>
+                  {project.features.map((feature, index) => (
+                    <span key={index} className="tech-tag">{feature}</span>
+                  ))}
                 </div>
-                <div className="project-tags-row">
-                  <span className={`project-tag status status-${getStatusClass(project.status)}`}>
-                    {project.status}
-                  </span>
+
+                {/* Bouton unique */}
+                <div className="project-card-actions">
+                  <Link to={project.link} className="project-action-btn primary">
+                    {t.viewDetails}
+                  </Link>
                 </div>
               </div>
-
-              <div className="project-meta-row">
-                <span className="project-meta-tag">{project.type}</span>
-                <span className="project-meta-separator">•</span>
-                <span className="project-meta-tag">{project.category}</span>
-                <span className="project-meta-separator">•</span>
-                <span className="project-meta-tag">{project.year}</span>
-              </div>
-
-              <h2>{project.title}</h2>
-              <p className="project-description">{project.description}</p>
-
-              <div className="project-features">
-                {project.features.map((feature, index) => (
-                  <span key={index} className="feature-badge">{feature}</span>
-                ))}
-              </div>
-
-              <span className="project-link">{t.learnMore} →</span>
             </div>
-          </Link>
-        ))}
+          );
+        })}
       </div>
     </section>
   );

@@ -25,7 +25,8 @@ export default function Home() {
       aboutText3: "Mon objectif est de contribuer à des projets innovants et de continuer à développer mes compétences dans l'industrie du jeu vidéo.",
       featuredSingle: 'Projet Principal',
       featuredMultiple: 'Projets principaux',
-      openSource: 'Open Source'
+      openSource: 'Open Source',
+      viewDetails: 'En savoir plus →'
     },
     en: {
       title: 'Clément',
@@ -43,11 +44,23 @@ export default function Home() {
       aboutText3: "My goal is to contribute to innovative projects and continue to develop my skills in the video game industry.",
       featuredSingle: 'Main Project',
       featuredMultiple: 'Featured Projects',
-      openSource: 'Open Source'
+      openSource: 'Open Source',
+      viewDetails: 'Learn more →'
     }
   };
 
   const t = translations[language];
+
+  const getStatusBadge = (status) => {
+    const statusMap = {
+      'En cours': { class: 'ongoing', label: status },
+      'In Progress': { class: 'ongoing', label: status },
+      'Terminé': { class: 'completed', label: status },
+      'Completed': { class: 'completed', label: status },
+      'Prototype': { class: 'prototype', label: status }
+    };
+    return statusMap[status] || { class: 'completed', label: status };
+  };
 
   return (
     <section className="home">
@@ -98,18 +111,42 @@ export default function Home() {
       <div className="home-featured">
         <h2>{featuredProjects.length === 1 ? t.featuredSingle : t.featuredMultiple}</h2>
         <div className="featured-grid">
-          {featuredProjects.map(project => (
-            <Link to={project.link} key={project.id} className="featured-card">
-              <div className="card-tags-row">
-                <div className="card-tag">{project.engine}</div>
-                {project.openSource && (
-                  <div className="card-tag open-source">{t.openSource}</div>
-                )}
+          {featuredProjects.map(project => {
+            const statusInfo = getStatusBadge(project.status);
+            
+            return (
+              <div key={project.id} className="featured-card">
+                {/* Image ou placeholder */}
+                <div className={`featured-card-image ${!project.image ? 'no-image' : ''}`}>
+                  {project.image && <img src={project.image} alt={project.title} />}
+                  <span className={`featured-status-badge ${statusInfo.class}`}>
+                    {statusInfo.label}
+                  </span>
+                </div>
+
+                {/* Contenu */}
+                <div className="featured-card-content">
+                  <h3>{project.title}</h3>
+                  <p>{project.description}</p>
+
+                  {/* Tags de technos */}
+                  <div className="featured-tech-tags">
+                    <span className="featured-tech-tag">{project.engine}</span>
+                    {project.features.slice(0, 3).map((feature, index) => (
+                      <span key={index} className="featured-tech-tag">{feature}</span>
+                    ))}
+                  </div>
+
+                  {/* Bouton d'action */}
+                  <div className="featured-card-actions">
+                    <Link to={project.link} className="featured-action-btn">
+                      {t.viewDetails}
+                    </Link>
+                  </div>
+                </div>
               </div>
-              <h3>{project.title}</h3>
-              <p>{project.description}</p>
-            </Link>
-          ))}
+            );
+          })}
         </div>
       </div>
     </section>

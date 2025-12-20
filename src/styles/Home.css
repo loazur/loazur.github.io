@@ -129,107 +129,164 @@
   gap: 2rem;
 }
 
+/* Style des cartes aligné avec Projects.css */
 .featured-card {
-  background: rgba(255, 255, 255, 0.03);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 20px;
-  padding: 1.25rem;
+  background: rgba(20, 20, 20, 0.9);
+  border: 2px solid rgba(255, 255, 255, 0.15);
+  border-radius: 16px;
+  overflow: hidden;
   transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-  text-decoration: none;
   display: flex;
   flex-direction: column;
+  text-decoration: none;
   position: relative;
-  overflow: hidden;
-  backdrop-filter: blur(10px);
-}
-
-.featured-card::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(135deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0) 100%);
-  opacity: 0;
-  transition: opacity 0.4s ease;
-}
-
-.featured-card:hover::before {
-  opacity: 1;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.6);
 }
 
 .featured-card:hover {
   transform: translateY(-8px);
-  border-color: rgba(255, 255, 255, 0.3);
-  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
-  background: rgba(255, 255, 255, 0.05);
+  border-color: rgba(255, 255, 255, 0.4);
+  box-shadow: 0 16px 48px rgba(0, 0, 0, 0.8);
 }
 
-.card-tags-row {
-  display: flex;
-  gap: 0.3rem;
-  flex-wrap: wrap;
-  margin-bottom: 0.5rem;
+/* Image de preview en haut (comme project-card-image) */
+.featured-card-image {
+  width: 100%;
+  height: 220px;
+  overflow: hidden;
   position: relative;
-  z-index: 1;
+  background: rgba(0, 0, 0, 0.5);
 }
 
-.card-tag {
-  background: rgba(255, 255, 255, 0.15);
-  color: #ffffff;
-  padding: 0.3rem 0.75rem;
+.featured-card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease, filter 0.4s ease;
+  filter: brightness(0.7) grayscale(0.2);
+}
+
+.featured-card:hover .featured-card-image img {
+  transform: scale(1.05);
+  filter: brightness(0.9) grayscale(0);
+}
+
+/* Badge de statut sur l'image */
+.featured-status-badge {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  padding: 0.5rem 1rem;
   border-radius: 20px;
-  display: inline-block;
-  font-size: 0.7rem;
-  font-weight: 700;
-  border: 1px solid rgba(255, 255, 255, 0.3);
+  font-size: 0.75rem;
+  font-weight: 800;
   text-transform: uppercase;
-  letter-spacing: 0.3px;
+  letter-spacing: 0.5px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.8);
+  color: #ffffff;
+  border: 2px solid rgba(255, 255, 255, 0.3);
 }
 
-.card-tag.open-source {
-  background: rgba(168, 85, 247, 0.15);
-  color: #c084fc;
-  border: 2px solid rgba(168, 85, 247, 0.5);
+/* Contenu de la carte */
+.featured-card-content {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  flex: 1;
 }
 
 .featured-card h3 {
-  color: #ffffff;
-  font-size: 1.5rem;
-  margin: 0.1rem 0 0.35rem 0;
+  font-size: 1.75rem;
   font-weight: 700;
-  position: relative;
-  z-index: 1;
+  color: #ffffff;
+  margin: 0;
   line-height: 1.2;
 }
 
 .featured-card p {
+  font-size: 0.95rem;
   color: #b0b0b0;
-  line-height: 1.5;
+  line-height: 1.6;
   margin: 0;
-  font-size: 0.9rem;
-  position: relative;
-  z-index: 1;
+  flex: 1;
 }
 
-.card-link {
-  color: #ffffff;
+/* Tags de technos */
+.featured-tech-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.featured-tech-tag {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: #e0e0e0;
+  padding: 0.4rem 0.8rem;
+  border-radius: 12px;
+  font-size: 0.75rem;
   font-weight: 600;
-  display: inline-flex;
-  align-items: center;
-  gap: 0.4rem;
   transition: all 0.3s ease;
-  position: relative;
-  z-index: 1;
-  font-size: 0.85rem;
-  margin-top: auto;
-  padding-top: 0.35rem;
-  align-self: flex-start;
 }
 
-.featured-card:hover .card-link {
-  transform: translateX(8px);
+.featured-card:hover .featured-tech-tag {
+  background: rgba(255, 255, 255, 0.15);
+  border-color: rgba(255, 255, 255, 0.4);
+  color: #ffffff;
+}
+
+/* Bouton d'action */
+.featured-card-actions {
+  display: flex;
+  padding-top: 1rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.featured-action-btn {
+  flex: 1;
+  padding: 0.75rem 1.25rem;
+  border-radius: 12px;
+  font-size: 0.9rem;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  background: rgba(255, 255, 255, 0.15);
+  color: #ffffff;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+.featured-action-btn:hover {
+  background: rgba(255, 255, 255, 0.25);
+  border-color: rgba(255, 255, 255, 0.5);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(255, 255, 255, 0.2);
+}
+
+/* Image par défaut si pas d'image */
+.featured-card-image.no-image {
+  background: linear-gradient(135deg, rgba(40, 40, 40, 0.8) 0%, rgba(20, 20, 20, 0.95) 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.featured-card-image.no-image::after {
+  content: '◆';
+  font-size: 4rem;
+  color: rgba(255, 255, 255, 0.1);
+}
+
+/* Anciens styles supprimés */
+.card-tags-row,
+.card-tag,
+.card-link {
+  display: none;
 }
 
 .home-skills {
@@ -379,12 +436,20 @@
     grid-template-columns: 1fr;
   }
 
+  .featured-card-image {
+    height: 200px;
+  }
+
+  .featured-card-content h3 {
+    font-size: 1.5rem;
+  }
+
+  .featured-card-content p {
+    font-size: 0.9rem;
+  }
+
   .home-about {
     margin: 4rem 0 3rem 0;
-  }
-  
-  .featured-card {
-    padding: 1.25rem;
   }
   
   .github-calendar-wrapper {
