@@ -1,17 +1,23 @@
 import '../../styles/ProjectDetail.css';
 import { useLanguage } from '../../context/LanguageContext';
 import ProjectLayout from '../../layout/ProjectLayout';
+import LibetMainPicture from '../../assets/Libet/libet-dev-picture1.webp';
+import LibetPicture2 from '../../assets/Libet/libet-dev-picture2.webp';
+import LibetPicture3 from '../../assets/Libet/libet-dev-picture3.webp';
+import LibetPicture4 from '../../assets/Libet/libet-dev-picture4.webp';
+import LibetPicture5 from '../../assets/Libet/libet-dev-picture5.webp';
+import LibetPicture6 from '../../assets/Libet/libet-dev-picture6.webp';
 
 export default function Libet() {
   const { language } = useLanguage();
 
   const translations = {
     fr: {
-      title: "LIBET - Jeu narratif sur Alzheimer",
+      title: "LIBET - Jeu narratif en plein développement",
       tags: ["Unity 6", "Jeu Narratif", "Open Source"],
       date: "Oct. 2025 - Juin 2026",
       github: "GitHub",
-      mainImageAlt: "LIBET - Menu principal",
+      mainImageAlt: "LIBET - Salle à manger",
       
       context: "Contexte",
       contextText1: "LIBET est un jeu 3D à la première personne développé dans le cadre de ma formation en BUT Informatique Graphique.",
@@ -78,7 +84,7 @@ export default function Libet() {
       tags: ["Unity 6", "Narrative Game", "Open Source"],
       date: "Oct. 2025 - June 2026",
       github: "GitHub",
-      mainImageAlt: "LIBET - Main menu",
+      mainImageAlt: "LIBET - Dining room",
       
       context: "Context",
       contextText1: "LIBET is a first-person 3D game developed as part of my Computer Graphics Bachelor program.",
@@ -156,8 +162,11 @@ export default function Libet() {
       alt: t.mainImageAlt
     },
     galleryImages: [
-      { src: LibetPicture1, alt: 'LIBET - Dining room' },
-      { src: LibetPicture2, alt: 'LIBET - Kitchen' }
+      { src: LibetPicture2, alt: 'LIBET - Autre vue de la salle à manger' },
+      { src: LibetPicture3, alt: 'LIBET - Menu principal du jeu' },
+      { src: LibetPicture4, alt: 'LIBET - Configuration des touches' },
+      { src: LibetPicture5, alt: 'LIBET - Interaction avec un fauteuil' },
+      { src: LibetPicture6, alt: 'LIBET - Scène de test Unity' },
     ]
   };
 

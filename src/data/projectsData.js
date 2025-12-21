@@ -1,4 +1,5 @@
 // Import des images avec les BONS noms de fichiers
+import LibetMainPicture from '../assets/Libet/libet-dev-picture1.webp';
 import MycoriaMainPicture from '../assets/ProjectMycoria/project-mycoria-picture1.webp';
 import IPlatMainPicture from '../assets/IPlat/iplat-picture1.webp';
 import BotDiscordMainPicture from '../assets/BotDiscordSteam/botdiscordsteam-picture2.webp';
@@ -22,7 +23,7 @@ const projectsBase = [
     link: "/projects/libet",
     featured: true,
     openSource: true,
-    image: null // Pas encore d'image pour LIBET
+    image: LibetMainPicture
   },
   {
     id: 2,
