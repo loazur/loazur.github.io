@@ -2,11 +2,11 @@ import '../../styles/ProjectDetail.css';
 import { useLanguage } from '../../context/LanguageContext';
 import ProjectLayout from '../../layout/ProjectLayout';
 
-import IPlatMainPicture from '../../assets/IPlat/iplat-main-picture.webp';
-import IPlatPicture1 from '../../assets/IPlat/iplat-picture1.webp';
-import IPlatPicture2 from '../../assets/IPlat/iplat-picture2.webp';
-import IPlatPicture3 from '../../assets/IPlat/iplat-picture3.webp';
-import IPlatPicture4 from '../../assets/IPlat/iplat-picture4.webp';
+import IPlatMainPicture from '../../assets/IPlat/iplat-picture1.webp';
+import IPlatPicture1 from '../../assets/IPlat/iplat-picture2.webp';
+import IPlatPicture2 from '../../assets/IPlat/iplat-picture3.webp';
+import IPlatPicture3 from '../../assets/IPlat/iplat-picture4.webp';
+import IPlatPicture4 from '../../assets/IPlat/iplat-picture5.webp';
 
 export default function IPlat() {
   const { language } = useLanguage();

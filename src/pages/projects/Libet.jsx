@@ -2,10 +2,6 @@ import '../../styles/ProjectDetail.css';
 import { useLanguage } from '../../context/LanguageContext';
 import ProjectLayout from '../../layout/ProjectLayout';
 
-import LibetMainPicture from '../../assets/Libet/libet-proto-main-picture.webp';
-import LibetPicture1 from '../../assets/Libet/libet-proto-picture1.webp';
-import LibetPicture2 from '../../assets/Libet/libet-proto-picture2.webp';
-
 export default function Libet() {
   const { language } = useLanguage();
 
