@@ -72,16 +72,6 @@ export default function BotDiscordSteam() {
       </section>
 
       <section className="project-section">
-        <h2>Technologies et Outils Utilisés</h2>
-        <div className="tech-tags">
-          <span className="tech-tag">Node.js</span>
-          <span className="tech-tag">Discord.js</span>
-          <span className="tech-tag">Steam API</span>
-          <span className="tech-tag">GitHub</span>
-        </div>
-      </section>
-
-      <section className="project-section">
         <h2>Compétences développées</h2>
         <ul>
           <li>Intégration d'API externe (Steam Web API)</li>
@@ -91,6 +81,16 @@ export default function BotDiscordSteam() {
           <li>Système de permissions et modération</li>
           <li>Déploiement et maintenance d'un bot</li>
         </ul>
+      </section>
+
+      <section className="project-section">
+        <h2>Technologies et Outils Utilisés</h2>
+        <div className="tech-tags">
+          <span className="tech-tag">Node.js</span>
+          <span className="tech-tag">Discord.js</span>
+          <span className="tech-tag">Steam API</span>
+          <span className="tech-tag">GitHub</span>
+        </div>
       </section>
     </ProjectLayout>
   );

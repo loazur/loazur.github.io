@@ -13,7 +13,7 @@ export default function Libet() {
 
   const translations = {
     fr: {
-      title: "LIBET - Jeu narratif en plein développement",
+      title: "LIBET - Jeu narratif en développement",
       tags: ["Unity 6", "Jeu Narratif", "Open Source"],
       date: "Oct. 2025 - Juin 2026",
       github: "GitHub",
@@ -51,7 +51,7 @@ export default function Libet() {
       tech6: "Optimisation des performances",
       
       transversalSkills: "Compétences Transversales",
-      trans1: "Gestion de projet agile avec Trello",
+      trans1: "Gestion de projet agile avec Jira",
       trans2: "Travail en équipe multidisciplinaire",
       trans3: "Recherche documentaire sur Alzheimer",
       trans4: "Communication et présentation de projet",
@@ -75,12 +75,15 @@ export default function Libet() {
       acad4Text: "Création d'environnements réalistes et optimisés",
       
       progress: "État d'Avancement",
-      progressText: "Le projet est actuellement en développement actif. Les environnements principaux (salle à manger, cuisine) sont modélisés et intégrés dans Unity. Les mécaniques de base sont fonctionnelles.",
+      progressText: "Le projet est actuellement en développement actif. Voici la progression des fonctionnalités :",
+      progressComplete: "Fonctionnalités terminées :",
+      progressInProgress: "Fonctionnalités en cours :",
+      progressPlanned: "Fonctionnalités planifiées :",
       
       technologies: "Technologies et Outils Utilisés"
     },
     en: {
-      title: "LIBET - Narrative Game About Alzheimer's",
+      title: "LIBET - Narrative Game in development",
       tags: ["Unity 6", "Narrative Game", "Open Source"],
       date: "Oct. 2025 - June 2026",
       github: "GitHub",
@@ -118,7 +121,7 @@ export default function Libet() {
       tech6: "Performance optimization",
       
       transversalSkills: "Transversal Skills",
-      trans1: "Agile project management with Trello",
+      trans1: "Agile project management with Jira",
       trans2: "Multidisciplinary teamwork",
       trans3: "Documentary research on Alzheimer's",
       trans4: "Project communication and presentation",
@@ -142,13 +145,45 @@ export default function Libet() {
       acad4Text: "Creation of realistic and optimized environments",
       
       progress: "Current Progress",
-      progressText: "The project is currently in active development. The main environments (dining room, kitchen) are modeled and integrated into Unity. The basic mechanics are functional.",
+      progressText: "The project is currently in active development. Here is the feature progress:",
+      progressComplete: "Completed features:",
+      progressInProgress: "Features in progress:",
+      progressPlanned: "Planned features:",
       
       technologies: "Technologies and Tools Used"
     }
   };
 
   const t = translations[language];
+
+  // Liste des fonctionnalités
+  const features = {
+    complete: [
+      "Player Controller (courir, s'accroupir...)",
+      "Système d'interactions flexible",
+      "Interactions : chaises, portes, objets, interrupteurs, PNJs",
+      "Système de dialogues",
+      "Support manettes",
+      "Menu paramètres complet sauvegardé (avec PlayerPrefs)",
+      "Système de quêtes",
+      "Système cycle jour/nuit",
+      "Audio adaptatif avec FMOD",
+      "Sauvegarde des données en JSON (cryptée)",
+      "Plusieurs slots de sauvegardes",
+      "Événements aléatoires liés à Alzheimer"
+    ],
+    inProgress: [
+      "Modélisation de chaque pièce de la maison",
+      "Jauge de lucidité (liée aux événements d'Alzheimer)",
+    ],
+    planned: [
+      "Système de progression",
+      "Optimisations : occlusion culling...",
+      "Ajout de plus d'événements aléatoires",
+      "Système de piano",
+      "..."
+    ]
+  };
 
   const projectData = {
     title: t.title,
@@ -194,6 +229,56 @@ export default function Libet() {
           <li>{t.obj4}</li>
           <li>{t.obj5}</li>
         </ul>
+      </section>
+
+      <section className="project-section">
+        <h2>Équipe de Développement</h2>
+        <p><strong>LIBET Team</strong> - Équipe de 5 développeurs :</p>
+        <ul>
+          <li><strong>Clément BOUNAIX</strong> - Responsable programmation - Programmeur</li>
+          <li><strong>Nathanaël MORIT</strong> - Responsable modélisation - Modélisateur, Game designer</li>
+          <li><strong>Morphée SEVESTRE</strong> - Modélisatrice, Game designer</li>
+          <li><strong>Lucas CHAPON</strong> - Modélisateur</li>
+          <li><strong>Lucas CONTRERAS-HODAPP</strong> - Programmeur</li>
+        </ul>
+      </section>
+
+      <section className="project-section">
+        <h2>{t.progress}</h2>
+        <p>{t.progressText}</p>
+        
+        {features.complete.length > 0 && (
+          <>
+            <h3 style={{ color: '#4ade80', marginTop: '1.5rem' }}>✓ {t.progressComplete}</h3>
+            <ul>
+              {features.complete.map((feature, index) => (
+                <li key={index}>{feature}</li>
+              ))}
+            </ul>
+          </>
+        )}
+
+        {features.inProgress.length > 0 && (
+          <>
+            <h3 style={{ color: '#fbbf24', marginTop: '1.5rem' }}>⟳ {t.progressInProgress}</h3>
+            <ul>
+              {features.inProgress.map((feature, index) => (
+                <li key={index}>{feature}</li>
+              ))}
+            </ul>
+          </>
+        )}
+
+        {features.planned.length > 0 && (
+          <>
+            <h3 style={{ color: '#94a3b8', marginTop: '1.5rem' }}>○ {t.progressPlanned}</h3>
+            <ul>
+              {features.planned.map((feature, index) => (
+                <li key={index}>{feature}</li>
+              ))}
+            </ul>
+          </>
+        )}
       </section>
 
       <section className="project-section">
@@ -256,11 +341,6 @@ export default function Libet() {
       </section>
 
       <section className="project-section">
-        <h2>{t.progress}</h2>
-        <p>{t.progressText}</p>
-      </section>
-
-      <section className="project-section">
         <h2>{t.technologies}</h2>
         <div className="tech-tags">
           <span className="tech-tag">Unity 6</span>
@@ -268,7 +348,7 @@ export default function Libet() {
           <span className="tech-tag">FMOD</span>
           <span className="tech-tag">Blender</span>
           <span className="tech-tag">GitHub</span>
-          <span className="tech-tag">Trello</span>
+          <span className="tech-tag">Jira</span>
         </div>
       </section>
     </ProjectLayout>

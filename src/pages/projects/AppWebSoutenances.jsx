@@ -64,17 +64,6 @@ export default function AppWebSoutenances() {
       </section>
 
       <section className="project-section">
-        <h2>Technologies et Outils Utilisés</h2>
-        <div className="tech-tags">
-          <span className="tech-tag">PHP</span>
-          <span className="tech-tag">MySQL</span>
-          <span className="tech-tag">HTML/CSS</span>
-          <span className="tech-tag">JavaScript</span>
-          <span className="tech-tag">GitHub</span>
-        </div>
-      </section>
-
-      <section className="project-section">
         <h2>Contexte du projet</h2>
         <p>
           Ce projet a été développé dans le cadre de ma formation en BUT Informatique à l'IUT du Puy-en-Velay.
@@ -84,6 +73,17 @@ export default function AppWebSoutenances() {
           L'application a été conçue en collaboration avec le secrétariat et les enseignants pour s'adapter
           parfaitement aux processus existants tout en apportant des améliorations ergonomiques significatives.
         </p>
+      </section>
+
+      <section className="project-section">
+        <h2>Technologies et Outils Utilisés</h2>
+        <div className="tech-tags">
+          <span className="tech-tag">PHP</span>
+          <span className="tech-tag">MySQL</span>
+          <span className="tech-tag">HTML/CSS</span>
+          <span className="tech-tag">JavaScript</span>
+          <span className="tech-tag">GitHub</span>
+        </div>
       </section>
     </ProjectLayout>
   );

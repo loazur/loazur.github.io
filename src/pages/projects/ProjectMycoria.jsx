@@ -68,19 +68,8 @@ export default function ProjectMycoria() {
           <li><strong>Clément ROUVEURE</strong> - Builder</li>
           <li><strong>Maël MACE</strong> - Scénariste et Programmer</li>
           <li><strong>Mathias BONNEFOUX</strong> - Sound Designer</li>
+          <li><strong>Jocelyn GUILLON</strong> - Développeur</li>
         </ul>
-      </section>
-
-      <section className="project-section">
-        <h2>Technologies et Outils Utilisés</h2>
-        <div className="tech-tags">
-          <span className="tech-tag">Unreal Engine 5</span>
-          <span className="tech-tag">C++</span>
-          <span className="tech-tag">Blueprints</span>
-          <span className="tech-tag">Blender</span>
-          <span className="tech-tag">GitLab</span>
-          <span className="tech-tag">Photoshop</span>
-        </div>
       </section>
 
       <section className="project-section">
@@ -94,6 +83,18 @@ export default function ProjectMycoria() {
           <li>Travail d'équipe et collaboration sur GitLab</li>
           <li>Optimisation des performances sur grand monde ouvert</li>
         </ul>
+      </section>
+
+      <section className="project-section">
+        <h2>Technologies et Outils Utilisés</h2>
+        <div className="tech-tags">
+          <span className="tech-tag">Unreal Engine 5</span>
+          <span className="tech-tag">C++</span>
+          <span className="tech-tag">Blueprints</span>
+          <span className="tech-tag">Blender</span>
+          <span className="tech-tag">GitLab</span>
+          <span className="tech-tag">Photoshop</span>
+        </div>
       </section>
     </ProjectLayout>
   );
