@@ -170,14 +170,16 @@ export default function Libet() {
       "Audio adaptatif avec FMOD",
       "Sauvegarde des données en JSON (cryptée)",
       "Plusieurs slots de sauvegardes",
-      "Événements aléatoires liés à Alzheimer"
+      "Événements aléatoires liés à Alzheimer",
+      "Jauge de lucidité (liée aux événements d'Alzheimer)"
     ],
     inProgress: [
       "Modélisation de chaque pièce de la maison",
-      "Jauge de lucidité (liée aux événements d'Alzheimer)",
+      "Design de l'UI",
+      "Musiques",
+      "Quetes, progression du jeu"
     ],
     planned: [
-      "Système de progression",
       "Optimisations : occlusion culling...",
       "Ajout de plus d'événements aléatoires",
       "Système de piano",
