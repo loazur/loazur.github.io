@@ -11,6 +11,18 @@
     "aboutText2": "Mon objectif est de contribuer à des projets innovants et de continuer à développer mes compétences dans l'industrie du jeu vidéo.",
     "readMore": "En savoir plus →"
   },
+  "header": {
+    "home": "Accueil",
+    "projects": "Projets",
+    "cv": "CV",
+    "contact": "Contacts"
+  },
+  "footer": {
+    "allRights" : "Clément Bounaix. Tous droits réservés."
+  },
+  "languageDropdown": {
+    "chooseLanguage": "Choisir une langue"
+  },
   "contact": {
     "title": "Me contacter",
     "subtitle": "N'hésitez pas à me contacter via les plateformes ci-dessous !",
