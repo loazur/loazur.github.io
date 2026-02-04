@@ -14,11 +14,18 @@ main {
   width: 100%;
   position: relative;
   z-index: 1;
-  padding-top: 80px; /* Ajoute un espace pour le header fixe */
+  padding-top: 80px; /* Espace pour le header */
+  min-height: calc(100vh - 80px);
 }
 
 @media (max-width: 768px) {
   main {
-    padding-top: 70px; /* Légèrement moins sur mobile */
+    padding-top: 140px; /* Plus d'espace sur mobile car header sur 2 lignes */
+  }
+}
+
+@media (max-width: 480px) {
+  main {
+    padding-top: 160px;
   }
 }

@@ -3,7 +3,7 @@ import { useTranslation } from 'react-i18next';
 import '../styles/LanguageDropdown.css';
 
 export default function LanguageDropdown() {
-  const { i18n } = useTranslation();
+  const { t, i18n } = useTranslation();
   const [isOpen, setIsOpen] = useState(false);
   const dropdownRef = useRef(null);
 
@@ -36,7 +36,6 @@ export default function LanguageDropdown() {
       <button 
         className="language-dropdown-trigger"
         onClick={() => setIsOpen(!isOpen)}
-        aria-label="Changer de langue"
       >
         <span className="language-icon">🌐</span>
         <span className="language-flag">{currentLanguage.flag}</span>
@@ -45,7 +44,7 @@ export default function LanguageDropdown() {
 
       {isOpen && (
         <div className="language-dropdown-menu">
-          <div className="language-dropdown-header">Choose a language</div>
+          <div className="language-dropdown-header">{t("languageDropdown.chooseLanguage")}</div>
           {languages.map((lang) => (
             <button
               key={lang.code}

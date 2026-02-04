@@ -11,6 +11,18 @@
     "aboutText2": "My goal is to contribute to innovative projects and continue to develop my skills in the video game industry.",
     "readMore": "Learn more →"
   },
+  "header": {
+    "home": "",
+    "projects": "",
+    "cv": "",
+    "contact": ""
+  },
+  "footer": {
+    "allRights" : "."
+  },
+  "languageDropdown": {
+    "chooseLanguage": ""
+  },
   "contact": {
     "title": "Contact Me",
     "subtitle": "Don't hesitate to contact me via the platforms below!",
