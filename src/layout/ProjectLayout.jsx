@@ -1,6 +1,5 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { useLanguage } from '../context/LanguageContext';
 import '../styles/ProjectDetail.css';
 
 export default function ProjectLayout({ 
@@ -12,22 +11,8 @@ export default function ProjectLayout({
   galleryImages, 
   children 
 }) {
-  const { language } = useLanguage();
   const [lightboxOpen, setLightboxOpen] = useState(false);
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
-
-  const translations = {
-    fr: {
-      backToProjects: '← Retour aux projets',
-      gallery: 'Galerie'
-    },
-    en: {
-      backToProjects: '← Back to projects',
-      gallery: 'Gallery'
-    }
-  };
-
-  const t = translations[language];
 
   const openLightbox = (index) => {
     setCurrentImageIndex(index);
@@ -54,7 +39,7 @@ export default function ProjectLayout({
 
   return (
     <section className="project-detail" onKeyDown={handleKeyDown} tabIndex={0}>
-      <Link to="/projects" className="back-link">{t.backToProjects}</Link>
+      <Link to="/projects" className="back-link">← Retour aux projets</Link>
       
       <div className="project-header">
         <h1>{title}</h1>
@@ -65,7 +50,6 @@ export default function ProjectLayout({
           <span className="date">{date}</span>
         </div>
 
-        {/* Liens du projet */}
         {links && links.length > 0 && (
           <div className="project-links-top">
             {links.map((link, index) => (
@@ -83,7 +67,6 @@ export default function ProjectLayout({
         )}
       </div>
 
-      {/* Image principale */}
       {mainImage && (
         <div className="project-image">
           <img src={mainImage.src} alt={mainImage.alt} />
@@ -92,10 +75,9 @@ export default function ProjectLayout({
 
        <div className="project-content">
         
-        {/* Galerie */}
         {galleryImages && galleryImages.length > 0 && (
           <section className="project-section">
-            <h2>{t.gallery}</h2>
+            <h2>Galerie</h2>
             <div className="project-gallery">
               {galleryImages.map((image, index) => (
                 <img 
@@ -112,7 +94,6 @@ export default function ProjectLayout({
         {children}
       </div>
 
-      {/* Lightbox */}
       {lightboxOpen && galleryImages && (
         <div className="lightbox" onClick={closeLightbox}>
           <button className="lightbox-close" onClick={closeLightbox}>✕</button>
