@@ -12,16 +12,16 @@
     "readMore": "Learn more →"
   },
   "header": {
-    "home": "",
-    "projects": "",
-    "cv": "",
-    "contact": ""
+    "home": "Accueil",
+    "projects": "Projets",
+    "cv": "CV",
+    "contact": "Contacts"
   },
   "footer": {
-    "allRights" : "."
+    "allRights": "Clément Bounaix. Tous droits réservés."
   },
   "languageDropdown": {
-    "chooseLanguage": ""
+    "chooseLanguage": "Choisir une langue"
   },
   "contact": {
     "title": "Contact Me",
