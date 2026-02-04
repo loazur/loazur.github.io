@@ -12,8 +12,17 @@ import IPlat from './pages/projects/IPlat';
 import BotDiscordSteam from './pages/projects/BotDiscordSteam';
 import AppWebSoutenances from './pages/projects/AppWebSoutenances';
 import './App.css';
+import { useTranslation } from 'react-i18next';
+import { useEffect } from 'react';
+
 
 function App() {
+  const { t, i18n} = useTranslation();
+
+  useEffect(() => {
+    i18n.changeLanguage(navigator.language);
+  }, [])
+
   return (
     <Router>
       <ScrollToTop />
@@ -32,6 +41,8 @@ function App() {
         </Routes>
       </MainLayout>
     </Router>
+
+
   );
 }
 

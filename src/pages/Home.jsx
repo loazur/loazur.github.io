@@ -4,15 +4,10 @@ import { getFeaturedProjects } from '../data/projectsData';
 import '../styles/Home.css';
 
 import { useTranslation } from 'react-i18next';
-import { useEffect } from 'react';
 
 export default function Home() {
-  const { t, i18n } = useTranslation();
+  const { t } = useTranslation();
   const featuredProjects = getFeaturedProjects();
-
-  useEffect(() => {
-    i18n.changeLanguage(navigator.language);
-  })
 
   const getStatusBadge = (status) => {
     const statusMap = {

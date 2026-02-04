@@ -1,5 +1,6 @@
 import { NavLink } from 'react-router-dom';
 import '../styles/Header.css';
+import LanguageDropdown from './LanguageDropdown';
 
 export function Header() {
   return (
@@ -11,6 +12,7 @@ export function Header() {
           <NavLink to="/cv" className="nav-link">CV</NavLink>
           <NavLink to="/contact" className="nav-link">Contact</NavLink>
         </nav>
+        <LanguageDropdown />
       </div>
     </header>
   );
