@@ -1,0 +1,7 @@
+project_id: "TON_ID"
+api_token: "TON_TOKEN"
+base_path: "."
+
+files:
+  - source: "/public/locales/fr/translation.json"
+    translation: "/public/locales/%two_letters_code%/translation.json"

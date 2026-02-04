@@ -3,7 +3,10 @@ import { GitHubCalendar } from 'react-github-calendar';
 import { getFeaturedProjects } from '../data/projectsData';
 import '../styles/Home.css';
 
+import { useTranslation } from 'react-i18next';
+
 export default function Home() {
+  const { t } = useTranslation();
   const featuredProjects = getFeaturedProjects();
 
   const getStatusBadge = (status) => {
@@ -23,7 +26,7 @@ export default function Home() {
             Clément <span className="highlight">Bounaix</span>
           </h1>
           <p className="home-subtitle">
-            Gameplay Programmer en formation - 19 ans
+            {t("home.subtitle")}
           </p>
           <p className="home-description">
             Etudiant français passionné par le développement de jeux vidéo.<br/>
