@@ -1,5 +1,31 @@
 {
   "home": {
-    "subtitle": "Gameplay Programmer in training"
+    "subtitle": "Gameplay Programmer in training",
+    "description": "",
+    "inDevelopment": "",
+    "seeMyProjects": "",
+    "contactMe": "",
+    "scrollToDiscover": "",
+    "about": "",
+    "aboutText1": "",
+    "aboutText2": "",
+    "readMoreProject": ""
+  }
+  ,
+  "contact": {
+    "title": "",
+    "subtitle": "",
+    "linkedIn": "",
+    "github": "",
+    "itchio": ""
+  },
+  "projects": {
+    "title": "",
+    "subtitle": "",
+    "readMore": ""
+  },
+  "cv": {
+    "title": "",
+    "download": ""
   }
 }

@@ -1,10 +1,12 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { getProjects } from '../data/projectsData';
+import { useTranslation } from 'react-i18next';
 import '../styles/Projects.css';
 
 export default function Projects() {
   const projects = getProjects();
+  const { t } = useTranslation();
   const [filter, setFilter] = useState('Tous');
 
   const categories = ['Tous', 'Jeux vidéo', 'Web', 'Bot'];
@@ -30,8 +32,8 @@ export default function Projects() {
   return (
     <section className="projects">
       <div className="projects-header">
-        <h1>Mes Projets</h1>
-        <p>Découvrez mes différents projets de développement</p>
+        <h1>{t("projects.title")}</h1>
+        <p>{t("projects.subtitle")}</p>
       </div>
 
       <div className="projects-filters">
@@ -72,7 +74,7 @@ export default function Projects() {
 
                 <div className="project-card-actions">
                   <Link to={project.link} className="project-action-btn primary">
-                    En savoir plus →
+                    {t("projects.readMore")}
                   </Link>
                 </div>
               </div>

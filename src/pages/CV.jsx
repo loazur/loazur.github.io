@@ -1,4 +1,5 @@
 import '../styles/CV.css';
+import { useTranslation } from 'react-i18next';
 
 export default function CV() {
   const downloadCV = () => {
@@ -10,12 +11,14 @@ export default function CV() {
     document.body.removeChild(link);
   };
 
+  const { t } = useTranslation();
+
   return (
     <section className="cv">
       <div className="cv-header">
-        <h1>Mon CV</h1>
+        <h1>{t("cv.title")}</h1>
         <button onClick={downloadCV} className="download-btn">
-          ⬇ Télécharger mon CV
+          {t("cv.download")}
         </button>
       </div>
 

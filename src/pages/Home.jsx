@@ -29,35 +29,35 @@ export default function Home() {
             {t("home.subtitle")}
           </p>
           <p className="home-description">
-            Etudiant français passionné par le développement de jeux vidéo.<br/>
-            <strong>Site en cours de développement.</strong>
+            {t("home.description")}<br/>
+            <strong>{t("home.inDevelopment")}</strong>
           </p>
         </div>
         
         <div className="home-cta">
           <Link to="/projects" className="btn btn-primary">
-            Voir mes projets
+            {t("home.seeMyProjects")}
           </Link>
           <Link to="/contact" className="btn btn-secondary">
-            Me contacter
+            {t("home.contactMe")}
           </Link>
         </div>
 
         <div className="home-scroll">
-          <span>Scroll pour découvrir</span>
+          <span>{t("home.scrollToDiscover")}</span>
           <div className="scroll-arrow">↓</div>
         </div>
       </div>
 
       <div className="home-about">
-        <h2>À propos</h2>
+        <h2>{t("home.about")}</h2>
         <div className="about-content">
           <div className="about-text">
             <p>
-              Actuellement en 2ème année de <strong>BUT Informatique Graphique</strong> à l'IUT du Puy-en-Velay, je me spécialise dans le développement de jeux vidéo plus précisément en programmation gameplay.
+              {t("home.aboutText1")}
             </p>
             <p>
-              Mon objectif est de contribuer à des projets innovants et de continuer à développer mes compétences dans l'industrie du jeu vidéo.
+              {t("home.aboutText2")}
             </p>
           </div>
           <GitHubCalendar username="loazur" />
@@ -92,7 +92,7 @@ export default function Home() {
 
                   <div className="featured-card-actions">
                     <Link to={project.link} className="featured-action-btn">
-                      En savoir plus →
+                      {t("home.readMore")}
                     </Link>
                   </div>
                 </div>

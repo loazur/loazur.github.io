@@ -3,13 +3,16 @@ import emailIcon from '../assets/icons/icon-mail.webp';
 import linkedinIcon from '../assets/icons/icon-linkedin.webp';
 import githubIcon from '../assets/icons/icon-github.webp';
 import itchIcon from '../assets/icons/icon-itchio.webp';
+import { useTranslation } from 'react-i18next';
 
 export default function Contact() {
+  const { t } = useTranslation();
+
   return (
     <section className="contact">
       <div className="contact-header">
-        <h1>Me Contacter</h1>
-        <p>N'hésitez pas à me contacter via les plateformes ci-dessous !</p>
+        <h1>{t("contact.title")}</h1>
+        <p>{t("contact.subtitle")}</p>
       </div>
 
       <div className="contact-container">
@@ -30,7 +33,7 @@ export default function Contact() {
             </div>
             <div className="info-content">
               <h3>LinkedIn</h3>
-              <p>Profil LinkedIn</p>
+              <p>{t("contact.linkedin")}</p>
             </div>
           </a>
           
@@ -40,7 +43,7 @@ export default function Contact() {
             </div>
             <div className="info-content">
               <h3>GitHub</h3>
-              <p>Profil GitHub</p>
+              <p>{t("contact.github")}</p>
             </div>
           </a>
           
@@ -50,7 +53,7 @@ export default function Contact() {
             </div>
             <div className="info-content">
               <h3>Itch.io</h3>
-              <p>Profil Itch.io</p>
+              <p>{t("contact.itchio")}</p>
             </div>
           </a>
         </div>
