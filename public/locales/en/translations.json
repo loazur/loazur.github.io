@@ -1,30 +1,30 @@
 {
   "home": {
     "subtitle": "Gameplay Programmer in training",
-    "description": "Etudiant français passionné par le développement de jeux vidéo.",
-    "inDevelopment": "Site en cours de développement.",
-    "seeMyProjects": "Voir mes projets",
-    "contactMe": "Me contacter",
-    "scrollToDiscover": "Scroll pour découvrir",
-    "about": "À propos",
-    "aboutText1": "Actuellement en 2ème année de BUT Informatique Graphique à l'IUT du Puy-en-Velay, je me spécialise dans le développement de jeux vidéo plus précisément en programmation gameplay.",
-    "aboutText2": "Mon objectif est de contribuer à des projets innovants et de continuer à développer mes compétences dans l'industrie du jeu vidéo.",
-    "readMore": "En savoir plus →"
+    "description": "French student passionate about video game development.",
+    "inDevelopment": "Site under development.",
+    "seeMyProjects": "See my projects",
+    "contactMe": "Contact Me",
+    "scrollToDiscover": "Scroll to Discover",
+    "about": "About me",
+    "aboutText1": "Currently in 2nd year of Bachelor of Computer Science at Le Puy-en-Velay, I specialize in the development of video-games specifically in gameplay programming.",
+    "aboutText2": "My goal is to contribute to innovative projects and continue to develop my skills in the video game industry.",
+    "readMore": "Learn more →"
   },
   "contact": {
-    "title": "Me Contacter",
-    "subtitle": "N'hésitez pas à me contacter via les plateformes ci-dessous !",
-    "linkedin": "Profil LinkedIn",
-    "github": "Profil GitHub",
-    "itchio": "Profil Itch.io"
+    "title": "Me contacter",
+    "subtitle": "Don't hesitate to contact me via the platforms below!",
+    "linkedin": "LinkedIn profile",
+    "github": "GitHub profile",
+    "itchio": "Itch.io profile"
   },
   "projects": {
-    "title": "Mes Projets",
-    "subtitle": "Découvrez mes différents projets de développement",
-    "readMore": "En savoir plus →"
+    "title": "Mes projets",
+    "subtitle": "Discover my different development projects",
+    "readMore": "Learn more →"
   },
   "cv": {
-    "title": "Mon CV",
-    "download": "⬇ Télécharger mon CV"
+    "title": "My Resume",
+    "download": "⬇ Download my resume"
   }
 }
