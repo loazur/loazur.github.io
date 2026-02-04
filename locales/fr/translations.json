@@ -1,5 +1,30 @@
 {
   "home": {
-    "subtitle": "Gameplay Programmer en formation"
+    "subtitle": "Gameplay Programmer en formation",
+    "description": "Etudiant français passionné par le développement de jeux vidéo.",
+    "inDevelopment": "Site en cours de développement.",
+    "seeMyProjects": "Voir mes projets",
+    "contactMe": "Me contacter",
+    "scrollToDiscover": "Scroll pour découvrir",
+    "about": "À propos",
+    "aboutText1": "Actuellement en 2ème année de BUT Informatique Graphique à l'IUT du Puy-en-Velay, je me spécialise dans le développement de jeux vidéo plus précisément en programmation gameplay.",
+    "aboutText2": "Mon objectif est de contribuer à des projets innovants et de continuer à développer mes compétences dans l'industrie du jeu vidéo.",
+    "readMore": "En savoir plus →"
+  },
+  "contact": {
+    "title": "Me contacter",
+    "subtitle": "N'hésitez pas à me contacter via les plateformes ci-dessous !",
+    "linkedin": "Profil LinkedIn",
+    "github": "Profil GitHub",
+    "itchio": "Profil Itch.io"
+  },
+  "projects": {
+    "title": "Mes projets",
+    "subtitle": "Découvrez mes différents projets de développement",
+    "readMore": "En savoir plus →"
+  },
+  "cv": {
+    "title": "Mon CV",
+    "download": "⬇ Télécharger mon CV"
   }
 }

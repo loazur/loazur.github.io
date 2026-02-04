@@ -1,5 +1,30 @@
 {
   "home": {
-    "subtitle": "Gameplay Programmer in training"
+    "subtitle": "Gameplay Programmer in training",
+    "description": "French student passionate about video game development.",
+    "inDevelopment": "Site under development.",
+    "seeMyProjects": "See my projects",
+    "contactMe": "Contact Me",
+    "scrollToDiscover": "Scroll to Discover",
+    "about": "About Me",
+    "aboutText1": "Currently in 2nd year of Bachelor of Computer Science at Le Puy-en-Velay, I specialize in the development of video-games specifically in gameplay programming.",
+    "aboutText2": "My goal is to contribute to innovative projects and continue to develop my skills in the video game industry.",
+    "readMore": "Learn more →"
+  },
+  "contact": {
+    "title": "Contact Me",
+    "subtitle": "Don't hesitate to contact me via the platforms below!",
+    "linkedin": "LinkedIn Profile",
+    "github": "GitHub Profile",
+    "itchio": "Itch.io Profile"
+  },
+  "projects": {
+    "title": "My Projects",
+    "subtitle": "Discover my different development projects",
+    "readMore": "Learn more →"
+  },
+  "cv": {
+    "title": "My Resume",
+    "download": "⬇ Download my resume"
   }
 }
