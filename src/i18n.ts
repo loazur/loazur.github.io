@@ -11,7 +11,7 @@ i18n
     fallbackLng: "fr",
     supportedLngs: ["fr", "en"],
     backend: {
-      loadPath: "/locales/{{lng}}/translation.json"
+      loadPath: "/locales/{{lng}}/translations.json"
     },
     interpolation: {
       escapeValue: false
