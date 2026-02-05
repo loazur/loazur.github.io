@@ -10,8 +10,8 @@
     "aboutText1": "Currently in 2nd year of Bachelor of Computer Science at Le Puy-en-Velay, I specialize in the development of video-games specifically in gameplay programming.",
     "aboutText2": "My goal is to contribute to innovative projects and continue to develop my skills in the video game industry.",
     "readMore": "Learn more →",
-    "featuredProject": "",
-    "featuredProjects": ""
+    "featuredProject": "Projet principal",
+    "featuredProjects": "Projets principaux"
   },
   "header": {
     "home": "Home",
@@ -37,44 +37,38 @@
     "subtitle": "Discover my different development projects",
     "readMore": "Learn more →",
     "filters": {
-      "all": ""
+      "all": "Tous"
     },
-
     "datas": {
       "types": {
-        "student": "",
-        "personal": ""
+        "student": "Projet étudiant",
+        "personal": "Personnel"
       },
       "categories": {
-        "videogame": "",
-        "bot": "",
-        "web": ""
+        "videogame": "Jeu vidéo",
+        "bot": "Bot",
+        "web": "Web"
       },
       "status": {
-        "inprogress": "",
-        "finished": "",
-        "prototype": ""
+        "inprogress": "En cours",
+        "finished": "Terminé",
+        "prototype": "Prototype"
       },
-
-
-
       "libet": {
-        "description": ""
+        "description": "Jeu 3D à la première personne dans lequel le joueur incarne 'Libet', un vieil homme atteint d'Alzheimer, vivant sa vie tandis qu'il perd progressivement la raison."
       },
       "projectMycoria": {
-        "description": ""
+        "description": "Jeu 3D d'exploration et narratif se déroulant dans la région du Livradois-Forez. Incarnez Vincent Morel, agent de la DGSI, chargé d'enquêter sur une série de disparitions mystérieuses."
       },
       "iplat": {
-        "description": ""
+        "description": "Court jeu de platforme en 2D développé en 1 semaine avec le framework Löve2D."
       },
       "botSteam": {
-        "description": ""
+        "description": "Bot Discord permettant de suivre les soldes Steam et recevoir des notifications pour vos jeux favoris."
       },
       "webSoutenances": {
-        "description": ""
+        "description": "Application web développée pour faciliter la gestion des soutenances de projet à l'IUT."
       }
-
-
     }
   },
   "cv": {
