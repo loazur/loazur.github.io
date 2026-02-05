@@ -7,27 +7,32 @@ import '../styles/Projects.css';
 export default function Projects() {
   const { t } = useTranslation();
   const projects = getProjects(t);
-  const [filter, setFilter] = useState('Tous');
+  const [filter, setFilter] = useState(t('projects.filters.all'));
 
-  const categories = ['Tous', 'Jeux vidéo', 'Web', 'Bot'];
+  const categories = [
+    t('projects.filters.all'),
+    t('projects.datas.categories.videogame'),
+    t('projects.datas.categories.web'),
+    t('projects.datas.categories.bot')
+  ];
 
   const getStatusBadge = (status) => {
-    const statusMap = {
-      'En cours': { class: 'ongoing', label: status },
-      'Terminé': { class: 'completed', label: status },
-      'Prototype': { class: 'prototype', label: status }
+    // Mappings basés sur les clés de traduction
+    const statusClasses = {
+      [t('projects.datas.status.inprogress')]: 'ongoing',
+      [t('projects.datas.status.finished')]: 'completed',
+      [t('projects.datas.status.prototype')]: 'prototype'
     };
-    return statusMap[status] || { class: 'completed', label: status };
+
+    return {
+      class: statusClasses[status] || 'completed',
+      label: status
+    };
   };
 
-  const filteredProjects = filter === 'Tous' 
+  const filteredProjects = filter === t('projects.filters.all')
     ? projects 
-    : projects.filter(project => {
-        if (filter === 'Jeux vidéo') return project.category === 'Jeu vidéo';
-        if (filter === 'Web') return project.category === 'Web';
-        if (filter === 'Bot') return project.category === 'Bot';
-        return true;
-      });
+    : projects.filter(project => project.category === filter);
 
   return (
     <section className="projects">

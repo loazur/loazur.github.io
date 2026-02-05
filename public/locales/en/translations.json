@@ -36,6 +36,9 @@
     "title": "My Projects",
     "subtitle": "Discover my different development projects",
     "readMore": "Learn more →",
+    "filters": {
+      "all": ""
+    },
 
     "datas": {
       "types": {
@@ -49,7 +52,8 @@
       },
       "status": {
         "inprogress": "",
-        "finished": ""
+        "finished": "",
+        "prototype": ""
       },
 
 
