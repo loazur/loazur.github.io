@@ -7,17 +7,16 @@ import '../styles/Projects.css';
 export default function Projects() {
   const { t } = useTranslation();
   const projects = getProjects(t);
-  const [filter, setFilter] = useState(t('projects.filters.all'));
+  const [filter, setFilter] = useState("all");
 
   const categories = [
-    t('projects.filters.all'),
-    t('projects.datas.categories.videogame'),
-    t('projects.datas.categories.web'),
-    t('projects.datas.categories.bot')
+    { key: "all", label: t("projects.filters.all") },
+    { key: "videogame", label: t("projects.datas.categories.videogame") },
+    { key: "web", label: t("projects.datas.categories.web") },
+    { key: "bot", label: t("projects.datas.categories.bot") }
   ];
 
   const getStatusBadge = (status) => {
-    // Mappings basés sur les clés de traduction
     const statusClasses = {
       [t('projects.datas.status.inprogress')]: 'ongoing',
       [t('projects.datas.status.finished')]: 'completed',
@@ -30,9 +29,9 @@ export default function Projects() {
     };
   };
 
-  const filteredProjects = filter === t('projects.filters.all')
+  const filteredProjects = filter === "all"
     ? projects 
-    : projects.filter(project => project.category === filter);
+    : projects.filter(project => project.categoryKey === filter); 
 
   return (
     <section className="projects">
@@ -44,11 +43,11 @@ export default function Projects() {
       <div className="projects-filters">
         {categories.map((category) => (
           <button
-            key={category}
-            className={`filter-btn ${filter === category ? 'active' : ''}`}
-            onClick={() => setFilter(category)}
+            key={category.key}
+            className={`filter-btn ${filter === category.key ? 'active' : ''}`}
+            onClick={() => setFilter(category.key)}
           >
-            {category}
+            {category.label}
           </button>
         ))}
       </div>

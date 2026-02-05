@@ -1,10 +1,11 @@
-// Import des images avec les BONS noms de fichiers
+// Import des images
 import LibetMainPicture from '../assets/Libet/libet-dev-picture1.webp';
 import MycoriaMainPicture from '../assets/ProjectMycoria/project-mycoria-picture1.webp';
 import IPlatMainPicture from '../assets/IPlat/iplat-picture1.webp';
 import BotDiscordMainPicture from '../assets/BotDiscordSteam/botdiscordsteam-picture2.webp';
 import AppWebSoutenancesMainPicture from '../assets/AppWebSoutenances/gestion-soutenances-picture1.webp';
-// Données des projets
+
+// Données des projets avec clés de catégorie
 export const getProjectsData = (t) => [
   {
     id: 1,
@@ -12,7 +13,8 @@ export const getProjectsData = (t) => [
     engine: "Unity 6",
     year: "2025-2026",
     type: t("projects.datas.types.student"),
-    category: t("projects.datas.types.videogame"),
+    categoryKey: "videogame", // Clé fixe
+    category: t("projects.datas.categories.videogame"), // Traduction pour affichage
     status: t("projects.datas.status.inprogress"),
     description: t("projects.datas.libet.description"),
     features: ["FMOD"],
@@ -27,7 +29,8 @@ export const getProjectsData = (t) => [
     engine: "Unreal Engine 5",
     year: "2025",
     type: t("projects.datas.types.student"),
-    category: t("projects.datas.types.videogame"),
+    categoryKey: "videogame",
+    category: t("projects.datas.categories.videogame"),
     status: t("projects.datas.status.finished"),
     description: t("projects.datas.projectMycoria.description"),
     features: ["C++"],
@@ -42,7 +45,8 @@ export const getProjectsData = (t) => [
     engine: "Löve2D",
     year: "2021",
     type: t("projects.datas.types.personal"),
-    category: t("projects.datas.types.videogame"),
+    categoryKey: "videogame",
+    category: t("projects.datas.categories.videogame"),
     status: t("projects.datas.status.finished"),
     description: t("projects.datas.iplat.description"),
     features: ["Tiled"],
@@ -57,7 +61,8 @@ export const getProjectsData = (t) => [
     engine: "JavaScript",
     year: "2024-2025",
     type: t("projects.datas.types.personal"),
-    category: t("projects.datas.types.bot"),
+    categoryKey: "bot",
+    category: t("projects.datas.categories.bot"),
     status: t("projects.datas.status.finished"),
     description: t("projects.datas.botSteam.description"),
     features: ["API Steam"],
@@ -72,7 +77,8 @@ export const getProjectsData = (t) => [
     engine: "PHP",
     year: "2025",
     type: t("projects.datas.types.student"),
-    category: t("projects.datas.types.web"),
+    categoryKey: "web",
+    category: t("projects.datas.categories.web"),
     status: t("projects.datas.status.finished"),
     description: t("projects.datas.webSoutenances.description"),
     features: ["MySQL"],
