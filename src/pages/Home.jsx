@@ -7,7 +7,7 @@ import { useTranslation } from 'react-i18next';
 
 export default function Home() {
   const { t } = useTranslation();
-  const featuredProjects = getFeaturedProjects();
+  const featuredProjects = getFeaturedProjects(t);
 
   const getStatusBadge = (status) => {
     const statusMap = {
@@ -65,7 +65,7 @@ export default function Home() {
       </div>
 
       <div className="home-featured">
-        <h2>{featuredProjects.length === 1 ? 'Projet Principal' : 'Projets principaux'}</h2>
+        <h2>{featuredProjects.length === 1 ? t("home.featuredProject") : t("home.featuredProjects")}</h2>
         <div className="featured-grid">
           {featuredProjects.map(project => {
             const statusInfo = getStatusBadge(project.status);

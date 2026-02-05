@@ -4,18 +4,17 @@ import MycoriaMainPicture from '../assets/ProjectMycoria/project-mycoria-picture
 import IPlatMainPicture from '../assets/IPlat/iplat-picture1.webp';
 import BotDiscordMainPicture from '../assets/BotDiscordSteam/botdiscordsteam-picture2.webp';
 import AppWebSoutenancesMainPicture from '../assets/AppWebSoutenances/gestion-soutenances-picture1.webp';
-
 // Données des projets
-export const projectsData = [
+export const getProjectsData = (t) => [
   {
     id: 1,
     title: "LIBET",
     engine: "Unity 6",
     year: "2025-2026",
-    type: "Projet Étudiant",
-    category: "Jeu vidéo",
-    status: "En cours",
-    description: "Jeu 3D à la première personne dans lequel le joueur incarne 'Libet', un vieil homme atteint d'Alzheimer, vivant sa vie tandis qu'il perd progressivement la raison.",
+    type: t("projects.datas.types.student"),
+    category: t("projects.datas.types.videogame"),
+    status: t("projects.datas.status.inprogress"),
+    description: t("projects.datas.libet.description"),
     features: ["FMOD"],
     link: "/projects/libet",
     featured: true,
@@ -27,10 +26,10 @@ export const projectsData = [
     title: "Project Mycoria",
     engine: "Unreal Engine 5",
     year: "2025",
-    type: "Projet Étudiant",
-    category: "Jeu vidéo",
-    status: "Terminé",
-    description: "Jeu 3D d'exploration et narratif se déroulant dans la région du Livradois-Forez. Incarnez Vincent Morel, agent de la DGSI, chargé d'enquêter sur une série de disparitions mystérieuses.",
+    type: t("projects.datas.types.student"),
+    category: t("projects.datas.types.videogame"),
+    status: t("projects.datas.status.finished"),
+    description: t("projects.datas.projectMycoria.description"),
     features: ["C++"],
     link: "/projects/project-mycoria",
     featured: false,
@@ -42,10 +41,10 @@ export const projectsData = [
     title: "IPlat",
     engine: "Löve2D",
     year: "2021",
-    type: "Personnel",
-    category: "Jeu vidéo",
-    status: "Terminé",
-    description: "Court jeu de platforme en 2D développé en 1 semaine avec le framework Löve2D.",
+    type: t("projects.datas.types.personal"),
+    category: t("projects.datas.types.videogame"),
+    status: t("projects.datas.status.finished"),
+    description: t("projects.datas.iplat.description"),
     features: ["Tiled"],
     link: "/projects/iplat",
     featured: false,
@@ -57,10 +56,10 @@ export const projectsData = [
     title: "Bot Discord Steam",
     engine: "JavaScript",
     year: "2024-2025",
-    type: "Personnel",
-    category: "Bot",
-    status: "Terminé",
-    description: "Bot Discord permettant de suivre les soldes Steam et recevoir des notifications pour vos jeux favoris.",
+    type: t("projects.datas.types.personal"),
+    category: t("projects.datas.types.bot"),
+    status: t("projects.datas.status.finished"),
+    description: t("projects.datas.botSteam.description"),
     features: ["API Steam"],
     link: "/projects/bot-discord-steam",
     featured: false,
@@ -72,10 +71,10 @@ export const projectsData = [
     title: "Application web de gestion de soutenances",
     engine: "PHP",
     year: "2025",
-    type: "Projet Étudiant",
-    category: "Web",
-    status: "Terminé",
-    description: "Application web développée pour faciliter la gestion des soutenances de projet à l'IUT.",
+    type: t("projects.datas.types.student"),
+    category: t("projects.datas.types.web"),
+    status: t("projects.datas.status.finished"),
+    description: t("projects.datas.webSoutenances.description"),
     features: ["MySQL"],
     link: "/projects/app-web-soutenances",
     featured: false,
@@ -84,10 +83,10 @@ export const projectsData = [
   }
 ];
 
-export const getFeaturedProjects = () => {
-  return projectsData.filter(project => project.featured);
+export const getFeaturedProjects = (t) => {
+  return getProjectsData(t).filter(project => project.featured);
 };
 
-export const getProjects = () => {
-  return projectsData;
+export const getProjects = (t) => {
+  return getProjectsData(t);
 };

@@ -9,7 +9,9 @@
     "about": "À propos",
     "aboutText1": "Actuellement en 2ème année de BUT Informatique Graphique à l'IUT du Puy-en-Velay, je me spécialise dans le développement de jeux vidéo plus précisément en programmation gameplay.",
     "aboutText2": "Mon objectif est de contribuer à des projets innovants et de continuer à développer mes compétences dans l'industrie du jeu vidéo.",
-    "readMore": "En savoir plus →"
+    "readMore": "En savoir plus →",
+    "featuredProject": "Projet principal",
+    "featuredProjects": "Projets principaux"
   },
   "header": {
     "home": "Accueil",
@@ -33,7 +35,43 @@
   "projects": {
     "title": "Mes projets",
     "subtitle": "Découvrez mes différents projets de développement",
-    "readMore": "En savoir plus →"
+    "readMore": "En savoir plus →",
+
+    "datas": {
+      "types": {
+        "student": "Projet étudiant",
+        "personal": "Personnel"
+      },
+      "categories": {
+        "videogame": "Jeu vidéo",
+        "bot": "Bot",
+        "web": "Web"
+      },
+      "status": {
+        "inprogress": "En cours",
+        "finished": "Terminé"
+      },
+
+
+
+      "libet": {
+        "description": "Jeu 3D à la première personne dans lequel le joueur incarne 'Libet', un vieil homme atteint d'Alzheimer, vivant sa vie tandis qu'il perd progressivement la raison."
+      },
+      "projectMycoria": {
+        "description": "Jeu 3D d'exploration et narratif se déroulant dans la région du Livradois-Forez. Incarnez Vincent Morel, agent de la DGSI, chargé d'enquêter sur une série de disparitions mystérieuses."
+      },
+      "iplat": {
+        "description": "Court jeu de platforme en 2D développé en 1 semaine avec le framework Löve2D."
+      },
+      "botSteam": {
+        "description": "Bot Discord permettant de suivre les soldes Steam et recevoir des notifications pour vos jeux favoris."
+      },
+      "webSoutenances": {
+        "description": "Application web développée pour faciliter la gestion des soutenances de projet à l'IUT."
+      }
+
+
+    }
   },
   "cv": {
     "title": "Mon CV",

@@ -5,8 +5,8 @@ import { useTranslation } from 'react-i18next';
 import '../styles/Projects.css';
 
 export default function Projects() {
-  const projects = getProjects();
   const { t } = useTranslation();
+  const projects = getProjects(t);
   const [filter, setFilter] = useState('Tous');
 
   const categories = ['Tous', 'Jeux vidéo', 'Web', 'Bot'];

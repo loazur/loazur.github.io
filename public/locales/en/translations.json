@@ -9,7 +9,9 @@
     "about": "About Me",
     "aboutText1": "Currently in 2nd year of Bachelor of Computer Science at Le Puy-en-Velay, I specialize in the development of video-games specifically in gameplay programming.",
     "aboutText2": "My goal is to contribute to innovative projects and continue to develop my skills in the video game industry.",
-    "readMore": "Learn more →"
+    "readMore": "Learn more →",
+    "featuredProject": "",
+    "featuredProjects": ""
   },
   "header": {
     "home": "Home",
@@ -33,7 +35,43 @@
   "projects": {
     "title": "My Projects",
     "subtitle": "Discover my different development projects",
-    "readMore": "Learn more →"
+    "readMore": "Learn more →",
+
+    "datas": {
+      "types": {
+        "student": "",
+        "personal": ""
+      },
+      "categories": {
+        "videogame": "",
+        "bot": "",
+        "web": ""
+      },
+      "status": {
+        "inprogress": "",
+        "finished": ""
+      },
+
+
+
+      "libet": {
+        "description": ""
+      },
+      "projectMycoria": {
+        "description": ""
+      },
+      "iplat": {
+        "description": ""
+      },
+      "botSteam": {
+        "description": ""
+      },
+      "webSoutenances": {
+        "description": ""
+      }
+
+
+    }
   },
   "cv": {
     "title": "My Resume",
