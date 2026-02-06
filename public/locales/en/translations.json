@@ -92,9 +92,9 @@
         "mention": "Honours",
         "grades": {
           "title": "Marks obtained:",
-          "oral": "Grand oral: 18/20",
-          "nsi": "Numérique et sciences informatiques: 19/20",
-          "english": "Anglais monde contemporain: 15/20"
+          "oral": "Final oral: 18/20",
+          "nsi": "Computer Sciences: 19/20",
+          "english": "English: 15/20"
         }
       }
     },
