@@ -95,9 +95,9 @@
         "mention": "Mention Assez Bien",
         "grades": {
           "title": "Notes obtenues:",
-          "oral": "Grand oral: 18",
-          "nsi": "Numérique et sciences informatiques: 19",
-          "english": "Anglais monde contemporain: 15"
+          "oral": "Grand oral: 18/20",
+          "nsi": "Numérique et sciences informatiques: 19/20",
+          "english": "Anglais monde contemporain: 15/20"
         }
       }
     },
