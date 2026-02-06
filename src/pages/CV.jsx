@@ -2,6 +2,8 @@ import '../styles/CV.css';
 import { useTranslation } from 'react-i18next';
 
 export default function CV() {
+  const { t } = useTranslation();
+
   const downloadCV = () => {
     const link = document.createElement('a');
     link.href = '/CV-Clément BOUNAIX.pdf';
@@ -10,8 +12,6 @@ export default function CV() {
     link.click();
     document.body.removeChild(link);
   };
-
-  const { t } = useTranslation();
 
   return (
     <section className="cv">
@@ -24,83 +24,76 @@ export default function CV() {
 
       <div className="cv-content">
         <section className="cv-section">
-          <h2>Formation</h2>
+          <h2>{t("cv.sections.education")}</h2>
+          
           <div className="cv-item">
             <div className="cv-meta">
-              <h3>BUT Informatique Graphique</h3>
-              <span className="date">2024 - 2027</span>
+              <h3>{t("cv.education.but.title")}</h3>
+              <span className="date">{t("cv.education.but.date")}</span>
             </div>
-            <p className="institution">Université Clermont Auvergne - IUT Le Puy-en-Velay</p>
-            <p>Programmation en C++, Bases de données, Gestion de projets, Moteurs Unreal Engine et Unity</p>
+            <p className="institution">{t("cv.education.but.institution")}</p>
+            <p>{t("cv.education.but.description")}</p>
           </div>
 
           <div className="cv-item">
             <div className="cv-meta">
-              <h3>Baccalauréat général - Spécialités NSI, Anglais</h3>
-              <span className="date">2021 - 2024</span>
+              <h3>{t("cv.education.bac.title")}</h3>
+              <span className="date">{t("cv.education.bac.date")}</span>
             </div>
-            <p className="institution">Lycée Simone Weil</p>
-            <p>Mention Assez Bien</p>
+            <p className="institution">{t("cv.education.bac.institution")}</p>
+            <p>{t("cv.education.bac.mention")}</p>
             <ul>
-              <h4>Notes obtenues:</h4>
-              <li>Grand oral: 18</li>
-              <li>Numérique et sciences informatiques: 19</li>
-              <li>Anglais monde contemporain: 15</li>
+              <h4>{t("cv.education.bac.grades.title")}</h4>
+              <li>{t("cv.education.bac.grades.oral")}</li>
+              <li>{t("cv.education.bac.grades.nsi")}</li>
+              <li>{t("cv.education.bac.grades.english")}</li>
             </ul>
           </div>
         </section>
 
         <section className="cv-section">
-          <h2>Projets</h2>
+          <h2>{t("cv.sections.projects")}</h2>
           <div className="cv-item">
             <div className="cv-meta">
-              <h3>Programmation d'un jeu Unity - « LIBET »</h3>
-              <span className="date">Oct. 2025 - Juin 2026</span>
+              <h3>{t("cv.projects.libet.title")}</h3>
+              <span className="date">{t("cv.projects.libet.date")}</span>
             </div>
-            <p className="institution">IUT Le Puy-en-Velay</p>
-            <p>Jeu à la première personne, incarnez 'Libet' un vieil homme atteint d'Alzheimer, succombant peu à peu à sa maladie</p>
-            <p><em>Utilisation d'Unity/C#, Gestion du projet avec Jira et Github, Répartition des tâches</em></p>
+            <p className="institution">{t("cv.projects.libet.institution")}</p>
+            <p>{t("cv.projects.libet.description")}</p>
+            <p><em>{t("cv.projects.libet.skills")}</em></p>
           </div>
 
           <div className="cv-item">
             <div className="cv-meta">
-              <h3>Programmation d'un jeu Unreal Engine - « Project Mycoria »</h3>
-              <span className="date">Janv. - Juin 2025</span>
+              <h3>{t("cv.projects.mycoria.title")}</h3>
+              <span className="date">{t("cv.projects.mycoria.date")}</span>
             </div>
-            <p className="institution">IUT Le Puy-en-Velay</p>
-            <p>Conception d'un jeu narratif se déroulant dans le parc naturel du Livradois-Forez en Haute-Loire, commandé par l'Université elle même</p>
-            <p><em>Gestion de version sur Github, Programmation en Blueprint, Optimisation d'objets 3D, Création de niveaux</em></p>
+            <p className="institution">{t("cv.projects.mycoria.institution")}</p>
+            <p>{t("cv.projects.mycoria.description")}</p>
+            <p><em>{t("cv.projects.mycoria.skills")}</em></p>
           </div>
 
           <div className="cv-item">
             <div className="cv-meta">
-              <h3>Programmation et maintien d'un serveur Minecraft</h3>
-              <span className="date">Juill. - Août 2021</span>
+              <h3>{t("cv.projects.minecraft.title")}</h3>
+              <span className="date">{t("cv.projects.minecraft.date")}</span>
             </div>
-            <p className="institution">Projet en équipe hors du cadre académique</p>
-            <p>Développement et gestion d'un serveur multijoueur axé « Minijeux ». Et organisation d'un événement en jeu avec argent à gagner.</p>
-            <p><em>Travail d'équipe, Gestion d'événements en jeu, Programmation en Java</em></p>
+            <p className="institution">{t("cv.projects.minecraft.institution")}</p>
+            <p>{t("cv.projects.minecraft.description")}</p>
+            <p><em>{t("cv.projects.minecraft.skills")}</em></p>
           </div>
 
           <div className="cv-item">
             <div className="cv-meta">
-              <h3>Conception d'un jeu 2D - « IPlat »</h3>
-              <span className="date">Oct. 2021</span>
+              <h3>{t("cv.projects.iplat.title")}</h3>
+              <span className="date">{t("cv.projects.iplat.date")}</span>
             </div>
-            <p className="institution">Projet en autodidacte</p>
-            <p>Création d'un court jeu de plateforme en 1 semaine</p>
-            <p><em>Utilisation du framework Löve2D et du Lua, Gestion d'assets, Création de maps avec Tiled</em></p>
-          </div>
-        </section>
-
-        <section className="cv-section">
-          <h2>Langues</h2>
-          <div className="cv-item">
-            <p><strong>Français :</strong> Langue maternelle</p>
-            <p><strong>Anglais :</strong> Niveau B2</p>
+            <p className="institution">{t("cv.projects.iplat.institution")}</p>
+            <p>{t("cv.projects.iplat.description")}</p>
+            <p><em>{t("cv.projects.iplat.skills")}</em></p>
           </div>
         </section>
       </div>
-    </section>
-  );
+     </section>
+  )
 }
