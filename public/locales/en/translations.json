@@ -7,7 +7,7 @@
     "contactMe": "Contact Me",
     "scrollToDiscover": "Scroll to Discover",
     "about": "About Me",
-    "aboutText1": "Currently in 2nd year of Bachelor of Computer Science at Le Puy-en-Velay, I specialize in the development of video-games specifically in gameplay programming.",
+    "aboutText1": "Currently in 2nd year of University Bachelor of Technology in Computer Science at Le Puy-en-Velay, I specialize in the development of video-games specifically in gameplay programming.",
     "aboutText2": "My goal is to contribute to innovative projects and continue to develop my skills in the video game industry.",
     "readMore": "Learn more →",
     "featuredProject": "Main project",
@@ -75,57 +75,57 @@
     "title": "My Resume",
     "download": "⬇ Download my resume",
     "sections": {
-      "education": "Formation",
-      "projects": "Projets"
+      "education": "Education",
+      "projects": "Projects"
     },
     "education": {
       "but": {
-        "title": "BUT Informatique Graphique",
+        "title": "University Bachelor of Technology in Computer Science",
         "date": "2024 - 2027",
-        "institution": "Université Clermont Auvergne - IUT Le Puy-en-Velay",
-        "description": "Programmation en C++, Bases de données, Gestion de projets, Moteurs Unreal Engine et Unity"
+        "institution": "University Institute of Technology of Le Puy-en-Velay",
+        "description": "C++ Programming, Databases, Project Management, Unreal Engine and Unity"
       },
       "bac": {
-        "title": "Baccalauréat général - Spécialités NSI, Anglais",
+        "title": "High School Diploma - Specialities Computer Science, English",
         "date": "2021 - 2024",
-        "institution": "Lycée Simone Weil",
-        "mention": "Mention Assez Bien",
+        "institution": "Simone Weil High School",
+        "mention": "Honours",
         "grades": {
-          "title": "Notes obtenues:",
-          "oral": "Grand oral: 18",
-          "nsi": "Numérique et sciences informatiques: 19",
-          "english": "Anglais monde contemporain: 15"
+          "title": "Marks obtained:",
+          "oral": "Final oral: 18/20",
+          "nsi": "Computer Sciences: 19/20",
+          "english": "English: 15/20"
         }
       }
     },
     "projects": {
       "libet": {
-        "title": "Programmation d'un jeu Unity - « LIBET »",
-        "date": "Oct. 2025 - Juin 2026",
-        "institution": "IUT Le Puy-en-Velay",
-        "description": "Jeu à la première personne, incarnez 'Libet' un vieil homme atteint d'Alzheimer, succombant peu à peu à sa maladie",
-        "skills": "Utilisation d'Unity/C#, Gestion du projet avec Jira et Github, Répartition des tâches"
+        "title": "Unity Game Programming - \"LIBET\"",
+        "date": "Oct. 2025 - June 2026",
+        "institution": "University Institute of Technology of Le Puy-en-Velay",
+        "description": "Play in the first person, incarnate 'Libet' an old man with Alzheimer, slowly succumbing to his disease",
+        "skills": "Using Unity/C#, Project Management with Jira and Github, Task Distribution"
       },
       "mycoria": {
-        "title": "Programmation d'un jeu Unreal Engine - « Project Mycoria »",
-        "date": "Janv. - Juin 2025",
-        "institution": "IUT Le Puy-en-Velay",
-        "description": "Conception d'un jeu narratif se déroulant dans le parc naturel du Livradois-Forez en Haute-Loire, commandé par l'Université elle même",
-        "skills": "Gestion de version sur Github, Programmation en Blueprint, Optimisation d'objets 3D, Création de niveaux"
+        "title": "Unreal Engine Game Programming - \"Project Mycoria\"",
+        "date": "Jan. - June 2025",
+        "institution": "University Institute of Technology of Le Puy-en-Velay",
+        "description": "Design of a storytelling game located in the Livradois-Forez Nature Park in the Upper Loire, commissioned by the University itself",
+        "skills": "Version management on Github, Blueprint programming, 3D object optimization, Levels creation"
       },
       "minecraft": {
-        "title": "Programmation et maintien d'un serveur Minecraft",
-        "date": "Juill. - Août 2021",
-        "institution": "Projet en équipe hors du cadre académique",
-        "description": "Développement et gestion d'un serveur multijoueur axé « Minijeux ». Et organisation d'un événement en jeu avec argent à gagner.",
-        "skills": "Travail d'équipe, Gestion d'événements en jeu, Programmation en Java"
+        "title": "Programming and maintaining a Minecraft server",
+        "date": "Jul - August 2021",
+        "institution": "Team project outside the academic",
+        "description": "Development and management of a multiplayer server \"Minigames\". And organization of a game event with money to win.",
+        "skills": "Teamwork, Game Events Management, Java Programming"
       },
       "iplat": {
-        "title": "Conception d'un jeu 2D - « IPlat »",
+        "title": "Design of a 2D game - \"IPlat\"",
         "date": "Oct. 2021",
-        "institution": "Projet en autodidacte",
-        "description": "Création d'un court jeu de plateforme en 1 semaine",
-        "skills": "Utilisation du framework Löve2D et du Lua, Gestion d'assets, Création de maps avec Tiled"
+        "institution": "Self-taught project",
+        "description": "Creating a short platform game in 1 week",
+        "skills": "Using the Löve2D and Lua framework, Assets management, Tiled Map Creation"
       }
     }
   }
