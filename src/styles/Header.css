@@ -17,7 +17,7 @@
   max-width: 1200px;
   margin: 0 auto;
   padding: 1rem 2rem;
-  min-height: 60px; /* Hauteur minimale */
+  min-height: 60px;
 }
 
 .nav {
@@ -67,30 +67,32 @@
 
 @media (max-width: 768px) {
   .header .container {
-    flex-direction: column;
-    gap: 1rem;
     padding: 1rem;
-    min-height: auto;
+    /* Garde flex-direction: row pour garder tout sur la même ligne */
   }
 
   .nav {
     gap: 1rem;
-    justify-content: center;
-    width: 100%;
-  }
-
-  .nav-link {
-    font-size: 0.9rem;
-  }
-}
-
-@media (max-width: 480px) {
-  .nav {
-    gap: 0.75rem;
+    flex: 1; /* Prend l'espace disponible */
   }
 
   .nav-link {
     font-size: 0.85rem;
+    padding: 0.25rem 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .header .container {
+    padding: 0.75rem 1rem;
+  }
+
+  .nav {
+    gap: 0.5rem;
+  }
+
+  .nav-link {
+    font-size: 0.75rem;
     padding: 0.25rem 0;
   }
 }

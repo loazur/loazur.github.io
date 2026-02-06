@@ -18,21 +18,36 @@ export default function Home() {
     return statusMap[status] || { class: 'completed', label: status };
   };
 
+  // Texte qui défile
+  const scrollingTextTop = t("home.scrollingtext");
+
   return (
     <section className="home">
       <div className="home-content">
         <div className="home-header">
+          {/* Ligne défilante au-dessus du nom */}
+          <div className="scrolling-text-container top">
+            <div className="scrolling-text">
+              <span>{scrollingTextTop}</span>
+              <span>{scrollingTextTop}</span>
+              <span>{scrollingTextTop}</span>
+            </div>
+          </div>
+
           <h1 className="home-title">
             Clément <span className="highlight">Bounaix</span>
           </h1>
           <p className="home-subtitle">
             {t("home.subtitle")}
           </p>
-          <p className="home-description">
-            {t("home.description")}<br/>
-            <strong>{t("home.inDevelopment")}</strong>
-          </p>
+
+          
         </div>
+
+        <p className="home-description">
+          {t("home.description")}<br/>
+          <strong>{t("home.inDevelopment")}</strong>
+        </p>
         
         <div className="home-cta">
           <Link to="/projects" className="btn btn-primary">

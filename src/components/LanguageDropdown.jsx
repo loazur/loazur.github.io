@@ -1,6 +1,7 @@
 import { useState, useEffect, useRef } from 'react';
 import { useTranslation } from 'react-i18next';
 import '../styles/LanguageDropdown.css';
+import IconTranslation from "../assets/icons/icon-translation.webp";
 
 export default function LanguageDropdown() {
   const { t, i18n } = useTranslation();
@@ -37,7 +38,7 @@ export default function LanguageDropdown() {
         className="language-dropdown-trigger"
         onClick={() => setIsOpen(!isOpen)}
       >
-        <span className="language-icon">🌐</span>
+        <img src={IconTranslation} alt="" className="language-icon" />
         <span className="language-flag">{currentLanguage.flag}</span>
         <span className="language-arrow">{isOpen ? '▲' : '▼'}</span>
       </button>

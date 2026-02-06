@@ -1,6 +1,7 @@
 .language-dropdown {
   position: relative;
   display: inline-block;
+  flex-shrink: 0; /* Empêche le dropdown de se comprimer */
 }
 
 .language-dropdown-trigger {
@@ -23,7 +24,9 @@
 }
 
 .language-icon {
-  font-size: 1.2rem;
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
 }
 
 .language-flag {
@@ -97,4 +100,44 @@
 .language-check {
   color: var(--accent-primary);
   font-weight: bold;
+}
+
+/* Responsive pour mobile */
+@media (max-width: 768px) {
+  .language-dropdown-trigger {
+    padding: 0.4rem 0.6rem;
+    gap: 0.3rem;
+  }
+
+  .language-icon {
+    width: 16px;
+    height: 16px;
+  }
+
+  .language-flag {
+    font-size: 1rem;
+  }
+
+  .language-dropdown-menu {
+    min-width: 180px;
+  }
+}
+
+@media (max-width: 480px) {
+  .language-dropdown-trigger {
+    padding: 0.3rem 0.5rem;
+  }
+
+  .language-icon {
+    width: 14px;
+    height: 14px;
+  }
+
+  .language-flag {
+    font-size: 0.9rem;
+  }
+
+  .language-arrow {
+    font-size: 0.6rem;
+  }
 }
