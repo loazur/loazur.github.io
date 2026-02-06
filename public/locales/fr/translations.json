@@ -55,8 +55,6 @@
         "prototype": "Prototype"
       },
 
-
-
       "libet": {
         "description": "Jeu 3D à la première personne dans lequel le joueur incarne 'Libet', un vieil homme atteint d'Alzheimer, vivant sa vie tandis qu'il perd progressivement la raison."
       },
@@ -78,6 +76,60 @@
   },
   "cv": {
     "title": "Mon CV",
-    "download": "⬇ Télécharger mon CV"
+    "download": "⬇ Télécharger mon CV",
+    "sections": {
+      "education": "Formation",
+      "projects": "Projets"
+    },
+    "education": {
+      "but": {
+        "title": "BUT Informatique Graphique",
+        "date": "2024 - 2027",
+        "institution": "Université Clermont Auvergne - IUT Le Puy-en-Velay",
+        "description": "Programmation en C++, Bases de données, Gestion de projets, Moteurs Unreal Engine et Unity"
+      },
+      "bac": {
+        "title": "Baccalauréat général - Spécialités NSI, Anglais",
+        "date": "2021 - 2024",
+        "institution": "Lycée Simone Weil",
+        "mention": "Mention Assez Bien",
+        "grades": {
+          "title": "Notes obtenues:",
+          "oral": "Grand oral: 18",
+          "nsi": "Numérique et sciences informatiques: 19",
+          "english": "Anglais monde contemporain: 15"
+        }
+      }
+    },
+    "projects": {
+      "libet": {
+        "title": "Programmation d'un jeu Unity - « LIBET »",
+        "date": "Oct. 2025 - Juin 2026",
+        "institution": "IUT Le Puy-en-Velay",
+        "description": "Jeu à la première personne, incarnez 'Libet' un vieil homme atteint d'Alzheimer, succombant peu à peu à sa maladie",
+        "skills": "Utilisation d'Unity/C#, Gestion du projet avec Jira et Github, Répartition des tâches"
+      },
+      "mycoria": {
+        "title": "Programmation d'un jeu Unreal Engine - « Project Mycoria »",
+        "date": "Janv. - Juin 2025",
+        "institution": "IUT Le Puy-en-Velay",
+        "description": "Conception d'un jeu narratif se déroulant dans le parc naturel du Livradois-Forez en Haute-Loire, commandé par l'Université elle même",
+        "skills": "Gestion de version sur Github, Programmation en Blueprint, Optimisation d'objets 3D, Création de niveaux"
+      },
+      "minecraft": {
+        "title": "Programmation et maintien d'un serveur Minecraft",
+        "date": "Juill. - Août 2021",
+        "institution": "Projet en équipe hors du cadre académique",
+        "description": "Développement et gestion d'un serveur multijoueur axé « Minijeux ». Et organisation d'un événement en jeu avec argent à gagner.",
+        "skills": "Travail d'équipe, Gestion d'événements en jeu, Programmation en Java"
+      },
+      "iplat": {
+        "title": "Conception d'un jeu 2D - « IPlat »",
+        "date": "Oct. 2021",
+        "institution": "Projet en autodidacte",
+        "description": "Création d'un court jeu de plateforme en 1 semaine",
+        "skills": "Utilisation du framework Löve2D et du Lua, Gestion d'assets, Création de maps avec Tiled"
+      }
+    }
   }
 }

@@ -72,7 +72,61 @@
     }
   },
   "cv": {
-    "title": "My Resume",
-    "download": "⬇ Download my resume"
+    "title": "",
+    "download": "",
+    "sections": {
+      "education": "",
+      "projects": ""
+    },
+    "education": {
+      "but": {
+        "title": "",
+        "date": "",
+        "institution": "",
+        "description": ""
+      },
+      "bac": {
+        "title": "",
+        "date": "",
+        "institution": "",
+        "mention": "",
+        "grades": {
+          "title": "",
+          "oral": "",
+          "nsi": "",
+          "english": ""
+        }
+      }
+    },
+    "projects": {
+      "libet": {
+        "title": "",
+        "date": "",
+        "institution": "",
+        "description": "",
+        "skills": ""
+      },
+      "mycoria": {
+        "title": "",
+        "date": "",
+        "institution": "",
+        "description": "",
+        "skills": ""
+      },
+      "minecraft": {
+        "title": "",
+        "date": "",
+        "institution": "",
+        "description": "",
+        "skills": ""
+      },
+      "iplat": {
+        "title": "",
+        "date": "",
+        "institution": "",
+        "description": "",
+        "skills": ""
+      }
+    }
   }
 }
