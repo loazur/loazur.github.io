@@ -77,7 +77,7 @@
       },
       "botSteam": {
         "title": "Bot Discord Steam",
-        "description": "..."
+        "description": "Bot discord permettant d'afficher des informations de comptes Steam, et de lier son propre compte."
       },
       "webSoutenances": {
         "title": "Application web de gestion de soutenances",
@@ -85,12 +85,12 @@
       },
       "therapieMiroir-AR": {
         "title": "Réalité Augmentée - Thérapie miroir",
-        "description": "..."
+        "description": "Application de réalité augmentée s’appuyant sur la thérapie miroir pour la rééducation des personnes victimes d’un AVC."
       }
       ,
       "projetVapeur": {
         "title": "Projet Vapeur",
-        "description": "..."
+        "description": "Application web inspirée de Steam, reproduisant ses principes et fonctionnalités essentielles."
       }
 
 
