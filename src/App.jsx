@@ -11,6 +11,8 @@ import ProjectMycoria from './pages/projects/ProjectMycoria';
 import IPlat from './pages/projects/IPlat';
 import BotDiscordSteam from './pages/projects/BotDiscordSteam';
 import AppWebSoutenances from './pages/projects/AppWebSoutenances';
+import AR_CHU from './pages/projects/AR-CHU';
+
 import './App.css';
 import { useTranslation } from 'react-i18next';
 import { useEffect } from 'react';
@@ -38,6 +40,7 @@ function App() {
           <Route path="/projects/iplat" element={<IPlat />} />
           <Route path="/projects/bot-discord-steam" element={<BotDiscordSteam />} />
           <Route path="/projects/app-web-soutenances" element={<AppWebSoutenances />} />
+          <Route path="/projects/therapie-miroir-ar" element={<AR_CHU />} />
         </Routes>
       </MainLayout>
     </Router>

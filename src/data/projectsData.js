@@ -5,16 +5,16 @@ import IPlatMainPicture from '../assets/IPlat/iplat-picture1.webp';
 import BotDiscordMainPicture from '../assets/BotDiscordSteam/botdiscordsteam-picture2.webp';
 import AppWebSoutenancesMainPicture from '../assets/AppWebSoutenances/gestion-soutenances-picture1.webp';
 
-// Données des projets avec clés de catégorie
+// Données des projets
 export const getProjectsData = (t) => [
   {
     id: 1,
-    title: "LIBET",
+    title: t("projects.datas.libet.title"),
     engine: "Unity 6",
     year: "2025-2026",
     type: t("projects.datas.types.student"),
-    categoryKey: "videogame", // Clé fixe
-    category: t("projects.datas.categories.videogame"), // Traduction pour affichage
+    categoryKey: "videogame", 
+    category: t("projects.datas.categories.videogame"),
     status: t("projects.datas.status.inprogress"),
     description: t("projects.datas.libet.description"),
     features: ["FMOD"],
@@ -25,7 +25,7 @@ export const getProjectsData = (t) => [
   },
   {
     id: 2,
-    title: "Project Mycoria",
+    title: t("projects.datas.projectMycoria.title"),
     engine: "Unreal Engine 5",
     year: "2025",
     type: t("projects.datas.types.student"),
@@ -41,7 +41,7 @@ export const getProjectsData = (t) => [
   },
   {
     id: 3,
-    title: "IPlat",
+    title: t("projects.datas.iplat.title"),
     engine: "Löve2D",
     year: "2021",
     type: t("projects.datas.types.personal"),
@@ -57,7 +57,7 @@ export const getProjectsData = (t) => [
   },
   {
     id: 4,
-    title: "Bot Discord Steam",
+    title: t("projects.datas.botSteam.title"),
     engine: "JavaScript",
     year: "2024-2025",
     type: t("projects.datas.types.personal"),
@@ -73,7 +73,7 @@ export const getProjectsData = (t) => [
   },
   {
     id: 5,
-    title: "Application web de gestion de soutenances",
+    title: t("projects.datas.webSoutenances.title"),
     engine: "PHP",
     year: "2025",
     type: t("projects.datas.types.student"),
@@ -86,7 +86,24 @@ export const getProjectsData = (t) => [
     featured: false,
     openSource: false,
     image: AppWebSoutenancesMainPicture
+  },
+  {
+    id: 6,
+    title: t("projects.datas.therapieMiroir-AR.title"),
+    engine: "Unity 6",
+    year: "2026",
+    type: t("projects.datas.types.student"),
+    categoryKey: "other",
+    category: t("projects.datas.categories.other"),
+    status: t("projects.datas.status.inprogress"),
+    description: t("projects.datas.therapieMiroir-AR.description"),
+    features: ["C#", "Meta Quest"],
+    link: "/projects/therapie-miroir-ar",
+    featured: true,
+    openSource: false,
+    image: null
   }
+  
 ];
 
 export const getFeaturedProjects = (t) => {

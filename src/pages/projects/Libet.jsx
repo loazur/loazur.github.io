@@ -11,7 +11,7 @@ export default function Libet() {
   const projectData = {
     title: "LIBET - Jeu narratif en développement",
     tags: ["Unity 6", "Jeu Narratif", "Open Source"],
-    date: "Oct. 2025 - Juin 2026",
+    date: "Oct. 2025 - Mars 2026",
     links: [
       { url: "https://github.com/loazur/LIBET", label: "GitHub", primary: true }
     ],

@@ -13,7 +13,8 @@ export default function Projects() {
     { key: "all", label: t("projects.filters.all") },
     { key: "videogame", label: t("projects.datas.categories.videogame") },
     { key: "web", label: t("projects.datas.categories.web") },
-    { key: "bot", label: t("projects.datas.categories.bot") }
+    { key: "bot", label: t("projects.datas.categories.bot") },
+    { key: "other", label: t("projects.datas.categories.other") }
   ];
 
   const getStatusBadge = (status) => {
@@ -29,9 +30,15 @@ export default function Projects() {
     };
   };
 
-  const filteredProjects = filter === "all"
+  const filteredProjects = (filter === "all"
     ? projects 
-    : projects.filter(project => project.categoryKey === filter); 
+    : projects.filter(project => project.categoryKey === filter))
+    .sort((a, b) => {
+      const inProgressStatus = t('projects.datas.status.inprogress');
+      if (a.status === inProgressStatus && b.status !== inProgressStatus) return -1;
+      if (a.status !== inProgressStatus && b.status === inProgressStatus) return 1;
+      return 0;
+    });
 
   return (
     <section className="projects">
