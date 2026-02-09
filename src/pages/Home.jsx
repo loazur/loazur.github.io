@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import { GitHubCalendar } from 'react-github-calendar';
 import { getFeaturedProjects } from '../data/projectsData';
+import TechPieChart from '../components/TechPieChart';
 import '../styles/Home.css';
 
 import { useTranslation } from 'react-i18next';
@@ -32,14 +33,12 @@ export default function Home() {
     };
   };
 
-  // Texte qui défile
   const scrollingTextTop = t("home.scrollingtext");
 
   return (
     <section className="home">
       <div className="home-content">
         <div className="home-header">
-          {/* Ligne défilante au-dessus du nom */}
           <div className="scrolling-text-container top">
             <div className="scrolling-text">
               <span>{scrollingTextTop}</span>
@@ -54,8 +53,6 @@ export default function Home() {
           <p className="home-subtitle">
             {t("home.subtitle")}
           </p>
-
-          
         </div>
 
         <p className="home-description">
@@ -92,6 +89,8 @@ export default function Home() {
           <GitHubCalendar username="loazur" />
         </div>
       </div>
+
+      <TechPieChart />
 
       <div className="home-featured">
         <h2>{featuredProjects.length === 1 ? t("home.featuredProject") : t("home.featuredProjects")}</h2>

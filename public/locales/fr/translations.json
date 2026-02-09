@@ -12,7 +12,13 @@
     "aboutText2": "Mon objectif est de contribuer à des projets innovants et créatifs, tout en continuant à développer mes compétences dans le jeu vidéo, et au-delà. Je travaille aussi sur d’autres projets.",
     "readMore": "En savoir plus →",
     "featuredProject": "Projet principal",
-    "featuredProjects": "Projets principaux"
+    "featuredProjects": "Projets principaux",
+
+    "techChart": {
+      "title": "Technologies les plus utilisées",
+      "project": "projet",
+      "projects": "projets"
+    }
   },
   "header": {
     "home": "Accueil",
