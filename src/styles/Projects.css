@@ -253,6 +253,41 @@
   color: rgba(255, 255, 255, 0.1);
 }
 
+/* Style sobre pour les badges de catégorie */
+.project-category-badge, .featured-category-badge {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  padding: 0.4rem 0.9rem;
+  border-radius: 4px;
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+  z-index: 2;
+  background-color: rgba(0, 0, 0, 0.85);
+  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(4px);
+}
+
+.category-videogame,
+.category-web,
+.category-bot,
+.category-other {
+  background-color: rgba(0, 0, 0, 0.85);
+  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.project-card:hover .project-category-badge,
+.featured-card:hover .featured-category-badge {
+  background-color: rgba(255, 255, 255, 0.95);
+  color: #000000;
+  border-color: rgba(255, 255, 255, 0.9);
+}
+
 @media (max-width: 768px) {
   .projects {
     padding: 2rem 1rem;

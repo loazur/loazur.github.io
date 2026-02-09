@@ -30,6 +30,20 @@ export default function Projects() {
     };
   };
 
+  const getCategoryBadge = (categoryKey) => {
+    const categoryClasses = {
+      'videogame': 'category-videogame',
+      'web': 'category-web',
+      'bot': 'category-bot',
+      'other': 'category-other'
+    };
+
+    return {
+      class: categoryClasses[categoryKey] || 'category-other',
+      label: t(`projects.datas.categories.${categoryKey}`)
+    };
+  };
+
   const filteredProjects = (filter === "all"
     ? projects 
     : projects.filter(project => project.categoryKey === filter))
@@ -62,11 +76,15 @@ export default function Projects() {
       <div className="projects-grid">
         {filteredProjects.map((project) => {
           const statusInfo = getStatusBadge(project.status);
+          const categoryInfo = getCategoryBadge(project.categoryKey);
           
           return (
             <div key={project.id} className="project-card">
               <div className={`project-card-image ${!project.image ? 'no-image' : ''}`}>
                 {project.image && <img src={project.image} alt={project.title} />}
+                <span className={`project-category-badge ${categoryInfo.class}`}>
+                  {categoryInfo.label}
+                </span>
                 <span className={`project-status-badge ${statusInfo.class}`}>
                   {statusInfo.label}
                 </span>

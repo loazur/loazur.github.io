@@ -11,11 +11,25 @@ export default function Home() {
 
   const getStatusBadge = (status) => {
     const statusMap = {
-      'En cours': { class: 'ongoing', label: status },
-      'Terminé': { class: 'completed', label: status },
-      'Prototype': { class: 'prototype', label: status }
+      [t('projects.datas.status.inprogress')]: { class: 'ongoing', label: status },
+      [t('projects.datas.status.finished')]: { class: 'completed', label: status },
+      [t('projects.datas.status.prototype')]: { class: 'prototype', label: status }
     };
     return statusMap[status] || { class: 'completed', label: status };
+  };
+
+  const getCategoryBadge = (categoryKey) => {
+    const categoryClasses = {
+      'videogame': 'category-videogame',
+      'web': 'category-web',
+      'bot': 'category-bot',
+      'other': 'category-other'
+    };
+
+    return {
+      class: categoryClasses[categoryKey] || 'category-other',
+      label: t(`projects.datas.categories.${categoryKey}`)
+    };
   };
 
   // Texte qui défile
@@ -84,11 +98,15 @@ export default function Home() {
         <div className="featured-grid">
           {featuredProjects.map(project => {
             const statusInfo = getStatusBadge(project.status);
+            const categoryInfo = getCategoryBadge(project.categoryKey);
             
             return (
               <div key={project.id} className="featured-card">
                 <div className={`featured-card-image ${!project.image ? 'no-image' : ''}`}>
                   {project.image && <img src={project.image} alt={project.title} />}
+                  <span className={`featured-category-badge ${categoryInfo.class}`}>
+                    {categoryInfo.label}
+                  </span>
                   <span className={`featured-status-badge ${statusInfo.class}`}>
                     {statusInfo.label}
                   </span>
