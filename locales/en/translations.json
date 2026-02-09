@@ -12,7 +12,12 @@
     "aboutText2": "My goal is to contribute to innovative and creative projects, while continuing to develop my skills in the video-game and beyond. I am also working on other projects.",
     "readMore": "Learn more →",
     "featuredProject": "Main project",
-    "featuredProjects": "Main projects"
+    "featuredProjects": "Main projects",
+    "techChart": {
+      "title": "Most used technologies",
+      "project": "project",
+      "projects": "projects"
+    }
   },
   "header": {
     "home": "Home",
@@ -48,7 +53,8 @@
       "categories": {
         "videogame": "Video game",
         "bot": "Bot",
-        "web": "Web"
+        "web": "Web",
+        "other": "Other"
       },
       "status": {
         "inprogress": "In Progress",
@@ -56,19 +62,32 @@
         "prototype": "Prototype"
       },
       "libet": {
+        "title": "LIBET",
         "description": "3D Game at the first person in which the player embodies 'Libet', an old man with Alzheimer, living his life while he gradually loses reason."
       },
       "projectMycoria": {
+        "title": "Project Mycoria",
         "description": "3D game of exploration and narrative wandering in the Livradois-Forez region. Play as Vincent Morel, a DGSI officer, charged with committing to a series of mysterious disappearances."
       },
       "iplat": {
-        "description": "Short 2D platform game developed in 1 week with the Lo<unk> ve2D framework."
+        "title": "IPlat",
+        "description": "Short 2D platform game developed in 1 week with the Löve2D framework."
       },
       "botSteam": {
-        "description": "Bot Discord permettant de suivre les soldes Steam et recevoir des notifications pour vos jeux favoris."
+        "title": "Discord Steam Bot",
+        "description": "Bot discord allowing to display Steam account information, and link its own account."
       },
       "webSoutenances": {
+        "title": "Defense Management Web Application",
         "description": "Web application developed to facilitate the management of defenses at the University."
+      },
+      "therapieMiroir-AR": {
+        "title": "Augmented Reality - Mirror Therapy",
+        "description": "Augmented Reality application based on Mirror Therapy for the re-education of stroke victims."
+      },
+      "projetVapeur": {
+        "title": "Steam Project",
+        "description": "Steam-inspired web application, reproducing its essential principles and functionality."
       }
     }
   },

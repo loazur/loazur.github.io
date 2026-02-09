@@ -12,7 +12,13 @@
     "aboutText2": "Mon objectif est de contribuer à des projets innovants et créatifs, tout en continuant à développer mes compétences dans le jeu vidéo, et au-delà. Je travaille aussi sur d’autres projets.",
     "readMore": "En savoir plus →",
     "featuredProject": "Projet principal",
-    "featuredProjects": "Projets principaux"
+    "featuredProjects": "Projets principaux",
+
+    "techChart": {
+      "title": "Technologies les plus utilisées",
+      "project": "projet",
+      "projects": "projets"
+    }
   },
   "header": {
     "home": "Accueil",
@@ -48,7 +54,8 @@
       "categories": {
         "videogame": "Jeu vidéo",
         "bot": "Bot",
-        "web": "Web"
+        "web": "Web",
+        "other": "Autre"
       },
       "status": {
         "inprogress": "En cours",
@@ -57,19 +64,33 @@
       },
 
       "libet": {
+        "title": "LIBET",
         "description": "Jeu 3D à la première personne dans lequel le joueur incarne 'Libet', un vieil homme atteint d'Alzheimer, vivant sa vie tandis qu'il perd progressivement la raison."
       },
       "projectMycoria": {
+        "title": "Project Mycoria",
         "description": "Jeu 3D d'exploration et narratif se déroulant dans la région du Livradois-Forez. Incarnez Vincent Morel, agent de la DGSI, chargé d'enquêter sur une série de disparitions mystérieuses."
       },
       "iplat": {
+        "title": "IPlat",
         "description": "Court jeu de platforme en 2D développé en 1 semaine avec le framework Löve2D."
       },
       "botSteam": {
-        "description": "Bot Discord permettant de suivre les soldes Steam et recevoir des notifications pour vos jeux favoris."
+        "title": "Bot Discord Steam",
+        "description": "Bot discord permettant d'afficher des informations de comptes Steam, et de lier son propre compte."
       },
       "webSoutenances": {
+        "title": "Application web de gestion de soutenances",
         "description": "Application web développée pour faciliter la gestion des soutenances de projet à l'IUT."
+      },
+      "therapieMiroir-AR": {
+        "title": "Réalité Augmentée - Thérapie miroir",
+        "description": "Application de réalité augmentée s’appuyant sur la thérapie miroir pour la rééducation des personnes victimes d’un AVC."
+      }
+      ,
+      "projetVapeur": {
+        "title": "Projet Vapeur",
+        "description": "Application web inspirée de Steam, reproduisant ses principes et fonctionnalités essentielles."
       }
 
 
