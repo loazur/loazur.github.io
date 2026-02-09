@@ -49,7 +49,7 @@
         "videogame": "Video game",
         "bot": "Bot",
         "web": "Web",
-        "other": "Autre"
+        "other": "Other"
       },
       "status": {
         "inprogress": "In Progress",
@@ -69,15 +69,15 @@
         "description": "Short 2D platform game developed in 1 week with the Lo<unk> ve2D framework."
       },
       "botSteam": {
-        "title": "Bot Discord Steam",
+        "title": "Discord Steam Bot",
         "description": "Bot Discord permettant de suivre les soldes Steam et recevoir des notifications pour vos jeux favoris."
       },
       "webSoutenances": {
-        "title": "Application web de gestion de soutenances",
+        "title": "Defense management web application",
         "description": "Web application developed to facilitate the management of defenses at the University."
       },
       "therapieMiroir-AR": {
-        "title": "Réalité Augmentée - Thérapie miroir",
+        "title": "Augmented Reality - Mirror Therapy",
         "description": "..."
       }
     }
