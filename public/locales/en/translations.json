@@ -48,7 +48,8 @@
       "categories": {
         "videogame": "Video game",
         "bot": "Bot",
-        "web": "Web"
+        "web": "Web",
+        "other": "Autre"
       },
       "status": {
         "inprogress": "In Progress",
@@ -56,19 +57,28 @@
         "prototype": "Prototype"
       },
       "libet": {
+        "title": "LIBET",
         "description": "3D Game at the first person in which the player embodies 'Libet', an old man with Alzheimer, living his life while he gradually loses reason."
       },
       "projectMycoria": {
+        "title": "Project Mycoria",
         "description": "3D game of exploration and narrative wandering in the Livradois-Forez region. Play as Vincent Morel, a DGSI officer, charged with committing to a series of mysterious disappearances."
       },
       "iplat": {
+        "title": "IPlat",
         "description": "Short 2D platform game developed in 1 week with the Lo<unk> ve2D framework."
       },
       "botSteam": {
+        "title": "Bot Discord Steam",
         "description": "Bot Discord permettant de suivre les soldes Steam et recevoir des notifications pour vos jeux favoris."
       },
       "webSoutenances": {
+        "title": "Application web de gestion de soutenances",
         "description": "Web application developed to facilitate the management of defenses at the University."
+      },
+      "therapieMiroir-AR": {
+        "title": "Réalité Augmentée - Thérapie miroir",
+        "description": "..."
       }
     }
   },
