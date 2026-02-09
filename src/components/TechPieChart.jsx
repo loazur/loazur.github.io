@@ -7,6 +7,7 @@ export default function TechPieChart() {
   const { t } = useTranslation();
   const projects = getProjects(t);
   const [hoveredTech, setHoveredTech] = useState(null);
+  const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
 
   // Compter les occurrences de chaque technologie
   const techCount = {};
@@ -75,6 +76,15 @@ export default function TechPieChart() {
     return `M ${centerX} ${centerY} L ${x1} ${y1} A ${radius} ${radius} 0 ${largeArc} 1 ${x2} ${y2} Z`;
   };
 
+  const handleMouseMove = (e, tech) => {
+    setHoveredTech(tech);
+    setMousePosition({ x: e.clientX, y: e.clientY });
+  };
+
+  const handleMouseLeave = () => {
+    setHoveredTech(null);
+  };
+
   return (
     <div className="tech-pie-chart">
       <h3 className="chart-title">{t("home.techChart.title") || "Technologies les plus utilisées"}</h3>
@@ -89,8 +99,8 @@ export default function TechPieChart() {
                 stroke="#1a1a1a"
                 strokeWidth="2"
                 className={`pie-slice ${hoveredTech === slice.tech ? 'hovered' : ''}`}
-                onMouseEnter={() => setHoveredTech(slice.tech)}
-                onMouseLeave={() => setHoveredTech(null)}
+                onMouseMove={(e) => handleMouseMove(e, slice.tech)}
+                onMouseLeave={handleMouseLeave}
               />
             </g>
           ))}
@@ -101,8 +111,8 @@ export default function TechPieChart() {
             <div
               key={index}
               className={`legend-item ${hoveredTech === slice.tech ? 'active' : ''}`}
-              onMouseEnter={() => setHoveredTech(slice.tech)}
-              onMouseLeave={() => setHoveredTech(null)}
+              onMouseMove={(e) => handleMouseMove(e, slice.tech)}
+              onMouseLeave={handleMouseLeave}
             >
               <div
                 className="legend-color"
@@ -120,7 +130,13 @@ export default function TechPieChart() {
       </div>
 
       {hoveredTech && (
-        <div className="projects-popup">
+        <div 
+          className="projects-popup"
+          style={{
+            left: `${mousePosition.x + 15}px`,
+            top: `${mousePosition.y + 15}px`
+          }}
+        >
           <h4>{hoveredTech}</h4>
           <ul>
             {techProjects[hoveredTech].map((projectName, index) => (
