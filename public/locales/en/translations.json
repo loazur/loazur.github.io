@@ -14,9 +14,9 @@
     "featuredProject": "Main project",
     "featuredProjects": "Main projects",
     "techChart": {
-      "title": "Technologies les plus utilisées",
-      "project": "projet",
-      "projects": "projets"
+      "title": "Most used technologies",
+      "project": "project",
+      "projects": "projects"
     }
   },
   "header": {
@@ -78,7 +78,7 @@
         "description": "..."
       },
       "webSoutenances": {
-        "title": "Defense management web application",
+        "title": "Defense Management Web Application",
         "description": "Web application developed to facilitate the management of defenses at the University."
       },
       "therapieMiroir-AR": {
