@@ -12,7 +12,12 @@
     "aboutText2": "My goal is to contribute to innovative and creative projects, while continuing to develop my skills in the video-game and beyond. I am also working on other projects.",
     "readMore": "Learn more →",
     "featuredProject": "Main project",
-    "featuredProjects": "Main projects"
+    "featuredProjects": "Main projects",
+    "techChart": {
+      "title": "Technologies les plus utilisées",
+      "project": "projet",
+      "projects": "projets"
+    }
   },
   "header": {
     "home": "Home",
