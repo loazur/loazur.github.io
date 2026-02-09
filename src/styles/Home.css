@@ -542,3 +542,25 @@
   color: #000000;
   border-color: rgba(255, 255, 255, 0.9);
 }
+
+/* Styles pour les médias dans les featured projects */
+.project-media-video,
+.project-media-image,
+.featured-card-image .project-media-video,
+.featured-card-image .project-media-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.featured-card-image:hover .project-media-video,
+.featured-card-image:hover .project-media-image {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
+
+.featured-card-image {
+  overflow: hidden;
+  position: relative;
+}

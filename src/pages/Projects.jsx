@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { getProjects } from '../data/projectsData';
 import { useTranslation } from 'react-i18next';
+import MediaPreview from '../components/MediaPreview';
 import '../styles/Projects.css';
 
 export default function Projects() {
@@ -80,8 +81,13 @@ export default function Projects() {
           
           return (
             <div key={project.id} className="project-card">
-              <div className={`project-card-image ${!project.image ? 'no-image' : ''}`}>
-                {project.image && <img src={project.image} alt={project.title} />}
+              <div className={`project-card-image ${!project.image && !project.video ? 'no-image' : ''}`}>
+                <MediaPreview 
+                  image={project.image} 
+                  video={project.video}
+                  videoType={project.videoType}
+                  alt={project.title}
+                />
                 <span className={`project-category-badge ${categoryInfo.class}`}>
                   {categoryInfo.label}
                 </span>

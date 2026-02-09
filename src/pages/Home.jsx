@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom';
 import { GitHubCalendar } from 'react-github-calendar';
 import { getFeaturedProjects } from '../data/projectsData';
 import TechPieChart from '../components/TechPieChart';
+import MediaPreview from '../components/MediaPreview';
 import '../styles/Home.css';
 
 import { useTranslation } from 'react-i18next';
@@ -101,8 +102,13 @@ export default function Home() {
             
             return (
               <div key={project.id} className="featured-card">
-                <div className={`featured-card-image ${!project.image ? 'no-image' : ''}`}>
-                  {project.image && <img src={project.image} alt={project.title} />}
+                <div className={`featured-card-image ${!project.image && !project.video ? 'no-image' : ''}`}>
+                  <MediaPreview 
+                    image={project.image} 
+                    video={project.video}
+                    videoType={project.videoType}
+                    alt={project.title}
+                  />
                   <span className={`featured-category-badge ${categoryInfo.class}`}>
                     {categoryInfo.label}
                   </span>

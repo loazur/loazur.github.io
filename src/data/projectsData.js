@@ -5,6 +5,10 @@ import IPlatMainPicture from '../assets/IPlat/iplat-picture1.webp';
 import BotDiscordMainPicture from '../assets/BotDiscordSteam/botdiscordsteam-picture2.webp';
 import AppWebSoutenancesMainPicture from '../assets/AppWebSoutenances/gestion-soutenances-picture1.webp';
 
+// Import des vidéos (ajoutez vos vidéos dans le dossier assets)
+// import LibetVideo from '../assets/Libet/libet-preview.mp4';
+// import MycoriaVideo from '../assets/ProjectMycoria/mycoria-preview.mp4';
+
 // Données des projets
 export const getProjectsData = (t) => [
   {
@@ -21,7 +25,9 @@ export const getProjectsData = (t) => [
     link: "/projects/libet",
     featured: true,
     openSource: true,
-    image: LibetMainPicture
+    image: LibetMainPicture,
+    video: null, // Ajoutez le chemin de la vidéo ici : LibetVideo
+    videoType: "mp4" // Type de vidéo (mp4, webm, etc.)
   },
   {
     id: 2,
@@ -37,7 +43,9 @@ export const getProjectsData = (t) => [
     link: "/projects/project-mycoria",
     featured: false,
     openSource: false,
-    image: MycoriaMainPicture
+    image: MycoriaMainPicture,
+    video: null, // Ajoutez le chemin de la vidéo ici : MycoriaVideo
+    videoType: "mp4" // Type de vidéo (mp4, webm, etc.)
   },
   {
     id: 3,
@@ -53,7 +61,9 @@ export const getProjectsData = (t) => [
     link: "/projects/iplat",
     featured: false,
     openSource: true,
-    image: IPlatMainPicture
+    image: IPlatMainPicture,
+    video: null,
+    videoType: "mp4"
   },
   {
     id: 4,
@@ -69,7 +79,9 @@ export const getProjectsData = (t) => [
     link: "/projects/bot-discord-steam",
     featured: false,
     openSource: true,
-    image: BotDiscordMainPicture
+    image: BotDiscordMainPicture,
+    video: null,
+    videoType: "mp4"
   },
   {
     id: 5,
@@ -85,7 +97,9 @@ export const getProjectsData = (t) => [
     link: "/projects/app-web-soutenances",
     featured: false,
     openSource: false,
-    image: AppWebSoutenancesMainPicture
+    image: AppWebSoutenancesMainPicture,
+    video: null,
+    videoType: "mp4"
   },
   {
     id: 6,
@@ -101,7 +115,9 @@ export const getProjectsData = (t) => [
     link: "/projects/therapie-miroir-ar",
     featured: true,
     openSource: false,
-    image: null
+    image: null,
+    video: null,
+    videoType: "mp4"
   },
   {
     id: 7,
@@ -117,7 +133,9 @@ export const getProjectsData = (t) => [
     link: "/projects/projet-vapeur",
     featured: false,
     openSource: true,
-    image: null
+    image: null,
+    video: null,
+    videoType: "mp4"
   }
   
 ];
