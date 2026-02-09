@@ -70,7 +70,7 @@
       },
       "botSteam": {
         "title": "Discord Steam Bot",
-        "description": ""
+        "description": "..."
       },
       "webSoutenances": {
         "title": "Defense management web application",
@@ -78,6 +78,10 @@
       },
       "therapieMiroir-AR": {
         "title": "Augmented Reality - Mirror Therapy",
+        "description": "..."
+      },
+      "projetVapeur": {
+        "title": "Projet Vapeur",
         "description": "..."
       }
     }
