@@ -12,6 +12,7 @@ import IPlat from './pages/projects/IPlat';
 import BotDiscordSteam from './pages/projects/BotDiscordSteam';
 import AppWebSoutenances from './pages/projects/AppWebSoutenances';
 import AR_CHU from './pages/projects/AR-CHU';
+import ProjetVapeur from './pages/projects/ProjetVapeur';
 
 import './App.css';
 import { useTranslation } from 'react-i18next';
@@ -41,6 +42,7 @@ function App() {
           <Route path="/projects/bot-discord-steam" element={<BotDiscordSteam />} />
           <Route path="/projects/app-web-soutenances" element={<AppWebSoutenances />} />
           <Route path="/projects/therapie-miroir-ar" element={<AR_CHU />} />
+          <Route path="/projects/projet-vapeur" element={<ProjetVapeur />} />
         </Routes>
       </MainLayout>
     </Router>

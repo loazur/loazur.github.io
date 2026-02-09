@@ -102,6 +102,22 @@ export const getProjectsData = (t) => [
     featured: true,
     openSource: false,
     image: null
+  },
+  {
+    id: 7,
+    title: t("projects.datas.projetVapeur.title"),
+    engine: "JavaScript",
+    year: "2025",
+    type: t("projects.datas.types.student"),
+    categoryKey: "web",
+    category: t("projects.datas.categories.web"),
+    status: t("projects.datas.status.finished"),
+    description: t("projects.datas.projetVapeur.description"),
+    features: ["Handlebars"],
+    link: "/projects/projet-vapeur",
+    featured: false,
+    openSource: true,
+    image: null
   }
   
 ];
