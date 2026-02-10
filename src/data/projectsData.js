@@ -8,6 +8,8 @@ import AppWebSoutenancesMainPicture from '../assets/AppWebSoutenances/gestion-so
 // Import des vidéos (ajoutez vos vidéos dans le dossier assets)
 // import LibetVideo from '../assets/Libet/libet-preview.mp4';
 // import MycoriaVideo from '../assets/ProjectMycoria/mycoria-preview.mp4';
+import IPlatVideo from "../assets/IPlat/iplat-preview.mp4";
+import ProjetVapeurVideo from "../assets/ProjetVapeur/projetVapeur-preview.mp4"
 
 // Données des projets
 export const getProjectsData = (t) => [
@@ -26,8 +28,8 @@ export const getProjectsData = (t) => [
     featured: true,
     openSource: true,
     image: LibetMainPicture,
-    video: null, // Ajoutez le chemin de la vidéo ici : LibetVideo
-    videoType: "mp4" // Type de vidéo (mp4, webm, etc.)
+    video: null, 
+    videoType: "mp4" 
   },
   {
     id: 2,
@@ -44,8 +46,8 @@ export const getProjectsData = (t) => [
     featured: false,
     openSource: false,
     image: MycoriaMainPicture,
-    video: null, // Ajoutez le chemin de la vidéo ici : MycoriaVideo
-    videoType: "mp4" // Type de vidéo (mp4, webm, etc.)
+    video: null, 
+    videoType: "mp4" 
   },
   {
     id: 3,
@@ -62,7 +64,7 @@ export const getProjectsData = (t) => [
     featured: false,
     openSource: true,
     image: IPlatMainPicture,
-    video: null,
+    video: IPlatVideo,
     videoType: "mp4"
   },
   {
@@ -134,7 +136,7 @@ export const getProjectsData = (t) => [
     featured: false,
     openSource: true,
     image: null,
-    video: null,
+    video: ProjetVapeurVideo,
     videoType: "mp4"
   }
   
