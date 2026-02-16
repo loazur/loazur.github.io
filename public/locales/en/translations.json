@@ -70,8 +70,89 @@
         "description": "3D game of exploration and narrative wandering in the Livradois-Forez region. Play as Vincent Morel, a DGSI officer, charged with committing to a series of mysterious disappearances."
       },
       "iplat": {
-        "title": "IPlat",
-        "description": "Short 2D platform game developed in 1 week with the Löve2D framework."
+        "title": "IPlat - My First Video Game",
+        "description": "Short 2D platform game developed in 1 week with the Löve2D framework.",
+        "tags": {
+          "love2d": "Löve2D",
+          "platformer": "2D Platformer"
+        },
+        "date": "Oct. 2021",
+        "links": {
+          "github": "GitHub",
+          "itchio": "Itch.io"
+        },
+        "context": {
+          "title": "Context",
+          "paragraph1": "IPlat is the first game I created in 9th grade. It is a quite simple 2D platform.",
+          "paragraph2": "The player aims to move forward on each screen until the end of the game.",
+          "paragraph3": "Obtaining coins add one more health point.",
+          "paragraph4": "When the player no longer has health points they are teleported to the beginning of the current screen.",
+          "problem": "Problematic:",
+          "problemText": "How to create a short 2D platformer without knowledge in less than a week ?"
+        },
+        "objectives": {
+          "title": "Objectives",
+          "item1": "Discover and master the basics of the Löve2D framework",
+          "item2": "Learn Lua programming language",
+          "item3": "Understanding the fundamental mechanics of a platform game (physics, collisions, inputs)",
+          "item4": "Deliver a playable and functional game within a short period",
+          "item5": "Publish my first game on a distribution platform (Itch.io)"
+        },
+        "missions": {
+          "title": "Main Tasks",
+          "item1": "Conception and design of gameplay",
+          "item2": "Development of the physics engine and collisions",
+          "item3": "Programming and managing Input Controls",
+          "item4": "Creating and designing levels",
+          "item5": "Testing And Debugging",
+          "item6": "Publishing on Itch.io"
+        },
+        "skills": {
+          "title": "Mobilized Skills",
+          "technical": {
+            "title": "Technical Skills",
+            "item1": "Lua Programming",
+            "item2": "Development of games with Löve2D",
+            "item3": "2D Physics Management",
+            "item4": "Collision System",
+            "item5": "User Inputs Management",
+            "item6": "Basic Level Design"
+          },
+          "transversal": {
+            "title": "Transverse Skills",
+            "item1": "Autonomous Project Management",
+            "item2": "Respect of short deadlines",
+            "item3": "Problems solving",
+            "item4": "Self-training",
+            "item5": "Technical documentation"
+          },
+          "human": {
+            "title": "Human Skills",
+            "item1": "Independance",
+            "item2": "Perseverance",
+            "item3": "Creativity"
+          }
+        },
+        "academic": {
+          "title": "Academic Incomes",
+          "intro": "Although realized outside the academic framework, this project has enabled me to acquire essential skills that have been useful to me in my training in Computer Science:",
+          "oop": "Object Oriented Programming::",
+          "oopText": "Applying OOP principles in Lua",
+          "algorithm": "Algorithmic:",
+          "algorithmText": "Resolving Physical and Collision Issues",
+          "projectManagement": "Project Management:",
+          "projectManagementText": "Organization of work and respect of deadlines",
+          "gameDev": "Game development:",
+          "gameDevText": "First-time experience in the field"
+        },
+        "conclusion": {
+          "title": "Conclusion and Learning",
+          "paragraph1": "IPlat was a success for what I was able to learn during the creation, but from a different point of view. the game is quite short, and uses that assets found on the Internet, so I could have done better.",
+          "paragraph2": "This project reinforced my passion for developing video games and gave me the desire to continue creating and learning."
+        },
+        "technologies": {
+          "title": "Technologies and Tools Used"
+        }
       },
       "botSteam": {
         "title": "Discord Steam Bot",
