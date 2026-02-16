@@ -70,8 +70,89 @@
         "description": "3D game of exploration and narrative wandering in the Livradois-Forez region. Play as Vincent Morel, a DGSI officer, charged with committing to a series of mysterious disappearances."
       },
       "iplat": {
-        "title": "IPlat",
-        "description": "Short 2D platform game developed in 1 week with the Löve2D framework."
+        "title": "IPlat - Mon premier jeu vidéo",
+        "description": "Short 2D platform game developed in 1 week with the Löve2D framework.",
+        "tags": {
+          "love2d": "Löve2D",
+          "platformer": "Plateforme 2D"
+        },
+        "date": "Oct. 2021",
+        "links": {
+          "github": "GitHub",
+          "itchio": "Itch.io"
+        },
+        "context": {
+          "title": "Contexte",
+          "paragraph1": "IPlat est le premier jeu que j'ai créé en 3ème. Il s'agit d'un jeu de plateforme en 2D assez simple.",
+          "paragraph2": "Le joueur a pour objectif d'avancer dans chaque écran jusqu'à la fin du jeu.",
+          "paragraph3": "Récupérer des pièces apporte un point de vie en plus.",
+          "paragraph4": "Lorsque le joueur n'a plus de point de vie il est téléporté au début de l'écran actuel.",
+          "problem": "Problématique :",
+          "problemText": "Comment créer un court jeu de plateforme sans connaissance en moins d'une semaine ?"
+        },
+        "objectives": {
+          "title": "Objectifs",
+          "item1": "Découvrir et maîtriser les bases du framework Löve2D",
+          "item2": "Apprendre le langage de programmation Lua",
+          "item3": "Comprendre les mécaniques fondamentales d'un jeu de plateforme (physique, collisions, inputs)",
+          "item4": "Livrer un jeu jouable et fonctionnel dans un délai court",
+          "item5": "Publier mon premier jeu sur une plateforme de distribution (Itch.io)"
+        },
+        "missions": {
+          "title": "Missions Principales",
+          "item1": "Conception et design du gameplay",
+          "item2": "Développement du moteur de physique et des collisions",
+          "item3": "Programmation des contrôles et de la gestion des inputs",
+          "item4": "Création des niveaux et du level design",
+          "item5": "Tests et débogage",
+          "item6": "Publication sur Itch.io"
+        },
+        "skills": {
+          "title": "Compétences Mobilisées",
+          "technical": {
+            "title": "Compétences Techniques",
+            "item1": "Programmation en Lua",
+            "item2": "Développement de jeux avec Löve2D",
+            "item3": "Gestion de la physique 2D",
+            "item4": "Système de collisions",
+            "item5": "Gestion des inputs utilisateur",
+            "item6": "Level design basique"
+          },
+          "transversal": {
+            "title": "Compétences Transversales",
+            "item1": "Gestion de projet en autonomie",
+            "item2": "Respect des délais courts",
+            "item3": "Résolution de problèmes",
+            "item4": "Auto-formation",
+            "item5": "Documentation technique"
+          },
+          "human": {
+            "title": "Compétences Humaines",
+            "item1": "Autonomie",
+            "item2": "Persévérance",
+            "item3": "Créativité"
+          }
+        },
+        "academic": {
+          "title": "Apports Académiques",
+          "intro": "Bien que réalisé en dehors du cadre académique, ce projet m'a permis d'acquérir des compétences essentielles qui m'ont été utiles dans ma formation en BUT Informatique Graphique :",
+          "oop": "Programmation orientée objet :",
+          "oopText": "Application des principes POO en Lua",
+          "algorithm": "Algorithmique :",
+          "algorithmText": "Résolution de problèmes de physique et de collisions",
+          "projectManagement": "Gestion de projet :",
+          "projectManagementText": "Organisation du travail et respect des délais",
+          "gameDev": "Développement de jeux vidéo :",
+          "gameDevText": "Première expérience concrète dans le domaine"
+        },
+        "conclusion": {
+          "title": "Conclusion et Apprentissages",
+          "paragraph1": "IPlat fut une réussite pour ce que j'ai pu apprendre lors de la création, mais d'un autre point de vue, le jeu est assez court, et utilise que des assets trouvés sur Internet, donc j'aurais pu faire mieux.",
+          "paragraph2": "Ce projet m'a conforté dans ma passion pour le développement de jeux vidéo et m'a donné l'envie de continuer à créer et à apprendre."
+        },
+        "technologies": {
+          "title": "Technologies et Outils Utilisés"
+        }
       },
       "botSteam": {
         "title": "Discord Steam Bot",
