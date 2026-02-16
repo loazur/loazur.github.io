@@ -70,11 +70,11 @@
         "description": "3D game of exploration and narrative wandering in the Livradois-Forez region. Play as Vincent Morel, a DGSI officer, charged with committing to a series of mysterious disappearances."
       },
       "iplat": {
-        "title": "IPlat - Mon premier jeu vidéo",
+        "title": "IPlat - My First Video Game",
         "description": "Short 2D platform game developed in 1 week with the Löve2D framework.",
         "tags": {
           "love2d": "Löve2D",
-          "platformer": "Plateforme 2D"
+          "platformer": "2D Platformer"
         },
         "date": "Oct. 2021",
         "links": {
@@ -82,76 +82,76 @@
           "itchio": "Itch.io"
         },
         "context": {
-          "title": "Contexte",
-          "paragraph1": "IPlat est le premier jeu que j'ai créé en 3ème. Il s'agit d'un jeu de plateforme en 2D assez simple.",
-          "paragraph2": "Le joueur a pour objectif d'avancer dans chaque écran jusqu'à la fin du jeu.",
-          "paragraph3": "Récupérer des pièces apporte un point de vie en plus.",
-          "paragraph4": "Lorsque le joueur n'a plus de point de vie il est téléporté au début de l'écran actuel.",
-          "problem": "Problématique :",
-          "problemText": "Comment créer un court jeu de plateforme sans connaissance en moins d'une semaine ?"
+          "title": "Context",
+          "paragraph1": "IPlat is the first game I created in 9th grade. It is a quite simple 2D platform.",
+          "paragraph2": "The player aims to move forward on each screen until the end of the game.",
+          "paragraph3": "Obtaining coins add one more health point.",
+          "paragraph4": "When the player no longer has health points they are teleported to the beginning of the current screen.",
+          "problem": "Problematic:",
+          "problemText": "How to create a short 2D platformer without knowledge in less than a week ?"
         },
         "objectives": {
-          "title": "Objectifs",
-          "item1": "Découvrir et maîtriser les bases du framework Löve2D",
-          "item2": "Apprendre le langage de programmation Lua",
-          "item3": "Comprendre les mécaniques fondamentales d'un jeu de plateforme (physique, collisions, inputs)",
-          "item4": "Livrer un jeu jouable et fonctionnel dans un délai court",
-          "item5": "Publier mon premier jeu sur une plateforme de distribution (Itch.io)"
+          "title": "Objectives",
+          "item1": "Discover and master the basics of the Löve2D framework",
+          "item2": "Learn Lua programming language",
+          "item3": "Understanding the fundamental mechanics of a platform game (physics, collisions, inputs)",
+          "item4": "Deliver a playable and functional game within a short period",
+          "item5": "Publish my first game on a distribution platform (Itch.io)"
         },
         "missions": {
-          "title": "Missions Principales",
-          "item1": "Conception et design du gameplay",
-          "item2": "Développement du moteur de physique et des collisions",
-          "item3": "Programmation des contrôles et de la gestion des inputs",
-          "item4": "Création des niveaux et du level design",
-          "item5": "Tests et débogage",
-          "item6": "Publication sur Itch.io"
+          "title": "Main Tasks",
+          "item1": "Conception and design of gameplay",
+          "item2": "Development of the physics engine and collisions",
+          "item3": "Programming and managing Input Controls",
+          "item4": "Creating and designing levels",
+          "item5": "Testing And Debugging",
+          "item6": "Publishing on Itch.io"
         },
         "skills": {
-          "title": "Compétences Mobilisées",
+          "title": "Mobilized Skills",
           "technical": {
-            "title": "Compétences Techniques",
-            "item1": "Programmation en Lua",
-            "item2": "Développement de jeux avec Löve2D",
-            "item3": "Gestion de la physique 2D",
-            "item4": "Système de collisions",
-            "item5": "Gestion des inputs utilisateur",
-            "item6": "Level design basique"
+            "title": "Technical Skills",
+            "item1": "Lua Programming",
+            "item2": "Development of games with Löve2D",
+            "item3": "2D Physics Management",
+            "item4": "Collision System",
+            "item5": "User Inputs Management",
+            "item6": "Basic Level Design"
           },
           "transversal": {
-            "title": "Compétences Transversales",
-            "item1": "Gestion de projet en autonomie",
-            "item2": "Respect des délais courts",
-            "item3": "Résolution de problèmes",
-            "item4": "Auto-formation",
-            "item5": "Documentation technique"
+            "title": "Transverse Skills",
+            "item1": "Autonomous Project Management",
+            "item2": "Respect of short deadlines",
+            "item3": "Problems solving",
+            "item4": "Self-training",
+            "item5": "Technical documentation"
           },
           "human": {
-            "title": "Compétences Humaines",
-            "item1": "Autonomie",
-            "item2": "Persévérance",
-            "item3": "Créativité"
+            "title": "Human Skills",
+            "item1": "Independance",
+            "item2": "Perseverance",
+            "item3": "Creativity"
           }
         },
         "academic": {
-          "title": "Apports Académiques",
-          "intro": "Bien que réalisé en dehors du cadre académique, ce projet m'a permis d'acquérir des compétences essentielles qui m'ont été utiles dans ma formation en BUT Informatique Graphique :",
-          "oop": "Programmation orientée objet :",
-          "oopText": "Application des principes POO en Lua",
-          "algorithm": "Algorithmique :",
-          "algorithmText": "Résolution de problèmes de physique et de collisions",
-          "projectManagement": "Gestion de projet :",
-          "projectManagementText": "Organisation du travail et respect des délais",
-          "gameDev": "Développement de jeux vidéo :",
-          "gameDevText": "Première expérience concrète dans le domaine"
+          "title": "Academic Incomes",
+          "intro": "Although realized outside the academic framework, this project has enabled me to acquire essential skills that have been useful to me in my training in Computer Science:",
+          "oop": "Object Oriented Programming::",
+          "oopText": "Applying OOP principles in Lua",
+          "algorithm": "Algorithmic:",
+          "algorithmText": "Resolving Physical and Collision Issues",
+          "projectManagement": "Project Management:",
+          "projectManagementText": "Organization of work and respect of deadlines",
+          "gameDev": "Game development:",
+          "gameDevText": "First-time experience in the field"
         },
         "conclusion": {
-          "title": "Conclusion et Apprentissages",
-          "paragraph1": "IPlat fut une réussite pour ce que j'ai pu apprendre lors de la création, mais d'un autre point de vue, le jeu est assez court, et utilise que des assets trouvés sur Internet, donc j'aurais pu faire mieux.",
-          "paragraph2": "Ce projet m'a conforté dans ma passion pour le développement de jeux vidéo et m'a donné l'envie de continuer à créer et à apprendre."
+          "title": "Conclusion and Learning",
+          "paragraph1": "IPlat was a success for what I was able to learn during the creation, but from a different point of view. the game is quite short, and uses that assets found on the Internet, so I could have done better.",
+          "paragraph2": "This project reinforced my passion for developing video games and gave me the desire to continue creating and learning."
         },
         "technologies": {
-          "title": "Technologies et Outils Utilisés"
+          "title": "Technologies and Tools Used"
         }
       },
       "botSteam": {
