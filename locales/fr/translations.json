@@ -76,7 +76,7 @@
         "description": "Court jeu de platforme en 2D développé en 1 semaine avec le framework Löve2D.",
         "tags": {
           "love2d": "Löve2D",
-          "platformer": "Plateforme 2D"
+          "platformer": "Plateformer 2D"
         },
         "date": "Oct. 2021",
         "links": {
