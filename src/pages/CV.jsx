@@ -1,3 +1,4 @@
+import i18next from 'i18next';
 import '../styles/CV.css';
 import { useTranslation } from 'react-i18next';
 
@@ -6,8 +7,22 @@ export default function CV() {
 
   const downloadCV = () => {
     const link = document.createElement('a');
-    link.href = '/CV-Clément BOUNAIX.pdf';
-    link.download = 'CV-Clement-Bounaix.pdf';
+    
+    // Définir le chemin et le nom du fichier en fonction de la langue
+    switch (i18next.language) {
+      case "fr":
+        link.href = '/CV-Clement-Bounaix-FR.pdf';
+        link.download = "CV-Clement-Bounaix-FR.pdf";
+        break;
+      case "en":
+        link.href = '/CV-Clement-Bounaix-EN.pdf';
+        link.download = "CV-Clement-Bounaix-EN.pdf";
+        break;
+      default:
+        link.href = '/CV-Clement-Bounaix-FR.pdf';
+        link.download = "CV-Clement-Bounaix-FR.pdf";
+    }
+
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);

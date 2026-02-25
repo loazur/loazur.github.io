@@ -5,9 +5,8 @@ import IPlatMainPicture from '../assets/IPlat/iplat-picture1.webp';
 import BotDiscordMainPicture from '../assets/BotDiscordSteam/botdiscordsteam-picture2.webp';
 import AppWebSoutenancesMainPicture from '../assets/AppWebSoutenances/gestion-soutenances-picture1.webp';
 
-// Import des vidéos (ajoutez vos vidéos dans le dossier assets)
-// import LibetVideo from '../assets/Libet/libet-preview.mp4';
-// import MycoriaVideo from '../assets/ProjectMycoria/mycoria-preview.mp4';
+// Import des vidéos
+import LibetVideo from "../assets/Libet/libet-preview.mp4";
 import IPlatVideo from "../assets/IPlat/iplat-preview.mp4";
 import ProjetVapeurVideo from "../assets/ProjetVapeur/projetVapeur-preview.mp4"
 
@@ -28,7 +27,7 @@ export const getProjectsData = (t) => [
     featured: true,
     openSource: true,
     image: LibetMainPicture,
-    video: null, 
+    video: LibetVideo, 
     videoType: "mp4" 
   },
   {
