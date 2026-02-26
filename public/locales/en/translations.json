@@ -41,6 +41,7 @@
   "projects": {
     "title": "My Projects",
     "subtitle": "Discover my different development projects",
+    "searchPlaceholder": "Rechercher un projet...",
     "readMore": "Learn more →",
     "filters": {
       "all": "All"
