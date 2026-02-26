@@ -3,12 +3,17 @@ import { Link } from 'react-router-dom';
 import { getProjects } from '../data/projectsData';
 import { useTranslation } from 'react-i18next';
 import MediaPreview from '../components/MediaPreview';
+import SearchBar from '../components/SearchBar';
 import '../styles/Projects.css';
 
 export default function Projects() {
   const { t } = useTranslation();
   const projects = getProjects(t);
   const [filter, setFilter] = useState("all");
+  const [searchTerm, setSearchTerm] = useState('');
+
+  // Créer la liste des suggestions à partir des titres de projets
+  const projectSuggestions = projects.map(project => project.title);
 
   const categories = [
     { key: "all", label: t("projects.filters.all") },
@@ -48,6 +53,16 @@ export default function Projects() {
   const filteredProjects = (filter === "all"
     ? projects 
     : projects.filter(project => project.categoryKey === filter))
+    .filter(project => {
+      if (!searchTerm) return true;
+      const search = searchTerm.toLowerCase();
+      return (
+        project.title.toLowerCase().includes(search) ||
+        project.description.toLowerCase().includes(search) ||
+        project.engine.toLowerCase().includes(search) ||
+        project.features.some(feature => feature.toLowerCase().includes(search))
+      );
+    })
     .sort((a, b) => {
       const inProgressStatus = t('projects.datas.status.inprogress');
       if (a.status === inProgressStatus && b.status !== inProgressStatus) return -1;
@@ -61,6 +76,12 @@ export default function Projects() {
         <h1>{t("projects.title")}</h1>
         <p>{t("projects.subtitle")}</p>
       </div>
+
+      <SearchBar 
+        onSearch={setSearchTerm} 
+        placeholder={t("projects.searchPlaceholder")}
+        suggestions={projectSuggestions}
+      />
 
       <div className="projects-filters">
         {categories.map((category) => (
