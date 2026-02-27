@@ -55,6 +55,7 @@
         "videogame": "Video game",
         "bot": "Bot",
         "web": "Web",
+        "seriousgame": "Serious game",
         "other": "Other"
       },
       "status": {

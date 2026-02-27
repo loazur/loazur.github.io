@@ -25,6 +25,7 @@ export default function Home() {
       'videogame': 'category-videogame',
       'web': 'category-web',
       'bot': 'category-bot',
+      'seriousgame': 'category-seriousgame',
       'other': 'category-other'
     };
 

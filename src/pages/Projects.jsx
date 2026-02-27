@@ -20,6 +20,7 @@ export default function Projects() {
     { key: "videogame", label: t("projects.datas.categories.videogame") },
     { key: "web", label: t("projects.datas.categories.web") },
     { key: "bot", label: t("projects.datas.categories.bot") },
+    { key: "seriousgame", label: t("projects.datas.categories.seriousgame") },
     { key: "other", label: t("projects.datas.categories.other") }
   ];
 
@@ -41,6 +42,7 @@ export default function Projects() {
       'videogame': 'category-videogame',
       'web': 'category-web',
       'bot': 'category-bot',
+      'seriousgame': 'category-seriousgame',
       'other': 'category-other'
     };
 

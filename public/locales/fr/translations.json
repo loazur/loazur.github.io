@@ -56,6 +56,7 @@
         "videogame": "Jeu vidéo",
         "bot": "Bot",
         "web": "Web",
+        "seriousgame": "Serious game",
         "other": "Autre"
       },
       "status": {
