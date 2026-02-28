@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;700&display=swap');
+
 .animated-background {
   position: fixed;
   top: 0;
@@ -5,5 +7,6 @@
   width: 100%;
   height: 100%;
   z-index: -1;
-  background: #000000;
+  filter: blur(0.5px);
+  opacity: 0.55;
 }

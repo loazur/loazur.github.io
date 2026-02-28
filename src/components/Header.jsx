@@ -13,7 +13,6 @@ export function Header() {
           <NavLink to="/" className="nav-link">{t("header.home")}</NavLink>
           <NavLink to="/projects" className="nav-link">{t("header.projects")}</NavLink>
           <NavLink to="/cv" className="nav-link">{t("header.cv")}</NavLink>
-          <NavLink to="/contact" className="nav-link">{t("header.contact")}</NavLink>
         </nav>
         <LanguageDropdown />
       </div>
