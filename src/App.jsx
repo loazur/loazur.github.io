@@ -7,7 +7,6 @@ import PageTransition from './components/PageTransition';
 import Home from './pages/Home';
 import Projects from './pages/Projects';
 import CV from './pages/CV';
-import Contact from './pages/Contact';
 import Libet from './pages/projects/Libet';
 import ProjectMycoria from './pages/projects/ProjectMycoria';
 import IPlat from './pages/projects/IPlat';
@@ -29,7 +28,6 @@ function AnimatedRoutes() {
         <Route path="/" element={<PageTransition><Home /></PageTransition>} />
         <Route path="/projects" element={<PageTransition><Projects /></PageTransition>} />
         <Route path="/cv" element={<PageTransition><CV /></PageTransition>} />
-        <Route path="/contact" element={<PageTransition><Contact /></PageTransition>} />
         <Route path="/projects/libet" element={<PageTransition><Libet /></PageTransition>} />
         <Route path="/projects/project-mycoria" element={<PageTransition><ProjectMycoria /></PageTransition>} />
         <Route path="/projects/iplat" element={<PageTransition><IPlat /></PageTransition>} />

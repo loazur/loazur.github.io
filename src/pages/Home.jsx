@@ -41,13 +41,9 @@ export default function Home() {
     <section className="home">
       <div className="home-content">
         <div className="home-header">
-          <div className="scrolling-text-container top">
-            <div className="scrolling-text">
-              <span>{scrollingTextTop}</span>
-              <span>{scrollingTextTop}</span>
-              <span>{scrollingTextTop}</span>
-            </div>
-          </div>
+        
+        
+         
 
           <h1 className="home-title">
             Clément <span className="highlight">Bounaix</span>
@@ -65,9 +61,6 @@ export default function Home() {
         <div className="home-cta">
           <Link to="/projects" className="btn btn-primary">
             {t("home.seeMyProjects")}
-          </Link>
-          <Link to="/contact" className="btn btn-secondary">
-            {t("home.contactMe")}
           </Link>
         </div>
 
