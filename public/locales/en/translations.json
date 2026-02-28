@@ -26,13 +26,13 @@
     "contact": "Contacts"
   },
   "footer": {
-    "description": "Etudiant français passionné par le développement de jeux vidéo.",
+    "description": "French student passionate about video game development.",
     "navigation": "Navigation",
-    "home": "Accueil",
-    "projects": "Projets",
-    "cv": "CV",
+    "home": "Home",
+    "projects": "Projects",
+    "cv": "Resume",
     "socials": "Contacts",
-    "allRights": "Tous droits réservés."
+    "allRights": "All rights reserved."
   },
   "languageDropdown": {
     "chooseLanguage": "Choose a language"
@@ -48,8 +48,8 @@
     "title": "My Projects",
     "subtitle": "Discover my different development projects",
     "readMore": "Learn more →",
-    "projectsSingular": "projet",
-    "projectsPlural": "projets",
+    "projectsSingular": "project",
+    "projectsPlural": "projects",
     "filters": {
       "all": "All"
     },
