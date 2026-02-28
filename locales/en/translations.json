@@ -26,7 +26,13 @@
     "contact": "Contacts"
   },
   "footer": {
-    "allRights": "Clément Bounaix. All Rights Reserved."
+    "description": "French student passionate about video game development.",
+    "navigation": "Navigation",
+    "home": "Home",
+    "projects": "Projects",
+    "cv": "Resume",
+    "socials": "Contacts",
+    "allRights": "All rights reserved."
   },
   "languageDropdown": {
     "chooseLanguage": "Choose a language"
@@ -41,8 +47,9 @@
   "projects": {
     "title": "My Projects",
     "subtitle": "Discover my different development projects",
-    "searchPlaceholder": "Search a project...",
     "readMore": "Learn more →",
+    "projectsSingular": "project",
+    "projectsPlural": "projects",
     "filters": {
       "all": "All"
     },
