@@ -1,15 +1,13 @@
 {
   "home": {
-    "scrollingtext": "Unity • C# • C++ • FMOD • GitHub • Jira • Développement de jeux • Programmation gameplay",
-    "subtitle": "Gameplay Programmer en formation",
-    "description": "Etudiant français passionné par le développement de jeux vidéo.",
-    "inDevelopment": "Site en cours de développement. Le contenu peut changer à tout moment.",
+    "greeting": "Salut, je suis",
+    "tagline": "Étudiant en Informatique · Futur développeur de jeux vidéos",
+    "location": "📍 Le Puy-en-Velay, France 🇫🇷",
+    "bio": "Étudiant en 2ème année de BUT Informatique Graphique, passionné par le développement de jeux vidéo.",
     "seeMyProjects": "Voir mes projets",
-    "contactMe": "Me contacter",
-    "scrollToDiscover": "Scroll pour découvrir",
     "about": "À propos",
     "aboutText1": "Je suis étudiant en BUT Informatique Graphique, je me spécialise dans la programmation de jeux vidéo.",
-    "aboutText2": "Mon objectif est de contribuer à des projets innovants et créatifs, tout en continuant à développer mes compétences dans le jeu vidéo, et au-delà. Je travaille aussi sur d’autres projets.",
+    "aboutText2": "Mon objectif est de contribuer à des projets innovants et créatifs, tout en continuant à développer mes compétences dans le jeu vidéo, et au-delà. Je travaille aussi sur d'autres projets.",
     "readMore": "En savoir plus →",
     "featuredProject": "Projet principal",
     "featuredProjects": "Projets principaux",
@@ -37,13 +35,6 @@
   },
   "languageDropdown": {
     "chooseLanguage": "Choisir une langue"
-  },
-  "contact": {
-    "title": "Me contacter",
-    "subtitle": "N'hésitez pas à me contacter via les plateformes ci-dessous !",
-    "linkedin": "Profil LinkedIn",
-    "github": "Profil GitHub",
-    "itchio": "Profil Itch.io"
   },
   "projects": {
     "title": "Mes projets",

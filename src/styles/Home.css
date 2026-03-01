@@ -3,6 +3,116 @@
   padding: 2rem;
 }
 
+/* ===== HERO SECTION ===== */
+.home-hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 85vh;
+  padding: 4rem 2rem;
+}
+
+.hero-intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  max-width: 720px;
+  gap: 0.75rem;
+}
+
+.hero-greeting {
+  font-size: clamp(1rem, 2.5vw, 1.25rem);
+  color: #888888;
+  font-weight: 500;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+}
+
+.hero-name {
+  font-size: clamp(2.8rem, 8vw, 5rem);
+  font-weight: 800;
+  color: #ffffff;
+  margin: 0.25rem 0;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+}
+
+.hero-name .highlight {
+  background: linear-gradient(135deg, #ffffff 0%, #888888 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.hero-tagline {
+  font-size: clamp(1.15rem, 3vw, 1.5rem);
+  color: #d0d0d0;
+  font-weight: 500;
+  margin: 0.5rem 0 0 0;
+}
+
+.hero-location {
+  font-size: 0.95rem;
+  color: #777777;
+  margin: 0;
+  font-weight: 400;
+  letter-spacing: 0.05em;
+}
+
+.hero-bio {
+  font-size: clamp(0.95rem, 2vw, 1.1rem);
+  color: #a0a0a0;
+  line-height: 1.8;
+  margin: 1rem 0 0.5rem 0;
+  max-width: 600px;
+}
+
+.hero-cta {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 1.5rem;
+}
+
+.hero-socials {
+  display: flex;
+  gap: 1.25rem;
+  margin-top: 1.5rem;
+}
+
+.social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: 1.5px solid rgba(255, 255, 255, 0.2);
+  color: #a0a0a0;
+  background: rgba(255, 255, 255, 0.04);
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.social-link img {
+  filter: invert(1) brightness(0.65);
+  transition: filter 0.3s ease;
+}
+
+.social-link:hover {
+  color: #ffffff;
+  border-color: rgba(255, 255, 255, 0.6);
+  background: rgba(255, 255, 255, 0.1);
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(255, 255, 255, 0.15);
+}
+
+.social-link:hover img {
+  filter: invert(1) brightness(1);
+}
+
 .home-content {
   display: flex;
   flex-direction: column;
@@ -468,11 +578,16 @@
     padding: 1rem;
   }
 
-  .home-content {
-    min-height: 70vh;
+  .home-hero {
+    min-height: 75vh;
+    padding: 3rem 1rem;
   }
 
-  .home-cta {
+  .hero-intro {
+    gap: 0.5rem;
+  }
+
+  .hero-cta {
     flex-direction: column;
     width: 100%;
   }
@@ -480,6 +595,10 @@
   .btn {
     width: 100%;
     text-align: center;
+  }
+
+  .hero-socials {
+    margin-top: 1rem;
   }
 
   .featured-grid,

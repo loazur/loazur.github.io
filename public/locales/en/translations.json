@@ -1,12 +1,10 @@
 {
   "home": {
-    "scrollingtext": "Unity • C# • C++ • FMOD • GitHub • Jira • Game development • Gameplay programming",
-    "subtitle": "Gameplay Programmer in training",
-    "description": "French student passionate about video game development.",
-    "inDevelopment": "Site under development. Content may change at any time.",
+    "greeting": "Hey, I'm",
+    "tagline": "Computer Science Student · Future Game Developer",
+    "location": "📍 Le Puy-en-Velay, France 🇫🇷",
+    "bio": "Computer Science student specializing in game development.",
     "seeMyProjects": "See my projects",
-    "contactMe": "Contact Me",
-    "scrollToDiscover": "Scroll to Discover",
     "about": "About Me",
     "aboutText1": "I am a student in Computer Science, I specialize in video game programming.",
     "aboutText2": "My goal is to contribute to innovative and creative projects, while continuing to develop my skills in the video-game and beyond. I am also working on other projects.",
@@ -36,13 +34,6 @@
   },
   "languageDropdown": {
     "chooseLanguage": "Choose a language"
-  },
-  "contact": {
-    "title": "Contact Me",
-    "subtitle": "Don't hesitate to contact me via the platforms below!",
-    "linkedin": "LinkedIn Profile",
-    "github": "GitHub Profile",
-    "itchio": "Itch.io Profile"
   },
   "projects": {
     "title": "My Projects",
