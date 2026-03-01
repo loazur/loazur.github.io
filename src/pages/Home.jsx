@@ -42,7 +42,7 @@ export default function Home() {
 
   return (
     <section className="home">
-      {/* Hero — infos essentielles visibles immédiatement */}
+      {/* Hero — infos essentielles */}
       <div className="home-hero">
         <div className="hero-intro">
           <span className="hero-greeting">{t("home.greeting")}</span>
