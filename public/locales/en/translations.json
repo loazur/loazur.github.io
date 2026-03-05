@@ -174,14 +174,14 @@
   },
   "cv": {
     "title": "My Resume",
-    "heroLine1": "Mon parcours",
-    "heroLine2": "& expériences",
-    "heroStatus": "Ouvert aux opportunités",
-    "download": "Télécharger mon CV",
+    "heroLine1": "My journey",
+    "heroLine2": "& Experiences",
+    "heroStatus": "Open to Opportunities",
+    "download": "Download my resume",
     "sections": {
       "education": "Education",
-      "experience": "Expériences",
-      "skills": "Compétences"
+      "experience": "Experiences",
+      "skills": "Competences"
     },
     "education": {
       "but": {
@@ -194,43 +194,43 @@
         "title": "High School Diploma - Specialities Computer Science, English",
         "date": "2021 - 2024",
         "institution": "Simone Weil High School",
-        "description": "Baccalauréat général avec spécialités Numérique et Sciences Informatiques (NSI) et Anglais Monde Contemporain.",
-        "mention": "🎓 Mention Assez Bien",
+        "description": "High School Diploma with specialities Computer Science and English.",
+        "mention": "🎓 Honours",
         "grades": {
           "title": "Marks obtained:",
           "oral": "Final oral: 18/20",
-          "nsi": "NSI: 19/20",
-          "english": "Anglais: 15/20"
+          "nsi": "Computer Science: 19/20",
+          "english": "English: 15/20"
         }
       }
     },
     "experience": {
-      "emptyTitle": "Bientôt disponible",
-      "emptyText": "Je suis actuellement à la recherche d'un stage ou d'une première expérience professionnelle dans le développement de jeux vidéo."
+      "emptyTitle": "Coming soon",
+      "emptyText": "I am currently looking for an internship or a first professional experience in the development of video games."
     },
     "skills": {
       "technical": {
         "cpp": {
-          "title": "Programmation C++ / C#",
-          "description": "Langages principaux utilisés au quotidien. C++ pour la programmation bas-niveau et les moteurs de jeu, et C# avec Unity pour le développement de gameplay."
+          "title": "C++ / C# Programming",
+          "description": "Main languages used daily. C++ for low level programming and game engines, and C# with Unity for gameplay development."
         },
         "gameEngines": {
-          "title": "Moteurs de jeux vidéo",
-          "description": "Expérience pratique sur Unity et Unreal Engine (ainsi que d'autre moteurs) à travers plusieurs projets universitaires et personnels. Création de systèmes de gameplay, intégration d'assets 3D, gestion de scènes et scripting en Blueprint et C#."
+          "title": "Game Engines",
+          "description": "Practical experience on Unity and Unreal Engine (as well as other engines) through several university and personal projects. Create gameplay systems, 3D asset integration, blueprint and C# scripting."
         },
         "versionControl": {
-          "title": "Gestion de version & projet",
-          "description": "Utilisation quotidienne de Git et GitHub pour le travail collaboratif en équipe. Organisation de projets avec Jira : répartition de tâches, sprints, et suivi d'avancement dans un cadre agile."
+          "title": "Version & Project Management",
+          "description": "Daily use of Git and GitHub for team-based collaboration. Organization of projects with Jira: assignment of tasks, sprints, and follow-up of progress within an agile framework."
         }
       },
       "soft": {
-        "title": "Savoir-être",
+        "title": "Soft skills",
         "items": {
-          "teamwork": "Travail d'équipe",
-          "autonomy": "Autonomie",
-          "curiosity": "Curiosité",
-          "adaptability": "Adaptabilité",
-          "projectManagement": "Gestion de projet",
+          "teamwork": "Team Work",
+          "autonomy": "Independance",
+          "curiosity": "Curiosity",
+          "adaptability": "Adaptability",
+          "projectManagement": "Project Management",
           "communication": "Communication"
         }
       }
