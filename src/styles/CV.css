@@ -45,16 +45,18 @@
 }
 
 .cv-hero-title {
-  font-size: clamp(2.4rem, 5vw, 4rem);
+  font-size: clamp(1.8rem, 3.5vw, 3rem);
   font-weight: 800;
   line-height: 1.08;
   color: #fff;
   margin: 0 0 1.5rem;
+  white-space: nowrap;
 }
 
 .cv-hero-accent {
-  display: block;
-  background: linear-gradient(135deg, #a78bfa, #60a5fa);
+  display: inline;
+  margin-left: 0.5rem; 
+  background: linear-gradient(135deg, #ffffff, rgba(167, 139, 250, 0.7));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
