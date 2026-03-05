@@ -211,20 +211,16 @@
     "skills": {
       "technical": {
         "cpp": {
-          "title": "Programmation C / C++ / C#",
-          "description": "Langages principaux utilisés au quotidien. C++ pour la programmation bas-niveau et les moteurs de jeu, C# avec Unity pour le développement de gameplay, et C pour la compréhension fondamentale de la mémoire et des systèmes."
+          "title": "Programmation C++ / C#",
+          "description": "Langages principaux utilisés au quotidien. C++ pour la programmation bas-niveau et les moteurs de jeu, et C# avec Unity pour le développement de gameplay."
         },
         "gameEngines": {
           "title": "Moteurs de jeux vidéo",
-          "description": "Expérience pratique sur Unity et Unreal Engine à travers plusieurs projets universitaires et personnels. Création de systèmes de gameplay, intégration d'assets 3D, gestion de scènes et scripting en Blueprint et C#."
+          "description": "Expérience pratique sur Unity et Unreal Engine (ainsi que d'autre moteurs) à travers plusieurs projets universitaires et personnels. Création de systèmes de gameplay, intégration d'assets 3D, gestion de scènes et scripting en Blueprint et C#."
         },
         "versionControl": {
           "title": "Gestion de version & projet",
           "description": "Utilisation quotidienne de Git et GitHub pour le travail collaboratif en équipe. Organisation de projets avec Jira : répartition de tâches, sprints, et suivi d'avancement dans un cadre agile."
-        },
-        "web": {
-          "title": "Développement web",
-          "description": "Création de sites et applications web avec React et JavaScript. Conception d'interfaces responsives en HTML/CSS. Ce portfolio en est un exemple concret, construit de zéro avec React."
         }
       },
       "soft": {
