@@ -47,10 +47,9 @@
 .cv-hero-title {
   font-size: clamp(1.8rem, 3.5vw, 3rem);
   font-weight: 800;
-  line-height: 1.08;
+  line-height: 1.15;
   color: #fff;
   margin: 0 0 1.5rem;
-  white-space: nowrap;
 }
 
 .cv-hero-accent {
@@ -462,6 +461,10 @@
     margin-bottom: 4rem;
   }
 
+  .cv-hero-title {
+    font-size: clamp(1.6rem, 8vw, 2.4rem);
+  }
+
   .cv-content {
     gap: 4rem;
   }
@@ -493,7 +496,7 @@
 
 @media (max-width: 480px) {
   .cv-hero-title {
-    font-size: 1.8rem;
+    font-size: clamp(1.4rem, 9vw, 2rem);
   }
 
   .cv-skill-card {
