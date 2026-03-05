@@ -174,10 +174,14 @@
   },
   "cv": {
     "title": "My Resume",
-    "download": "⬇ Download my resume",
+    "heroLine1": "Mon parcours",
+    "heroLine2": "& expériences",
+    "heroStatus": "Ouvert aux opportunités",
+    "download": "Télécharger mon CV",
     "sections": {
       "education": "Education",
-      "projects": "Projects"
+      "experience": "Expériences",
+      "skills": "Compétences"
     },
     "education": {
       "but": {
@@ -190,43 +194,49 @@
         "title": "High School Diploma - Specialities Computer Science, English",
         "date": "2021 - 2024",
         "institution": "Simone Weil High School",
-        "mention": "Honours",
+        "description": "Baccalauréat général avec spécialités Numérique et Sciences Informatiques (NSI) et Anglais Monde Contemporain.",
+        "mention": "🎓 Mention Assez Bien",
         "grades": {
           "title": "Marks obtained:",
           "oral": "Final oral: 18/20",
-          "nsi": "Computer Sciences: 19/20",
-          "english": "English: 15/20"
+          "nsi": "NSI: 19/20",
+          "english": "Anglais: 15/20"
         }
       }
     },
-    "projects": {
-      "libet": {
-        "title": "Unity Game Programming - \"LIBET\"",
-        "date": "Oct. 2025 - June 2026",
-        "institution": "University Institute of Technology of Le Puy-en-Velay",
-        "description": "Play in the first person, incarnate 'Libet' an old man with Alzheimer, slowly succumbing to his disease",
-        "skills": "Using Unity/C#, Project Management with Jira and Github, Task Distribution"
+    "experience": {
+      "emptyTitle": "Bientôt disponible",
+      "emptyText": "Je suis actuellement à la recherche d'un stage ou d'une première expérience professionnelle dans le développement de jeux vidéo."
+    },
+    "skills": {
+      "technical": {
+        "cpp": {
+          "title": "Programmation C / C++ / C#",
+          "description": "Langages principaux utilisés au quotidien. C++ pour la programmation bas-niveau et les moteurs de jeu, C# avec Unity pour le développement de gameplay, et C pour la compréhension fondamentale de la mémoire et des systèmes."
+        },
+        "gameEngines": {
+          "title": "Moteurs de jeux vidéo",
+          "description": "Expérience pratique sur Unity et Unreal Engine à travers plusieurs projets universitaires et personnels. Création de systèmes de gameplay, intégration d'assets 3D, gestion de scènes et scripting en Blueprint et C#."
+        },
+        "versionControl": {
+          "title": "Gestion de version & projet",
+          "description": "Utilisation quotidienne de Git et GitHub pour le travail collaboratif en équipe. Organisation de projets avec Jira : répartition de tâches, sprints, et suivi d'avancement dans un cadre agile."
+        },
+        "web": {
+          "title": "Développement web",
+          "description": "Création de sites et applications web avec React et JavaScript. Conception d'interfaces responsives en HTML/CSS. Ce portfolio en est un exemple concret, construit de zéro avec React."
+        }
       },
-      "mycoria": {
-        "title": "Unreal Engine Game Programming - \"Project Mycoria\"",
-        "date": "Jan. - June 2025",
-        "institution": "University Institute of Technology of Le Puy-en-Velay",
-        "description": "Design of a storytelling game located in the Livradois-Forez Nature Park in the Upper Loire, commissioned by the University itself",
-        "skills": "Version management on Github, Blueprint programming, 3D object optimization, Levels creation"
-      },
-      "minecraft": {
-        "title": "Programming and maintaining a Minecraft server",
-        "date": "Jul - August 2021",
-        "institution": "Team project outside the academic",
-        "description": "Development and management of a multiplayer server \"Minigames\". And organization of a game event with money to win.",
-        "skills": "Teamwork, Game Events Management, Java Programming"
-      },
-      "iplat": {
-        "title": "Design of a 2D game - \"IPlat\"",
-        "date": "Oct. 2021",
-        "institution": "Self-taught project",
-        "description": "Creating a short platform game in 1 week",
-        "skills": "Using the Löve2D and Lua framework, Assets management, Tiled Map Creation"
+      "soft": {
+        "title": "Savoir-être",
+        "items": {
+          "teamwork": "Travail d'équipe",
+          "autonomy": "Autonomie",
+          "curiosity": "Curiosité",
+          "adaptability": "Adaptabilité",
+          "projectManagement": "Gestion de projet",
+          "communication": "Communication"
+        }
       }
     }
   }
