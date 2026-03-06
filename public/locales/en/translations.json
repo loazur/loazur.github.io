@@ -42,11 +42,11 @@
     "projectsSingular": "project",
     "projectsPlural": "projects",
     "projectLayout": {
-      "backToProjects": "Retour aux projets",
+      "backToProjects": "Back to projects",
       "date": "Date",
       "technologies": "Technologies",
-      "links": "Liens",
-      "gallery": "Galerie"
+      "links": "Links",
+      "gallery": "Gallery"
     },
     "filters": {
       "all": "All"
