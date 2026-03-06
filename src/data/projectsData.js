@@ -9,6 +9,7 @@ import AppWebSoutenancesMainPicture from '../assets/AppWebSoutenances/gestion-so
 import LibetVideo from "../assets/Libet/libet-preview.mp4";
 import IPlatVideo from "../assets/IPlat/iplat-preview.mp4";
 import ProjetVapeurVideo from "../assets/ProjetVapeur/projetVapeur-preview.mp4"
+import MycoriaVideo from "../assets/ProjectMycoria/project-mycoria-preview.mp4"
 
 // Données des projets
 export const getProjectsData = (t) => [
@@ -45,7 +46,7 @@ export const getProjectsData = (t) => [
     featured: false,
     openSource: false,
     image: MycoriaMainPicture,
-    video: null, 
+    video: MycoriaVideo, 
     videoType: "mp4" 
   },
   {
