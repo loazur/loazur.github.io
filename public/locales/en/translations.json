@@ -41,6 +41,13 @@
     "readMore": "Learn more →",
     "projectsSingular": "project",
     "projectsPlural": "projects",
+    "projectLayout": {
+      "backToProjects": "Retour aux projets",
+      "date": "Date",
+      "technologies": "Technologies",
+      "links": "Liens",
+      "gallery": "Galerie"
+    },
     "filters": {
       "all": "All"
     },
