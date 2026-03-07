@@ -458,6 +458,13 @@
   margin-right: auto;
 }
 
+.home-about .home-section-header {
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2rem;
+}
+
 .home-about h2 {
   text-align: center;
   font-size: clamp(2rem, 4vw, 2.5rem);
@@ -694,4 +701,45 @@
 .featured-card-image {
   overflow: hidden;
   position: relative;
+}
+
+/* ═══════════════════════════════════════
+   Section Headers — style CV / Donut centré
+   ═══════════════════════════════════════ */
+.home-section-header {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  margin-bottom: 2rem;
+}
+
+.home-section-number {
+  font-size: 0.85rem;
+  color: rgba(167, 139, 250, 0.5);
+  flex-shrink: 0;
+}
+
+.home-section-line {
+  flex: 1;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1));
+}
+
+.home-section-header h2 {
+  font-size: 1.85rem;
+  font-weight: 700;
+  color: #fff;
+  margin: 0;
+  flex-shrink: 0;
+  white-space: nowrap;
+  background: none;
+  -webkit-background-clip: unset;
+  -webkit-text-fill-color: unset;
+  background-clip: unset;
+}
+
+.home-section-line-right {
+  flex: 1;
+  height: 1px;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.1), transparent);
 }

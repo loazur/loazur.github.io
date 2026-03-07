@@ -8,6 +8,7 @@ export function Header() {
 
   return (
     <header className="header">
+      <img src="/previewIcon.png" alt="Logo" className="header-logo" />
       <div className="container">
         <nav className="nav">
           <NavLink to="/" className="nav-link">{t("header.home")}</NavLink>

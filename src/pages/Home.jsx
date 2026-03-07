@@ -78,7 +78,13 @@ export default function Home() {
 
       {/* About + GitHub Calendar */}
       <div className="home-about">
-        <h2>{t("home.about")}</h2>
+        <div className="home-section-header">
+          <span className="home-section-number">◆</span>
+          <div className="home-section-line" />
+          <h2>{t("home.about")}</h2>
+          <div className="home-section-line-right" />
+          <span className="home-section-number">◆</span>
+        </div>
         <div className="about-content">
           <div className="about-text">
             <p>{t("home.aboutText1")}</p>
@@ -92,7 +98,13 @@ export default function Home() {
 
       {/* Featured Projects */}
       <div className="home-featured">
-        <h2>{featuredProjects.length === 1 ? t("home.featuredProject") : t("home.featuredProjects")}</h2>
+        <div className="home-section-header">
+          <span className="home-section-number">◆</span>
+          <div className="home-section-line" />
+          <h2>{featuredProjects.length === 1 ? t("home.featuredProject") : t("home.featuredProjects")}</h2>
+          <div className="home-section-line-right" />
+          <span className="home-section-number">◆</span>
+        </div>
         <div className="featured-grid">
           {featuredProjects.map(project => {
             const statusInfo = getStatusBadge(project.status);

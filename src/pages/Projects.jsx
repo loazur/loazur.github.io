@@ -83,6 +83,7 @@ export default function Projects() {
   return (
     <section className="projects">
       <div className="projects-header">
+        <div className="projects-header-accent" />
         <h1>{t("projects.title")}</h1>
         <p>{t("projects.subtitle")}</p>
       </div>
