@@ -13,6 +13,7 @@
     "featuredProjects": "Projets principaux",
     "techChart": {
       "title": "Technologies les plus utilisées",
+      "projectsLabel": "projets",
       "project": "projet",
       "projects": "projets"
     }
