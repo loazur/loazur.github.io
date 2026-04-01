@@ -212,8 +212,13 @@
       }
     },
     "experience": {
-      "emptyTitle": "Coming soon",
-      "emptyText": "I am currently looking for an internship or a first professional experience in the development of video games."
+      "internship_koppelia": {
+        "title": "Game Developer",
+        "date": "Apr. 2026 - June 2026",
+        "company": "Koppelia",
+        "type": "Internship",
+        "description": "Development of a small game adapted for the senior population in EHPAD or senior service residence."
+      }
     },
     "skills": {
       "technical": {
