@@ -55,7 +55,7 @@ export const Footer = () => {
       </div>
 
       <div className="footer-bottom">
-        <p>&copy; 2025 - {currentYear} Clément Bounaix — {t("footer.allRights")}</p>
+        <p>&copy; {currentYear} Clément Bounaix — {t("footer.allRights")}</p>
       </div>
     </footer>
   );

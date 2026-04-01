@@ -40,7 +40,14 @@ export default function CV() {
     },
   ];
 
-  const experiences = [];
+  const experiences = [
+    {
+      key: 'internship_koppelia',
+      image: '/images/cv/LogoKoppelia.png',
+      companyLink: 'https://www.koppelia.com',
+      tags: ['Godot', 'Linux', 'Docker']
+    }
+  ];
 
   const skills = [
     {
@@ -90,10 +97,6 @@ export default function CV() {
     <section className="cv">
       {/* ─── Hero ─── */}
       <div className="cv-hero">
-        <div className="cv-hero-badge">
-          <span className="cv-hero-dot" />
-          {t("cv.heroStatus")}
-        </div>
         <h1 className="cv-hero-title">
           {t("cv.heroLine1")}
           <span className="cv-hero-accent">{t("cv.heroLine2")}</span>
@@ -180,7 +183,22 @@ export default function CV() {
                       <span className="cv-card-type">{t(`cv.experience.${exp.key}.type`)}</span>
                     </div>
                     <h3>{t(`cv.experience.${exp.key}.title`)}</h3>
-                    <p className="cv-card-institution-text">{t(`cv.experience.${exp.key}.company`)}</p>
+
+                    {exp.companyLink ? (
+                      <a
+                        className="cv-card-institution-text"
+                        href={exp.companyLink}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        {t(`cv.experience.${exp.key}.company`)}
+                      </a>
+                    ) : (
+                      <p className="cv-card-institution-text">
+                        {t(`cv.experience.${exp.key}.company`)}
+                      </p>
+                    )}
+
                     <p className="cv-card-description">{t(`cv.experience.${exp.key}.description`)}</p>
                     {exp.tags && (
                       <div className="cv-card-tags">
