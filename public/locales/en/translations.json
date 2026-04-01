@@ -184,7 +184,6 @@
     "title": "My Resume",
     "heroLine1": "My journey",
     "heroLine2": "& Experiences",
-    "heroStatus": "Open to Opportunities",
     "download": "Download my resume",
     "sections": {
       "education": "Education",
@@ -213,8 +212,13 @@
       }
     },
     "experience": {
-      "emptyTitle": "Coming soon",
-      "emptyText": "I am currently looking for an internship or a first professional experience in the development of video games."
+      "internship_koppelia": {
+        "title": "Game Developer",
+        "date": "Avr. 2026 - Juin 2026",
+        "company": "Koppelia",
+        "type": "Stage",
+        "description": "Développement d'un petit jeu adapté pour la population seniors en EHPAD ou en résidence service seniors."
+      }
     },
     "skills": {
       "technical": {
