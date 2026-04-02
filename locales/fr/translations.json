@@ -184,7 +184,6 @@
     "title": "Mon CV",
     "heroLine1": "Mon parcours",
     "heroLine2": "& expériences",
-    "heroStatus": "Ouvert aux opportunités",
     "download": "Télécharger mon CV",
     "sections": {
       "education": "Formation",
@@ -213,8 +212,13 @@
       }
     },
     "experience": {
-      "emptyTitle": "Bientôt disponible",
-      "emptyText": "Je suis actuellement à la recherche d'un stage ou d'une première expérience professionnelle dans le développement de jeux vidéo."
+      "internship_koppelia" : {
+        "title": "Game Developer",
+        "date": "Avr. 2026 - Juin 2026",
+        "company": "Koppelia",
+        "type": "Stage",
+        "description": "Développement d'un petit jeu adapté pour la population seniors en EHPAD ou en résidence service seniors."
+      }
     },
     "skills": {
       "technical": {
